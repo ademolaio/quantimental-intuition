@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  clickhouse:
+    image: clickhouse/clickhouse-server:latest
+    container_name: qi-clickhouse
+    restart: unless-stopped
+
+    # Use the root .env file
+    env_file:
+      - ../.env
+
+    # Only keep vars that aren't in .env (or hardcode extras here)
+    environment:
+      CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT: "1"
+
+    ports:
+      - "127.0.0.1:8124:8123"
+      - "9001:9000"
+      - "9010:9009"
+
+    volumes:
+      - qi_clickhouse_data:/var/lib/clickhouse
+      - qi_clickhouse_logs:/var/log/clickhouse-server
+      - ../db/init:/docker-entrypoint-initdb.d:ro
+
+volumes:
+  qi_clickhouse_data:
+  qi_clickhouse_logs:
