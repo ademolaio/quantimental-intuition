@@ -3,8 +3,17 @@ VENV := venv
 ENV_FILE := .env
 C_CH := docker/qi_clickhouse.yml
 C_SS := docker/qi_superset.yml
+PY_SRC := src
+DBT_DIR := src/qi/dbt_project
 
-.PHONY: up down bootstrap venv freeze shell dbt-debug
+# Common env bootstrap (venv + PYTHONPATH + .env)
+define ENV_EXPORT
+. $(VENV)/bin/activate && \
+export PYTHONPATH="$$(pwd)/$(PY_SRC)" && \
+set -a && [ -f $(ENV_FILE) ] && . $(ENV_FILE) || true && set +a
+endef
+
+.PHONY: up down bootstrap venv install freeze shell dbt-debug backfill_arcx refresh_arcx dbt_agg weekly_close morning_catchup test_market counts tail_spy
 
 # create external network if missing, start both stacks
 up:
@@ -42,4 +51,50 @@ shell:
 
 
 dbt-debug:
-	@set -a && source .env && set +a && dbt debug
+	@$(ENV_EXPORT) && dbt debug
+
+dbt-deps:
+	@$(ENV_EXPORT) && cd $(DBT_DIR) && dbt deps
+
+pip-upgrade:
+	@. $(VENV)/bin/activate && pip install --upgrade pip setuptools wheel
+
+# One-time historical load for ARCX tickers (1999-12-31 → today)
+backfill_arcx:
+	@$(ENV_EXPORT) && \
+	$(PY) -m qi.pipelines.backfill_arcx && \
+	cd $(DBT_DIR) && dbt run --select market.weekly_prices market.monthly_prices market.quarterly_prices
+
+# Weekly refresh (reloads the last ~3 weeks to capture final closes/dividends/splits)
+refresh_arcx:
+	@$(ENV_EXPORT) && \
+	$(PY) -m qi.pipelines.refresh_arcx && \
+	cd $(DBT_DIR) && dbt run --select market.weekly_prices market.monthly_prices market.quarterly_prices
+
+# Just rebuild the aggregates (no new raw loads)
+dbt_agg:
+	@$(ENV_EXPORT) && \
+	cd $(DBT_DIR) && dbt run --select market.weekly_prices market.monthly_prices market.quarterly_prices
+
+# End-of-day: run after US cash close (or next morning)
+weekly_close: refresh_arcx
+
+# Morning catch-up (if you skipped last night)
+morning_catchup: refresh_arcx
+
+# Run the dbt tests for market models
+test_market:
+	@$(ENV_EXPORT) && \
+	cd $(DBT_DIR) && dbt test --select market
+
+# Quick object counts (requires clickhouse-client on PATH; optional)
+counts:
+	@echo "Counts (if clickhouse-client installed):"
+	@echo "SELECT 'daily', count() FROM market.daily_prices;" | clickhouse-client -mn || true
+	@echo "SELECT 'weekly', count() FROM market.weekly_prices;" | clickhouse-client -mn || true
+	@echo "SELECT 'monthly', count() FROM market.monthly_prices;" | clickhouse-client -mn || true
+	@echo "SELECT 'quarterly', count() FROM market.quarterly_prices;" | clickhouse-client -mn || true
+
+# Show last few SPY rows (requires clickhouse-client; optional)
+tail_spy:
+	@echo "SELECT * FROM market.daily_prices WHERE ticker='SPY' ORDER BY date DESC LIMIT 10;" | clickhouse-client -mn || true
