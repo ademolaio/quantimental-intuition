@@ -1,0 +1,27 @@
+name: qi_dbt_project
+version: "1.0"
+profile: qi_dbt_project
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+test-paths: ["tests"]
+target-path: "target"
+
+models:
+  qi_dbt_project:
+    market:
+      +database: market
+      +schema: market        # harmless; macro ignores it
+      +materialized: table
+    fundamentals:
+      +database: fundamentals
+      +schema: fundamentals  # harmless; macro ignores it
+      +materialized: table
+    meta:
+      +database: meta
+      +schema: meta
+      +materialized: table
+    analytics:
+      +database: analytics
+      +schema: analytics
+      +materialized: view

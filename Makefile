@@ -4,7 +4,7 @@ ENV_FILE := .env
 C_CH := docker/qi_clickhouse.yml
 C_SS := docker/qi_superset.yml
 
-.PHONY: up down bootstrap
+.PHONY: up down bootstrap venv freeze shell dbt-debug
 
 # create external network if missing, start both stacks
 up:
@@ -39,3 +39,7 @@ freeze:
 # optional: open an interactive shell with venv pre-activated
 shell:
 	bash -lc 'source $(VENV)/bin/activate && exec bash -i'
+
+
+dbt-debug:
+	@set -a && source .env && set +a && dbt debug
