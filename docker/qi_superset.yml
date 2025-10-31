@@ -1,0 +1,29 @@
+version: "3.9"
+
+networks:
+  qi_net:
+    external: true
+
+volumes:
+  qi_superset_home:
+
+services:
+  superset:
+    build:
+      context: ./superset
+      dockerfile: Dockerfile
+    container_name: qi-superset
+    restart: unless-stopped
+    ports:
+      - "8089:8088"  # host→container
+    environment:
+      SUPERSET_ENV: production
+      SUPERSET_SECRET_KEY: "change-me-please"
+    volumes:
+      - qi_superset_home:/app/superset_home
+    networks: [qi_net]
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:8088/health >/dev/null 2>&1 || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
