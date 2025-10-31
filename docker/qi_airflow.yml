@@ -1,0 +1,86 @@
+version: "3.8"
+
+x-airflow-common:
+  &airflow-common
+  image: apache/airflow:2.9.3
+  environment:
+    - AIRFLOW__CORE__EXECUTOR=CeleryExecutor
+    - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@airflow-postgres/airflow
+    - AIRFLOW__CELERY__RESULT_BACKEND=db+postgresql://airflow:airflow@airflow-postgres/airflow
+    - AIRFLOW__CELERY__BROKER_URL=redis://:@airflow-redis:6379/0
+    - AIRFLOW__CORE__FERNET_KEY=your_fernet_key_here
+    - AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION=True
+    - AIRFLOW__CORE__LOAD_EXAMPLES=False
+    - AIRFLOW_UID=${AIRFLOW_UID}
+    - AIRFLOW_GID=${AIRFLOW_GID}
+  user: "${AIRFLOW_UID}:${AIRFLOW_GID}"
+  volumes:
+    - ../airflow/dags:/opt/airflow/dags
+    - ../airflow/logs:/opt/airflow/logs
+    - ../airflow/plugins:/opt/airflow/plugins
+  networks:
+    - qi_net
+
+services:
+  airflow-redis:
+    image: redis:7
+    container_name: qi-airflow-redis
+    expose:
+      - "6379"
+    networks:
+      - qi_net
+
+  airflow-postgres:
+    image: postgres:15
+    container_name: qi-airflow-postgres
+    environment:
+      - POSTGRES_USER=airflow
+      - POSTGRES_PASSWORD=airflow
+      - POSTGRES_DB=airflow
+    expose:
+      - "5432"
+    networks:
+      - qi_net
+
+  airflow-init:
+    <<: *airflow-common
+    container_name: qi-airflow-init
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        airflow db init
+        airflow users create \
+          --username admin \
+          --password admin \
+          --firstname Samuel \
+          --lastname Ademola \
+          --role Admin \
+          --email admin@example.com
+    depends_on:
+      - airflow-postgres
+      - airflow-redis
+
+  airflow-webserver:
+    <<: *airflow-common
+    container_name: qi-airflow-web
+    ports:
+      - "8081:8080"
+    command: webserver
+    depends_on:
+      - airflow-init
+      - airflow-postgres
+      - airflow-redis
+
+  airflow-scheduler:
+    <<: *airflow-common
+    container_name: qi-airflow-scheduler
+    command: scheduler
+    depends_on:
+      - airflow-init
+      - airflow-postgres
+      - airflow-redis
+
+networks:
+  qi_net:
+    external: true

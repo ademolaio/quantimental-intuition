@@ -5,6 +5,7 @@ C_CH := docker/qi_clickhouse.yml
 C_SS := docker/qi_superset.yml
 PY_SRC := src
 DBT_DIR := src/qi/dbt_project
+C_AF := docker/qi_airflow.yml
 
 # Common env bootstrap (venv + PYTHONPATH + .env)
 define ENV_EXPORT
@@ -13,9 +14,7 @@ export PYTHONPATH="$$(pwd)/$(PY_SRC)" && \
 set -a && [ -f $(ENV_FILE) ] && . $(ENV_FILE) || true && set +a
 endef
 
-.PHONY: up down bootstrap venv install freeze shell dbt-debug backfill_arcx refresh_arcx dbt_agg weekly_close morning_catchup test_market counts tail_spy
-
-# create external network if missing, start both stacks
+.PHONY: up down bootstrap venv install freeze shell dbt-debug backfill_arcx refresh_arcx dbt_agg weekly_close morning_catchup test_market counts tail_spy airflow-up airflow-down airflow-logs airflow-web print-env airflow-trigger airflow-run-logs airflow-task-logs# create external network if missing, start both stacks
 up:
 	@docker network create qi_net >/dev/null 2>&1 || true
 	docker compose --env-file $(ENV_FILE) -f $(C_CH) up -d
@@ -98,3 +97,30 @@ counts:
 # Show last few SPY rows (requires clickhouse-client; optional)
 tail_spy:
 	@echo "SELECT * FROM market.daily_prices WHERE ticker='SPY' ORDER BY date DESC LIMIT 10;" | clickhouse-client -mn || true
+
+
+airflow-up:
+	@docker network create qi_net >/dev/null 2>&1 || true
+	docker compose -f docker/qi_airflow.yml up -d
+
+airflow-down:
+	docker compose -f docker/qi_airflow.yml down
+
+airflow-logs:
+	@docker compose --env-file $(ENV_FILE) -f docker/qi_airflow.yml logs -f --tail=50
+
+airflow-web:
+	@echo "Open http://localhost:8081 (user: admin / pass: admin)"
+
+airflow-trigger:
+	@docker exec -it qi-airflow-web bash -lc "airflow dags trigger refresh_arcx_dag"
+
+airflow-run-logs:
+	@docker exec -it qi-airflow-web bash -lc "airflow dags runs list -d refresh_arcx_dag | head"
+
+airflow-task-logs:
+	@docker exec -it qi-airflow-web bash -lc "airflow tasks logs refresh_arcx_dag $(TASK) $(RUN)"
+
+print-env:
+	@$(ENV_EXPORT) && env | grep -E '^(CH_|CLICKHOUSE_|AIRFLOW_)'
+

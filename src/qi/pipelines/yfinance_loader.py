@@ -19,7 +19,7 @@ def backfill_arcx(tickers: Iterable[str], start: str = "1999-12-31") -> None:
     batch_id = str(uuid.uuid4())
     for t in tickers:
         short = fetch_short_name(t)
-        raw = fetch_daily_history(t, start=start, end=None)
+        raw = fetch_daily_history(t, start=start, end=None, force_range=True)
         df = to_daily_prices_df(t, short, raw, ingested_at=_utc_now(), batch_id=batch_id)
 
         if df.empty:
@@ -38,14 +38,14 @@ def refresh_arcx(tickers: Iterable[str], lookback_days: int = 21) -> None:
     Weekly refresh: reload rolling window to cover holidays/dividends/splits.
     """
     batch_id = str(uuid.uuid4())
-    end_dt = datetime.now(timezone.utc).date()
+    end_dt = datetime.now(timezone.utc).date() + timedelta(days=1)
     start_dt = (datetime.now(timezone.utc) - timedelta(days=lookback_days)).date()
     d1 = start_dt.strftime("%Y-%m-%d")
     d2 = end_dt.strftime("%Y-%m-%d")
 
     for t in tickers:
         short = fetch_short_name(t)
-        raw = fetch_daily_history(t, start=d1, end=d2)
+        raw = fetch_daily_history(t, start=d1, end=d2, force_range=True)
         df = to_daily_prices_df(t, short, raw, ingested_at=_utc_now(), batch_id=batch_id)
 
         # delete & insert the overlap window even if df is empty (safe no-op on insert)
