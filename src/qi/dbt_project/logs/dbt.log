@@ -4310,3 +4310,1184 @@ parsing.
 [0m12:20:05.697808 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a940e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10965b920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d8c6570>]}
 [0m12:20:05.697994 [debug] [MainThread]: Flushing usage events
 [0m12:20:06.124563 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:24:09.847704 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10733a0c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1074d6660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1074d6150>]}
+
+
+============================== 12:24:09.850120 | 0f886ab3-fa50-42b7-8190-603ff5e65494 ==============================
+[0m12:24:09.850120 [info ] [MainThread]: Running with dbt=1.10.13
+[0m12:24:09.850457 [debug] [MainThread]: running dbt with arguments {'empty': 'None', 'invocation_command': 'dbt test', 'debug': 'False', 'partial_parse': 'True', 'use_colors': 'True', 'quiet': 'False', 'printer_width': '80', 'version_check': 'True', 'static_parser': 'True', 'warn_error': 'None', 'no_print': 'None', 'use_experimental_parser': 'False', 'log_path': '/Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/logs', 'indirect_selection': 'eager', 'write_json': 'True', 'introspect': 'True', 'fail_fast': 'False', 'cache_selected_only': 'False', 'profiles_dir': '/Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project', 'log_cache_events': 'False', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m12:24:09.937362 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0f886ab3-fa50-42b7-8190-603ff5e65494', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107656a20>]}
+[0m12:24:09.967006 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0f886ab3-fa50-42b7-8190-603ff5e65494', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10761baa0>]}
+[0m12:24:09.967490 [info ] [MainThread]: Registered adapter: clickhouse=1.9.5
+[0m12:24:10.032261 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m12:24:10.091035 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:24:10.091300 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:24:10.094635 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.qi_dbt_project.meta
+- models.qi_dbt_project.analytics
+- models.qi_dbt_project.fundamentals
+[0m12:24:10.116092 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0f886ab3-fa50-42b7-8190-603ff5e65494', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10771a180>]}
+[0m12:24:10.164918 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/target/manifest.json
+[0m12:24:10.166353 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/target/semantic_manifest.json
+[0m12:24:10.182656 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0f886ab3-fa50-42b7-8190-603ff5e65494', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107bcd9d0>]}
+[0m12:24:10.183014 [info ] [MainThread]: Found 4 models, 14 data tests, 1 source, 487 macros
+[0m12:24:10.183209 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0f886ab3-fa50-42b7-8190-603ff5e65494', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107719c10>]}
+[0m12:24:10.184517 [info ] [MainThread]: 
+[0m12:24:10.184740 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m12:24:10.184892 [info ] [MainThread]: 
+[0m12:24:10.185189 [debug] [MainThread]: Acquiring new clickhouse connection 'master'
+[0m12:24:10.188841 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list__market'
+[0m12:24:10.195420 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:24:10.481117 [debug] [ThreadPool]: dbt_clickhouse adapter: On list__market: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "connection_name": "list__market"} */
+select
+      t.name as name,
+      t.database as schema,
+      multiIf(
+        engine in ('MaterializedView', 'View'), 'view',
+        engine = 'Dictionary', 'dictionary',
+        'table'
+      ) as type,
+      db.engine as db_engine,0 as is_on_cluster
+          from system.tables as t join system.databases as db on t.database = db.name
+        where schema = 'market'
+      
+
+  ...
+[0m12:24:10.485059 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m12:24:10.493411 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0f886ab3-fa50-42b7-8190-603ff5e65494', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b02000>]}
+[0m12:24:10.494629 [debug] [Thread-1 (]: Began running node test.qi_dbt_project.not_null_daily_prices_date.287ad299aa
+[0m12:24:10.494853 [info ] [Thread-1 (]: 1 of 14 START test not_null_daily_prices_date .................................. [RUN]
+[0m12:24:10.495095 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list__market, now test.qi_dbt_project.not_null_daily_prices_date.287ad299aa)
+[0m12:24:10.495279 [debug] [Thread-1 (]: Began compiling node test.qi_dbt_project.not_null_daily_prices_date.287ad299aa
+[0m12:24:10.504223 [debug] [Thread-1 (]: Writing injected SQL for node "test.qi_dbt_project.not_null_daily_prices_date.287ad299aa"
+[0m12:24:10.504994 [debug] [Thread-1 (]: Began executing node test.qi_dbt_project.not_null_daily_prices_date.287ad299aa
+[0m12:24:10.514959 [debug] [Thread-1 (]: Writing runtime sql for node "test.qi_dbt_project.not_null_daily_prices_date.287ad299aa"
+[0m12:24:10.515796 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.qi_dbt_project.not_null_daily_prices_date.287ad299aa: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "test.qi_dbt_project.not_null_daily_prices_date.287ad299aa"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select date
+from `market`.`daily_prices`
+where date is null
+
+
+
+  
+  
+    ) dbt_internal_test...
+[0m12:24:10.519986 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m12:24:10.522393 [info ] [Thread-1 (]: 1 of 14 PASS not_null_daily_prices_date ........................................ [[32mPASS[0m in 0.03s]
+[0m12:24:10.522723 [debug] [Thread-1 (]: Finished running node test.qi_dbt_project.not_null_daily_prices_date.287ad299aa
+[0m12:24:10.522936 [debug] [Thread-1 (]: Began running node test.qi_dbt_project.not_null_daily_prices_ingested_at.4dbf84d837
+[0m12:24:10.523189 [info ] [Thread-1 (]: 2 of 14 START test not_null_daily_prices_ingested_at ........................... [RUN]
+[0m12:24:10.523455 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.qi_dbt_project.not_null_daily_prices_date.287ad299aa, now test.qi_dbt_project.not_null_daily_prices_ingested_at.4dbf84d837)
+[0m12:24:10.523654 [debug] [Thread-1 (]: Began compiling node test.qi_dbt_project.not_null_daily_prices_ingested_at.4dbf84d837
+[0m12:24:10.525963 [debug] [Thread-1 (]: Writing injected SQL for node "test.qi_dbt_project.not_null_daily_prices_ingested_at.4dbf84d837"
+[0m12:24:10.526438 [debug] [Thread-1 (]: Began executing node test.qi_dbt_project.not_null_daily_prices_ingested_at.4dbf84d837
+[0m12:24:10.528436 [debug] [Thread-1 (]: Writing runtime sql for node "test.qi_dbt_project.not_null_daily_prices_ingested_at.4dbf84d837"
+[0m12:24:10.529054 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.qi_dbt_project.not_null_daily_prices_ingested_at.4dbf84d837: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "test.qi_dbt_project.not_null_daily_prices_ingested_at.4dbf84d837"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select ingested_at
+from `market`.`daily_prices`
+where ingested_at is null
+
+
+
+  
+  
+    ) dbt_internal_test...
+[0m12:24:10.532582 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m12:24:10.533622 [info ] [Thread-1 (]: 2 of 14 PASS not_null_daily_prices_ingested_at ................................. [[32mPASS[0m in 0.01s]
+[0m12:24:10.533923 [debug] [Thread-1 (]: Finished running node test.qi_dbt_project.not_null_daily_prices_ingested_at.4dbf84d837
+[0m12:24:10.534132 [debug] [Thread-1 (]: Began running node test.qi_dbt_project.not_null_daily_prices_short_name.9e91e59f52
+[0m12:24:10.534367 [info ] [Thread-1 (]: 3 of 14 START test not_null_daily_prices_short_name ............................ [RUN]
+[0m12:24:10.534612 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.qi_dbt_project.not_null_daily_prices_ingested_at.4dbf84d837, now test.qi_dbt_project.not_null_daily_prices_short_name.9e91e59f52)
+[0m12:24:10.534790 [debug] [Thread-1 (]: Began compiling node test.qi_dbt_project.not_null_daily_prices_short_name.9e91e59f52
+[0m12:24:10.537027 [debug] [Thread-1 (]: Writing injected SQL for node "test.qi_dbt_project.not_null_daily_prices_short_name.9e91e59f52"
+[0m12:24:10.537456 [debug] [Thread-1 (]: Began executing node test.qi_dbt_project.not_null_daily_prices_short_name.9e91e59f52
+[0m12:24:10.538642 [debug] [Thread-1 (]: Writing runtime sql for node "test.qi_dbt_project.not_null_daily_prices_short_name.9e91e59f52"
+[0m12:24:10.539173 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.qi_dbt_project.not_null_daily_prices_short_name.9e91e59f52: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "test.qi_dbt_project.not_null_daily_prices_short_name.9e91e59f52"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select short_name
+from `market`.`daily_prices`
+where short_name is null
+
+
+
+  
+  
+    ) dbt_internal_test...
+[0m12:24:10.542556 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m12:24:10.543526 [info ] [Thread-1 (]: 3 of 14 PASS not_null_daily_prices_short_name .................................. [[32mPASS[0m in 0.01s]
+[0m12:24:10.543837 [debug] [Thread-1 (]: Finished running node test.qi_dbt_project.not_null_daily_prices_short_name.9e91e59f52
+[0m12:24:10.544071 [debug] [Thread-1 (]: Began running node test.qi_dbt_project.not_null_daily_prices_ticker.cbd48d58d1
+[0m12:24:10.544257 [info ] [Thread-1 (]: 4 of 14 START test not_null_daily_prices_ticker ................................ [RUN]
+[0m12:24:10.544627 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.qi_dbt_project.not_null_daily_prices_short_name.9e91e59f52, now test.qi_dbt_project.not_null_daily_prices_ticker.cbd48d58d1)
+[0m12:24:10.544914 [debug] [Thread-1 (]: Began compiling node test.qi_dbt_project.not_null_daily_prices_ticker.cbd48d58d1
+[0m12:24:10.547154 [debug] [Thread-1 (]: Writing injected SQL for node "test.qi_dbt_project.not_null_daily_prices_ticker.cbd48d58d1"
+[0m12:24:10.547912 [debug] [Thread-1 (]: Began executing node test.qi_dbt_project.not_null_daily_prices_ticker.cbd48d58d1
+[0m12:24:10.549339 [debug] [Thread-1 (]: Writing runtime sql for node "test.qi_dbt_project.not_null_daily_prices_ticker.cbd48d58d1"
+[0m12:24:10.550172 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.qi_dbt_project.not_null_daily_prices_ticker.cbd48d58d1: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "test.qi_dbt_project.not_null_daily_prices_ticker.cbd48d58d1"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select ticker
+from `market`.`daily_prices`
+where ticker is null
+
+
+
+  
+  
+    ) dbt_internal_test...
+[0m12:24:10.553655 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m12:24:10.554782 [info ] [Thread-1 (]: 4 of 14 PASS not_null_daily_prices_ticker ...................................... [[32mPASS[0m in 0.01s]
+[0m12:24:10.555141 [debug] [Thread-1 (]: Finished running node test.qi_dbt_project.not_null_daily_prices_ticker.cbd48d58d1
+[0m12:24:10.555341 [debug] [Thread-1 (]: Began running node test.qi_dbt_project.not_null_monthly_prices_month_ending.63079ad274
+[0m12:24:10.555609 [info ] [Thread-1 (]: 5 of 14 START test not_null_monthly_prices_month_ending ........................ [RUN]
+[0m12:24:10.555920 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.qi_dbt_project.not_null_daily_prices_ticker.cbd48d58d1, now test.qi_dbt_project.not_null_monthly_prices_month_ending.63079ad274)
+[0m12:24:10.556124 [debug] [Thread-1 (]: Began compiling node test.qi_dbt_project.not_null_monthly_prices_month_ending.63079ad274
+[0m12:24:10.558340 [debug] [Thread-1 (]: Writing injected SQL for node "test.qi_dbt_project.not_null_monthly_prices_month_ending.63079ad274"
+[0m12:24:10.559091 [debug] [Thread-1 (]: Began executing node test.qi_dbt_project.not_null_monthly_prices_month_ending.63079ad274
+[0m12:24:10.560483 [debug] [Thread-1 (]: Writing runtime sql for node "test.qi_dbt_project.not_null_monthly_prices_month_ending.63079ad274"
+[0m12:24:10.560946 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.qi_dbt_project.not_null_monthly_prices_month_ending.63079ad274: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "test.qi_dbt_project.not_null_monthly_prices_month_ending.63079ad274"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select month_ending
+from `market`.`monthly_prices`
+where month_ending is null
+
+
+
+  
+  
+    ) dbt_internal_test...
+[0m12:24:10.564138 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m12:24:10.565198 [info ] [Thread-1 (]: 5 of 14 PASS not_null_monthly_prices_month_ending .............................. [[32mPASS[0m in 0.01s]
+[0m12:24:10.565548 [debug] [Thread-1 (]: Finished running node test.qi_dbt_project.not_null_monthly_prices_month_ending.63079ad274
+[0m12:24:10.565757 [debug] [Thread-1 (]: Began running node test.qi_dbt_project.not_null_monthly_prices_ticker.6f879395e2
+[0m12:24:10.565995 [info ] [Thread-1 (]: 6 of 14 START test not_null_monthly_prices_ticker .............................. [RUN]
+[0m12:24:10.566270 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.qi_dbt_project.not_null_monthly_prices_month_ending.63079ad274, now test.qi_dbt_project.not_null_monthly_prices_ticker.6f879395e2)
+[0m12:24:10.566468 [debug] [Thread-1 (]: Began compiling node test.qi_dbt_project.not_null_monthly_prices_ticker.6f879395e2
+[0m12:24:10.568875 [debug] [Thread-1 (]: Writing injected SQL for node "test.qi_dbt_project.not_null_monthly_prices_ticker.6f879395e2"
+[0m12:24:10.569551 [debug] [Thread-1 (]: Began executing node test.qi_dbt_project.not_null_monthly_prices_ticker.6f879395e2
+[0m12:24:10.570730 [debug] [Thread-1 (]: Writing runtime sql for node "test.qi_dbt_project.not_null_monthly_prices_ticker.6f879395e2"
+[0m12:24:10.571078 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.qi_dbt_project.not_null_monthly_prices_ticker.6f879395e2: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "test.qi_dbt_project.not_null_monthly_prices_ticker.6f879395e2"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select ticker
+from `market`.`monthly_prices`
+where ticker is null
+
+
+
+  
+  
+    ) dbt_internal_test...
+[0m12:24:10.574396 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m12:24:10.575411 [info ] [Thread-1 (]: 6 of 14 PASS not_null_monthly_prices_ticker .................................... [[32mPASS[0m in 0.01s]
+[0m12:24:10.575719 [debug] [Thread-1 (]: Finished running node test.qi_dbt_project.not_null_monthly_prices_ticker.6f879395e2
+[0m12:24:10.575920 [debug] [Thread-1 (]: Began running node test.qi_dbt_project.not_null_quarterly_prices_quarter_ending.bc6e4297ab
+[0m12:24:10.576127 [info ] [Thread-1 (]: 7 of 14 START test not_null_quarterly_prices_quarter_ending .................... [RUN]
+[0m12:24:10.576342 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.qi_dbt_project.not_null_monthly_prices_ticker.6f879395e2, now test.qi_dbt_project.not_null_quarterly_prices_quarter_ending.bc6e4297ab)
+[0m12:24:10.576519 [debug] [Thread-1 (]: Began compiling node test.qi_dbt_project.not_null_quarterly_prices_quarter_ending.bc6e4297ab
+[0m12:24:10.578781 [debug] [Thread-1 (]: Writing injected SQL for node "test.qi_dbt_project.not_null_quarterly_prices_quarter_ending.bc6e4297ab"
+[0m12:24:10.579263 [debug] [Thread-1 (]: Began executing node test.qi_dbt_project.not_null_quarterly_prices_quarter_ending.bc6e4297ab
+[0m12:24:10.581464 [debug] [Thread-1 (]: Writing runtime sql for node "test.qi_dbt_project.not_null_quarterly_prices_quarter_ending.bc6e4297ab"
+[0m12:24:10.582106 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.qi_dbt_project.not_null_quarterly_prices_quarter_ending.bc6e4297ab: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "test.qi_dbt_project.not_null_quarterly_prices_quarter_ending.bc6e4297ab"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select quarter_ending
+from `market`.`quarterly_prices`
+where quarter_ending is null
+
+
+
+  
+  
+    ) dbt_internal_test...
+[0m12:24:10.585447 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m12:24:10.586495 [info ] [Thread-1 (]: 7 of 14 PASS not_null_quarterly_prices_quarter_ending .......................... [[32mPASS[0m in 0.01s]
+[0m12:24:10.586822 [debug] [Thread-1 (]: Finished running node test.qi_dbt_project.not_null_quarterly_prices_quarter_ending.bc6e4297ab
+[0m12:24:10.587024 [debug] [Thread-1 (]: Began running node test.qi_dbt_project.not_null_quarterly_prices_ticker.a4f0b0d137
+[0m12:24:10.587240 [info ] [Thread-1 (]: 8 of 14 START test not_null_quarterly_prices_ticker ............................ [RUN]
+[0m12:24:10.587447 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.qi_dbt_project.not_null_quarterly_prices_quarter_ending.bc6e4297ab, now test.qi_dbt_project.not_null_quarterly_prices_ticker.a4f0b0d137)
+[0m12:24:10.587628 [debug] [Thread-1 (]: Began compiling node test.qi_dbt_project.not_null_quarterly_prices_ticker.a4f0b0d137
+[0m12:24:10.590013 [debug] [Thread-1 (]: Writing injected SQL for node "test.qi_dbt_project.not_null_quarterly_prices_ticker.a4f0b0d137"
+[0m12:24:10.590474 [debug] [Thread-1 (]: Began executing node test.qi_dbt_project.not_null_quarterly_prices_ticker.a4f0b0d137
+[0m12:24:10.591839 [debug] [Thread-1 (]: Writing runtime sql for node "test.qi_dbt_project.not_null_quarterly_prices_ticker.a4f0b0d137"
+[0m12:24:10.592575 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.qi_dbt_project.not_null_quarterly_prices_ticker.a4f0b0d137: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "test.qi_dbt_project.not_null_quarterly_prices_ticker.a4f0b0d137"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select ticker
+from `market`.`quarterly_prices`
+where ticker is null
+
+
+
+  
+  
+    ) dbt_internal_test...
+[0m12:24:10.595778 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m12:24:10.596654 [info ] [Thread-1 (]: 8 of 14 PASS not_null_quarterly_prices_ticker .................................. [[32mPASS[0m in 0.01s]
+[0m12:24:10.596935 [debug] [Thread-1 (]: Finished running node test.qi_dbt_project.not_null_quarterly_prices_ticker.a4f0b0d137
+[0m12:24:10.597121 [debug] [Thread-1 (]: Began running node test.qi_dbt_project.not_null_weekly_prices_ticker.e525680469
+[0m12:24:10.597402 [info ] [Thread-1 (]: 9 of 14 START test not_null_weekly_prices_ticker ............................... [RUN]
+[0m12:24:10.597734 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.qi_dbt_project.not_null_quarterly_prices_ticker.a4f0b0d137, now test.qi_dbt_project.not_null_weekly_prices_ticker.e525680469)
+[0m12:24:10.597946 [debug] [Thread-1 (]: Began compiling node test.qi_dbt_project.not_null_weekly_prices_ticker.e525680469
+[0m12:24:10.600498 [debug] [Thread-1 (]: Writing injected SQL for node "test.qi_dbt_project.not_null_weekly_prices_ticker.e525680469"
+[0m12:24:10.600964 [debug] [Thread-1 (]: Began executing node test.qi_dbt_project.not_null_weekly_prices_ticker.e525680469
+[0m12:24:10.602216 [debug] [Thread-1 (]: Writing runtime sql for node "test.qi_dbt_project.not_null_weekly_prices_ticker.e525680469"
+[0m12:24:10.602911 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.qi_dbt_project.not_null_weekly_prices_ticker.e525680469: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "test.qi_dbt_project.not_null_weekly_prices_ticker.e525680469"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select ticker
+from `market`.`weekly_prices`
+where ticker is null
+
+
+
+  
+  
+    ) dbt_internal_test...
+[0m12:24:10.606115 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m12:24:10.607166 [info ] [Thread-1 (]: 9 of 14 PASS not_null_weekly_prices_ticker ..................................... [[32mPASS[0m in 0.01s]
+[0m12:24:10.607509 [debug] [Thread-1 (]: Finished running node test.qi_dbt_project.not_null_weekly_prices_ticker.e525680469
+[0m12:24:10.607723 [debug] [Thread-1 (]: Began running node test.qi_dbt_project.not_null_weekly_prices_week_ending.1078b135de
+[0m12:24:10.607942 [info ] [Thread-1 (]: 10 of 14 START test not_null_weekly_prices_week_ending ......................... [RUN]
+[0m12:24:10.608187 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.qi_dbt_project.not_null_weekly_prices_ticker.e525680469, now test.qi_dbt_project.not_null_weekly_prices_week_ending.1078b135de)
+[0m12:24:10.608370 [debug] [Thread-1 (]: Began compiling node test.qi_dbt_project.not_null_weekly_prices_week_ending.1078b135de
+[0m12:24:10.610742 [debug] [Thread-1 (]: Writing injected SQL for node "test.qi_dbt_project.not_null_weekly_prices_week_ending.1078b135de"
+[0m12:24:10.611390 [debug] [Thread-1 (]: Began executing node test.qi_dbt_project.not_null_weekly_prices_week_ending.1078b135de
+[0m12:24:10.612784 [debug] [Thread-1 (]: Writing runtime sql for node "test.qi_dbt_project.not_null_weekly_prices_week_ending.1078b135de"
+[0m12:24:10.613224 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.qi_dbt_project.not_null_weekly_prices_week_ending.1078b135de: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "test.qi_dbt_project.not_null_weekly_prices_week_ending.1078b135de"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select week_ending
+from `market`.`weekly_prices`
+where week_ending is null
+
+
+
+  
+  
+    ) dbt_internal_test...
+[0m12:24:10.616579 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m12:24:10.617517 [info ] [Thread-1 (]: 10 of 14 PASS not_null_weekly_prices_week_ending ............................... [[32mPASS[0m in 0.01s]
+[0m12:24:10.617801 [debug] [Thread-1 (]: Finished running node test.qi_dbt_project.not_null_weekly_prices_week_ending.1078b135de
+[0m12:24:10.617992 [debug] [Thread-1 (]: Began running node test.qi_dbt_project.unique_daily_prices_date__ticker__date.0b403d6303
+[0m12:24:10.618283 [info ] [Thread-1 (]: 11 of 14 START test unique_daily_prices_date__ticker__date ..................... [RUN]
+[0m12:24:10.618665 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.qi_dbt_project.not_null_weekly_prices_week_ending.1078b135de, now test.qi_dbt_project.unique_daily_prices_date__ticker__date.0b403d6303)
+[0m12:24:10.618881 [debug] [Thread-1 (]: Began compiling node test.qi_dbt_project.unique_daily_prices_date__ticker__date.0b403d6303
+[0m12:24:10.627789 [debug] [Thread-1 (]: Compilation Error in test unique_daily_prices_date__ticker__date (models/market/schema.yml)
+  macro 'dbt_macro__test_unique' takes no keyword argument 'combination_of_columns'
+[0m12:24:10.628130 [error] [Thread-1 (]: 11 of 14 ERROR unique_daily_prices_date__ticker__date .......................... [[31mERROR[0m in 0.01s]
+[0m12:24:10.628404 [debug] [Thread-1 (]: Finished running node test.qi_dbt_project.unique_daily_prices_date__ticker__date.0b403d6303
+[0m12:24:10.628612 [debug] [Thread-1 (]: Began running node test.qi_dbt_project.unique_monthly_prices_month_ending__ticker__month_ending.c3fd418164
+[0m12:24:10.628835 [debug] [Thread-4 (]: Marking all children of 'test.qi_dbt_project.unique_daily_prices_date__ticker__date.0b403d6303' to be skipped because of status 'error'.  Reason: Compilation Error in test unique_daily_prices_date__ticker__date (models/market/schema.yml)
+  macro 'dbt_macro__test_unique' takes no keyword argument 'combination_of_columns'.
+[0m12:24:10.629068 [info ] [Thread-1 (]: 12 of 14 START test unique_monthly_prices_month_ending__ticker__month_ending ... [RUN]
+[0m12:24:10.629928 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.qi_dbt_project.unique_daily_prices_date__ticker__date.0b403d6303, now test.qi_dbt_project.unique_monthly_prices_month_ending__ticker__month_ending.c3fd418164)
+[0m12:24:10.630185 [debug] [Thread-1 (]: Began compiling node test.qi_dbt_project.unique_monthly_prices_month_ending__ticker__month_ending.c3fd418164
+[0m12:24:10.633570 [debug] [Thread-1 (]: Compilation Error in test unique_monthly_prices_month_ending__ticker__month_ending (models/market/schema.yml)
+  macro 'dbt_macro__test_unique' takes no keyword argument 'combination_of_columns'
+[0m12:24:10.633961 [error] [Thread-1 (]: 12 of 14 ERROR unique_monthly_prices_month_ending__ticker__month_ending ........ [[31mERROR[0m in 0.00s]
+[0m12:24:10.634235 [debug] [Thread-1 (]: Finished running node test.qi_dbt_project.unique_monthly_prices_month_ending__ticker__month_ending.c3fd418164
+[0m12:24:10.634443 [debug] [Thread-1 (]: Began running node test.qi_dbt_project.unique_quarterly_prices_quarter_ending__ticker__quarter_ending.cdc64869c5
+[0m12:24:10.634675 [debug] [Thread-4 (]: Marking all children of 'test.qi_dbt_project.unique_monthly_prices_month_ending__ticker__month_ending.c3fd418164' to be skipped because of status 'error'.  Reason: Compilation Error in test unique_monthly_prices_month_ending__ticker__month_ending (models/market/schema.yml)
+  macro 'dbt_macro__test_unique' takes no keyword argument 'combination_of_columns'.
+[0m12:24:10.634881 [info ] [Thread-1 (]: 13 of 14 START test unique_quarterly_prices_quarter_ending__ticker__quarter_ending  [RUN]
+[0m12:24:10.635216 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.qi_dbt_project.unique_monthly_prices_month_ending__ticker__month_ending.c3fd418164, now test.qi_dbt_project.unique_quarterly_prices_quarter_ending__ticker__quarter_ending.cdc64869c5)
+[0m12:24:10.635433 [debug] [Thread-1 (]: Began compiling node test.qi_dbt_project.unique_quarterly_prices_quarter_ending__ticker__quarter_ending.cdc64869c5
+[0m12:24:10.638493 [debug] [Thread-1 (]: Compilation Error in test unique_quarterly_prices_quarter_ending__ticker__quarter_ending (models/market/schema.yml)
+  macro 'dbt_macro__test_unique' takes no keyword argument 'combination_of_columns'
+[0m12:24:10.638739 [error] [Thread-1 (]: 13 of 14 ERROR unique_quarterly_prices_quarter_ending__ticker__quarter_ending .. [[31mERROR[0m in 0.00s]
+[0m12:24:10.638976 [debug] [Thread-1 (]: Finished running node test.qi_dbt_project.unique_quarterly_prices_quarter_ending__ticker__quarter_ending.cdc64869c5
+[0m12:24:10.639160 [debug] [Thread-1 (]: Began running node test.qi_dbt_project.unique_weekly_prices_week_ending__ticker__week_ending.ff02f0cf04
+[0m12:24:10.639354 [debug] [Thread-4 (]: Marking all children of 'test.qi_dbt_project.unique_quarterly_prices_quarter_ending__ticker__quarter_ending.cdc64869c5' to be skipped because of status 'error'.  Reason: Compilation Error in test unique_quarterly_prices_quarter_ending__ticker__quarter_ending (models/market/schema.yml)
+  macro 'dbt_macro__test_unique' takes no keyword argument 'combination_of_columns'.
+[0m12:24:10.639540 [info ] [Thread-1 (]: 14 of 14 START test unique_weekly_prices_week_ending__ticker__week_ending ...... [RUN]
+[0m12:24:10.639787 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.qi_dbt_project.unique_quarterly_prices_quarter_ending__ticker__quarter_ending.cdc64869c5, now test.qi_dbt_project.unique_weekly_prices_week_ending__ticker__week_ending.ff02f0cf04)
+[0m12:24:10.639960 [debug] [Thread-1 (]: Began compiling node test.qi_dbt_project.unique_weekly_prices_week_ending__ticker__week_ending.ff02f0cf04
+[0m12:24:10.644212 [debug] [Thread-1 (]: Compilation Error in test unique_weekly_prices_week_ending__ticker__week_ending (models/market/schema.yml)
+  macro 'dbt_macro__test_unique' takes no keyword argument 'combination_of_columns'
+[0m12:24:10.644504 [error] [Thread-1 (]: 14 of 14 ERROR unique_weekly_prices_week_ending__ticker__week_ending ........... [[31mERROR[0m in 0.00s]
+[0m12:24:10.644765 [debug] [Thread-1 (]: Finished running node test.qi_dbt_project.unique_weekly_prices_week_ending__ticker__week_ending.ff02f0cf04
+[0m12:24:10.644977 [debug] [Thread-4 (]: Marking all children of 'test.qi_dbt_project.unique_weekly_prices_week_ending__ticker__week_ending.ff02f0cf04' to be skipped because of status 'error'.  Reason: Compilation Error in test unique_weekly_prices_week_ending__ticker__week_ending (models/market/schema.yml)
+  macro 'dbt_macro__test_unique' takes no keyword argument 'combination_of_columns'.
+[0m12:24:10.645687 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:24:10.645859 [debug] [MainThread]: Connection 'test.qi_dbt_project.unique_weekly_prices_week_ending__ticker__week_ending.ff02f0cf04' was left open.
+[0m12:24:10.646015 [debug] [MainThread]: On test.qi_dbt_project.unique_weekly_prices_week_ending__ticker__week_ending.ff02f0cf04: Close
+[0m12:24:10.646285 [info ] [MainThread]: 
+[0m12:24:10.646512 [info ] [MainThread]: Finished running 14 data tests in 0 hours 0 minutes and 0.46 seconds (0.46s).
+[0m12:24:10.647472 [debug] [MainThread]: Command end result
+[0m12:24:10.661570 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/target/manifest.json
+[0m12:24:10.662919 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/target/semantic_manifest.json
+[0m12:24:10.667074 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/target/run_results.json
+[0m12:24:10.667287 [info ] [MainThread]: 
+[0m12:24:10.667471 [info ] [MainThread]: [31mCompleted with 4 errors, 0 partial successes, and 0 warnings:[0m
+[0m12:24:10.667626 [info ] [MainThread]: 
+[0m12:24:10.667815 [error] [MainThread]: [31mFailure in test unique_daily_prices_date__ticker__date (models/market/schema.yml)[0m
+[0m12:24:10.667992 [error] [MainThread]:   Compilation Error in test unique_daily_prices_date__ticker__date (models/market/schema.yml)
+  macro 'dbt_macro__test_unique' takes no keyword argument 'combination_of_columns'
+[0m12:24:10.668132 [info ] [MainThread]: 
+[0m12:24:10.668298 [error] [MainThread]: [31mFailure in test unique_monthly_prices_month_ending__ticker__month_ending (models/market/schema.yml)[0m
+[0m12:24:10.668463 [error] [MainThread]:   Compilation Error in test unique_monthly_prices_month_ending__ticker__month_ending (models/market/schema.yml)
+  macro 'dbt_macro__test_unique' takes no keyword argument 'combination_of_columns'
+[0m12:24:10.668595 [info ] [MainThread]: 
+[0m12:24:10.668760 [error] [MainThread]: [31mFailure in test unique_quarterly_prices_quarter_ending__ticker__quarter_ending (models/market/schema.yml)[0m
+[0m12:24:10.669098 [error] [MainThread]:   Compilation Error in test unique_quarterly_prices_quarter_ending__ticker__quarter_ending (models/market/schema.yml)
+  macro 'dbt_macro__test_unique' takes no keyword argument 'combination_of_columns'
+[0m12:24:10.669371 [info ] [MainThread]: 
+[0m12:24:10.669573 [error] [MainThread]: [31mFailure in test unique_weekly_prices_week_ending__ticker__week_ending (models/market/schema.yml)[0m
+[0m12:24:10.669759 [error] [MainThread]:   Compilation Error in test unique_weekly_prices_week_ending__ticker__week_ending (models/market/schema.yml)
+  macro 'dbt_macro__test_unique' takes no keyword argument 'combination_of_columns'
+[0m12:24:10.669911 [info ] [MainThread]: 
+[0m12:24:10.670077 [info ] [MainThread]: Done. PASS=10 WARN=0 ERROR=4 SKIP=0 NO-OP=0 TOTAL=14
+[0m12:24:10.672371 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 0.8604604, "process_in_blocks": "0", "process_kernel_time": 0.197659, "process_mem_max_rss": "168263680", "process_out_blocks": "0", "process_user_time": 1.347708}
+[0m12:24:10.672693 [debug] [MainThread]: Command `dbt test` failed at 12:24:10.672642 after 0.86 seconds
+[0m12:24:10.672900 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106cfe630>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10714d2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1074d5fa0>]}
+[0m12:24:10.673120 [debug] [MainThread]: Flushing usage events
+[0m12:24:11.125528 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:52:21.353231 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1081345c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d0c110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108a4d880>]}
+
+
+============================== 16:52:21.356532 | 9699f629-9d04-4d2d-a8e7-bdd90da69add ==============================
+[0m16:52:21.356532 [info ] [MainThread]: Running with dbt=1.10.13
+[0m16:52:21.356883 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'write_json': 'True', 'use_experimental_parser': 'False', 'use_colors': 'True', 'empty': 'None', 'log_cache_events': 'False', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt deps', 'introspect': 'True', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'debug': 'False', 'target_path': 'None', 'profiles_dir': '/Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project', 'no_print': 'None', 'indirect_selection': 'eager', 'version_check': 'True', 'fail_fast': 'False', 'printer_width': '80', 'warn_error': 'None', 'partial_parse': 'True', 'log_path': '/Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/logs'}
+[0m16:52:21.425883 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9699f629-9d04-4d2d-a8e7-bdd90da69add', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109832870>]}
+[0m16:52:21.437581 [debug] [MainThread]: Set downloads directory='/var/folders/tf/lr49688s3sz7sp0s0dt7yhn40000gn/T/dbt-downloads-54jv47a3'
+[0m16:52:21.437893 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m16:52:21.539211 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m16:52:21.540093 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m16:52:21.583621 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m16:52:21.592974 [info ] [MainThread]: Updating lock file in file path: /Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/package-lock.yml
+[0m16:52:21.595085 [debug] [MainThread]: Set downloads directory='/var/folders/tf/lr49688s3sz7sp0s0dt7yhn40000gn/T/dbt-downloads-e8a0_11n'
+[0m16:52:21.597213 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m16:52:21.949878 [info ] [MainThread]: Installed from version 1.3.1
+[0m16:52:21.950207 [info ] [MainThread]: Up to date!
+[0m16:52:21.950451 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '9699f629-9d04-4d2d-a8e7-bdd90da69add', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109948860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10994b170>]}
+[0m16:52:21.953162 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.64053786, "process_in_blocks": "0", "process_kernel_time": 0.178269, "process_mem_max_rss": "114163712", "process_out_blocks": "0", "process_user_time": 0.824509}
+[0m16:52:21.953576 [debug] [MainThread]: Command `dbt deps` succeeded at 16:52:21.953509 after 0.64 seconds
+[0m16:52:21.954026 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1093cc2c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c59a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096eeff0>]}
+[0m16:52:21.954306 [debug] [MainThread]: Flushing usage events
+[0m16:52:22.419711 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:54:31.421152 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10932d3a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1093e5bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088fe7e0>]}
+
+
+============================== 16:54:31.423682 | 0d854234-2b0e-4c05-b49e-79f47f3a7676 ==============================
+[0m16:54:31.423682 [info ] [MainThread]: Running with dbt=1.10.13
+[0m16:54:31.424023 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'version_check': 'True', 'fail_fast': 'False', 'debug': 'False', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'empty': 'None', 'use_colors': 'True', 'target_path': 'None', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'printer_width': '80', 'quiet': 'False', 'log_path': '/Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/logs', 'profiles_dir': '/Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'invocation_command': 'dbt clean', 'partial_parse': 'True'}
+[0m16:54:31.487417 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0d854234-2b0e-4c05-b49e-79f47f3a7676', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e53cb0>]}
+[0m16:54:31.500792 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 0.1147455, "process_in_blocks": "0", "process_kernel_time": 0.109589, "process_mem_max_rss": "110297088", "process_out_blocks": "0", "process_user_time": 0.763312}
+[0m16:54:31.501105 [debug] [MainThread]: Command `dbt clean` succeeded at 16:54:31.501049 after 0.12 seconds
+[0m16:54:31.501322 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b94140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106345d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a94ef0>]}
+[0m16:54:31.501529 [debug] [MainThread]: Flushing usage events
+[0m16:54:31.966885 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:54:40.651665 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060711f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1061230b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065b6180>]}
+
+
+============================== 16:54:40.654214 | dd5621fc-116a-42b8-91f4-6c28c216da42 ==============================
+[0m16:54:40.654214 [info ] [MainThread]: Running with dbt=1.10.13
+[0m16:54:40.654569 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project', 'indirect_selection': 'eager', 'fail_fast': 'False', 'use_colors': 'True', 'invocation_command': 'dbt deps', 'version_check': 'True', 'log_path': '/Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/logs', 'write_json': 'True', 'use_experimental_parser': 'False', 'static_parser': 'True', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'target_path': 'None', 'warn_error': 'None', 'cache_selected_only': 'False', 'partial_parse': 'True', 'empty': 'None', 'quiet': 'False', 'introspect': 'True'}
+[0m16:54:40.717849 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dd5621fc-116a-42b8-91f4-6c28c216da42', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ebbc80>]}
+[0m16:54:40.740751 [debug] [MainThread]: Set downloads directory='/var/folders/tf/lr49688s3sz7sp0s0dt7yhn40000gn/T/dbt-downloads-ton4_ejo'
+[0m16:54:40.741018 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m16:54:40.829845 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m16:54:40.830767 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m16:54:40.885985 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m16:54:40.889497 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m16:54:41.402891 [info ] [MainThread]: Installed from version 1.3.1
+[0m16:54:41.403185 [info ] [MainThread]: Up to date!
+[0m16:54:41.403411 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'dd5621fc-116a-42b8-91f4-6c28c216da42', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d7af90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e90fe0>]}
+[0m16:54:41.405376 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.78944796, "process_in_blocks": "0", "process_kernel_time": 0.146405, "process_mem_max_rss": "114180096", "process_out_blocks": "0", "process_user_time": 0.811004}
+[0m16:54:41.405792 [debug] [MainThread]: Command `dbt deps` succeeded at 16:54:41.405732 after 0.79 seconds
+[0m16:54:41.406029 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106072750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068b1640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106de1c10>]}
+[0m16:54:41.406238 [debug] [MainThread]: Flushing usage events
+[0m16:54:41.837035 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:54:51.471016 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10476e8a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10547a810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10547a2a0>]}
+
+
+============================== 16:54:51.473488 | 7b10cba7-bd23-4423-b3ee-7b28bce9cc32 ==============================
+[0m16:54:51.473488 [info ] [MainThread]: Running with dbt=1.10.13
+[0m16:54:51.473852 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'write_json': 'True', 'printer_width': '80', 'target_path': 'None', 'empty': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'log_cache_events': 'False', 'log_path': '/Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'quiet': 'False', 'warn_error': 'None', 'indirect_selection': 'eager', 'profiles_dir': '/Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project', 'invocation_command': 'dbt test', 'log_format': 'default', 'cache_selected_only': 'False', 'no_print': 'None', 'use_colors': 'True', 'debug': 'False'}
+[0m16:54:51.570341 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7b10cba7-bd23-4423-b3ee-7b28bce9cc32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055bbc80>]}
+[0m16:54:51.600538 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7b10cba7-bd23-4423-b3ee-7b28bce9cc32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10374f230>]}
+[0m16:54:51.601189 [info ] [MainThread]: Registered adapter: clickhouse=1.9.5
+[0m16:54:51.676070 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m16:54:51.676604 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m16:54:51.676810 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '7b10cba7-bd23-4423-b3ee-7b28bce9cc32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1056b6480>]}
+[0m16:54:52.399009 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `dbt_utils.unique_combination_of_columns`.
+Arguments to generic tests should be nested under the `arguments` property.`
+[0m16:54:52.399358 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '7b10cba7-bd23-4423-b3ee-7b28bce9cc32', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b04cb0>]}
+[0m16:54:52.409396 [error] [MainThread]: Encountered an error:
+Compilation Error in test dbt_utils_unique_combination_of_columns_daily_prices_date__ticker__date (models/market/schema.yml)
+  macro 'dbt_macro__test_unique_combination_of_columns' takes no keyword argument 'column_name'
+[0m16:54:52.409761 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m16:54:52.411282 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 0.9782215, "process_in_blocks": "0", "process_kernel_time": 0.148857, "process_mem_max_rss": "123551744", "process_out_blocks": "0", "process_user_time": 1.560365}
+[0m16:54:52.411634 [debug] [MainThread]: Command `dbt test` failed at 16:54:52.411582 after 0.98 seconds
+[0m16:54:52.411857 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ec4e60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105ad4fe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105c0c770>]}
+[0m16:54:52.412069 [debug] [MainThread]: Flushing usage events
+[0m16:54:52.933275 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:56:26.414994 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060f8fe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110f0f320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1106ffe90>]}
+
+
+============================== 16:56:26.417558 | 2b1b5772-3d1f-4c7d-8af1-c36c80eb547c ==============================
+[0m16:56:26.417558 [info ] [MainThread]: Running with dbt=1.10.13
+[0m16:56:26.417900 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'target_path': 'None', 'log_format': 'default', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'debug': 'False', 'no_print': 'None', 'cache_selected_only': 'False', 'log_path': '/Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/logs', 'write_json': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'warn_error': 'None', 'invocation_command': 'dbt clean', 'version_check': 'True', 'quiet': 'False', 'printer_width': '80', 'profiles_dir': '/Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'empty': 'None'}
+[0m16:56:26.480816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2b1b5772-3d1f-4c7d-8af1-c36c80eb547c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110aee240>]}
+[0m16:56:26.487878 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 0.10828979, "process_in_blocks": "0", "process_kernel_time": 0.101855, "process_mem_max_rss": "111378432", "process_out_blocks": "0", "process_user_time": 0.764041}
+[0m16:56:26.488163 [debug] [MainThread]: Command `dbt clean` succeeded at 16:56:26.488112 after 0.11 seconds
+[0m16:56:26.488353 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110f760f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1062e1f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110f0ef60>]}
+[0m16:56:26.488530 [debug] [MainThread]: Flushing usage events
+[0m16:56:26.971589 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:56:36.304559 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107698d70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053be7e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053be840>]}
+
+
+============================== 16:56:36.307212 | 77c89f11-8a1f-4b2b-a549-b4b4bcd7c2d1 ==============================
+[0m16:56:36.307212 [info ] [MainThread]: Running with dbt=1.10.13
+[0m16:56:36.307556 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project', 'invocation_command': 'dbt deps', 'partial_parse': 'True', 'fail_fast': 'False', 'printer_width': '80', 'cache_selected_only': 'False', 'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': '/Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/logs', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'use_colors': 'True', 'write_json': 'True', 'debug': 'False', 'quiet': 'False', 'log_format': 'default', 'empty': 'None', 'warn_error': 'None', 'log_cache_events': 'False', 'target_path': 'None'}
+[0m16:56:36.369953 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '77c89f11-8a1f-4b2b-a549-b4b4bcd7c2d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1079743b0>]}
+[0m16:56:36.391399 [debug] [MainThread]: Set downloads directory='/var/folders/tf/lr49688s3sz7sp0s0dt7yhn40000gn/T/dbt-downloads-jgdmhnas'
+[0m16:56:36.391643 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m16:56:36.481526 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m16:56:36.482416 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m16:56:36.523759 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m16:56:36.527204 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m16:56:37.030199 [info ] [MainThread]: Installed from version 1.3.1
+[0m16:56:37.030495 [info ] [MainThread]: Up to date!
+[0m16:56:37.030720 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '77c89f11-8a1f-4b2b-a549-b4b4bcd7c2d1', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10780f110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a12180>]}
+[0m16:56:37.032685 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.76502454, "process_in_blocks": "0", "process_kernel_time": 0.159857, "process_mem_max_rss": "116211712", "process_out_blocks": "0", "process_user_time": 0.829765}
+[0m16:56:37.032985 [debug] [MainThread]: Command `dbt deps` succeeded at 16:56:37.032932 after 0.77 seconds
+[0m16:56:37.033199 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053bd430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105470200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078761e0>]}
+[0m16:56:37.033396 [debug] [MainThread]: Flushing usage events
+[0m16:56:37.450343 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:56:46.895096 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a4e570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10747a5d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107479f70>]}
+
+
+============================== 16:56:46.897466 | 30b3496b-344e-407b-b8a1-baf69285879e ==============================
+[0m16:56:46.897466 [info ] [MainThread]: Running with dbt=1.10.13
+[0m16:56:46.897796 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'version_check': 'True', 'write_json': 'True', 'target_path': 'None', 'invocation_command': 'dbt test', 'cache_selected_only': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'profiles_dir': '/Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'log_path': '/Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/logs', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'printer_width': '80', 'static_parser': 'True', 'use_experimental_parser': 'False', 'quiet': 'False'}
+[0m16:56:46.991626 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '30b3496b-344e-407b-b8a1-baf69285879e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1074ae150>]}
+[0m16:56:47.022806 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '30b3496b-344e-407b-b8a1-baf69285879e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c7cfb0>]}
+[0m16:56:47.023394 [info ] [MainThread]: Registered adapter: clickhouse=1.9.5
+[0m16:56:47.092402 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m16:56:47.092970 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m16:56:47.093191 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '30b3496b-344e-407b-b8a1-baf69285879e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076cc470>]}
+[0m16:56:47.916014 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.qi_dbt_project.meta
+- models.qi_dbt_project.fundamentals
+- models.qi_dbt_project.analytics
+[0m16:56:47.921323 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '30b3496b-344e-407b-b8a1-baf69285879e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108515b80>]}
+[0m16:56:47.970115 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/target/manifest.json
+[0m16:56:47.971759 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/target/semantic_manifest.json
+[0m16:56:47.986437 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '30b3496b-344e-407b-b8a1-baf69285879e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108848b00>]}
+[0m16:56:47.986739 [info ] [MainThread]: Found 4 models, 14 data tests, 1 source, 603 macros
+[0m16:56:47.986929 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '30b3496b-344e-407b-b8a1-baf69285879e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10825f080>]}
+[0m16:56:47.988067 [info ] [MainThread]: 
+[0m16:56:47.988249 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:56:47.988390 [info ] [MainThread]: 
+[0m16:56:47.988628 [debug] [MainThread]: Acquiring new clickhouse connection 'master'
+[0m16:56:47.991536 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list__market'
+[0m16:56:47.997142 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:56:48.381270 [debug] [ThreadPool]: dbt_clickhouse adapter: On list__market: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "connection_name": "list__market"} */
+select
+      t.name as name,
+      t.database as schema,
+      multiIf(
+        engine in ('MaterializedView', 'View'), 'view',
+        engine = 'Dictionary', 'dictionary',
+        'table'
+      ) as type,
+      db.engine as db_engine,0 as is_on_cluster
+          from system.tables as t join system.databases as db on t.database = db.name
+        where schema = 'market'
+      
+
+  ...
+[0m16:56:48.383929 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m16:56:48.394882 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '30b3496b-344e-407b-b8a1-baf69285879e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088b3e60>]}
+[0m16:56:48.396431 [debug] [Thread-1 (]: Began running node test.qi_dbt_project.dbt_utils_unique_combination_of_columns_daily_prices_ticker__date.87713cbcc3
+[0m16:56:48.396651 [info ] [Thread-1 (]: 1 of 14 START test dbt_utils_unique_combination_of_columns_daily_prices_ticker__date  [RUN]
+[0m16:56:48.396873 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list__market, now test.qi_dbt_project.dbt_utils_unique_combination_of_columns_daily_prices_ticker__date.87713cbcc3)
+[0m16:56:48.397050 [debug] [Thread-1 (]: Began compiling node test.qi_dbt_project.dbt_utils_unique_combination_of_columns_daily_prices_ticker__date.87713cbcc3
+[0m16:56:48.402638 [debug] [Thread-1 (]: Writing injected SQL for node "test.qi_dbt_project.dbt_utils_unique_combination_of_columns_daily_prices_ticker__date.87713cbcc3"
+[0m16:56:48.403648 [debug] [Thread-1 (]: Began executing node test.qi_dbt_project.dbt_utils_unique_combination_of_columns_daily_prices_ticker__date.87713cbcc3
+[0m16:56:48.413989 [debug] [Thread-1 (]: Writing runtime sql for node "test.qi_dbt_project.dbt_utils_unique_combination_of_columns_daily_prices_ticker__date.87713cbcc3"
+[0m16:56:48.415068 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.qi_dbt_project.dbt_utils_unique_combination_of_columns_daily_prices_ticker__date.87713cbcc3: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "test.qi_dbt_project.dbt_utils_unique_combination_of_columns_daily_prices_ticker__date.87713cbcc3"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+
+
+
+
+with validation_errors as (
+
+    select
+        ticker, date
+    from `market`.`daily_prices`
+    group by ticker, date
+    having count(*) > 1
+
+)
+
+select *
+from validation_errors
+
+
+
+  
+  
+    ) dbt_internal_test...
+[0m16:56:48.422386 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m16:56:48.424923 [info ] [Thread-1 (]: 1 of 14 PASS dbt_utils_unique_combination_of_columns_daily_prices_ticker__date . [[32mPASS[0m in 0.03s]
+[0m16:56:48.425278 [debug] [Thread-1 (]: Finished running node test.qi_dbt_project.dbt_utils_unique_combination_of_columns_daily_prices_ticker__date.87713cbcc3
+[0m16:56:48.425502 [debug] [Thread-1 (]: Began running node test.qi_dbt_project.dbt_utils_unique_combination_of_columns_monthly_prices_ticker__month_ending.49db5807dd
+[0m16:56:48.425707 [info ] [Thread-1 (]: 2 of 14 START test dbt_utils_unique_combination_of_columns_monthly_prices_ticker__month_ending  [RUN]
+[0m16:56:48.425996 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.qi_dbt_project.dbt_utils_unique_combination_of_columns_daily_prices_ticker__date.87713cbcc3, now test.qi_dbt_project.dbt_utils_unique_combination_of_columns_monthly_prices_ticker__month_ending.49db5807dd)
+[0m16:56:48.426231 [debug] [Thread-1 (]: Began compiling node test.qi_dbt_project.dbt_utils_unique_combination_of_columns_monthly_prices_ticker__month_ending.49db5807dd
+[0m16:56:48.428941 [debug] [Thread-1 (]: Writing injected SQL for node "test.qi_dbt_project.dbt_utils_unique_combination_of_columns_monthly_prices_ticker__month_ending.49db5807dd"
+[0m16:56:48.429646 [debug] [Thread-1 (]: Began executing node test.qi_dbt_project.dbt_utils_unique_combination_of_columns_monthly_prices_ticker__month_ending.49db5807dd
+[0m16:56:48.431054 [debug] [Thread-1 (]: Writing runtime sql for node "test.qi_dbt_project.dbt_utils_unique_combination_of_columns_monthly_prices_ticker__month_ending.49db5807dd"
+[0m16:56:48.431631 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.qi_dbt_project.dbt_utils_unique_combination_of_columns_monthly_prices_ticker__month_ending.49db5807dd: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "test.qi_dbt_project.dbt_utils_unique_combination_of_columns_monthly_prices_ticker__month_ending.49db5807dd"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+
+
+
+
+with validation_errors as (
+
+    select
+        ticker, month_ending
+    from `market`.`monthly_prices`
+    group by ticker, month_ending
+    having count(*) > 1
+
+)
+
+select *
+from validation_errors
+
+
+
+  
+  
+    ) dbt_internal_test...
+[0m16:56:48.437508 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m16:56:48.438505 [info ] [Thread-1 (]: 2 of 14 PASS dbt_utils_unique_combination_of_columns_monthly_prices_ticker__month_ending  [[32mPASS[0m in 0.01s]
+[0m16:56:48.438840 [debug] [Thread-1 (]: Finished running node test.qi_dbt_project.dbt_utils_unique_combination_of_columns_monthly_prices_ticker__month_ending.49db5807dd
+[0m16:56:48.439056 [debug] [Thread-1 (]: Began running node test.qi_dbt_project.dbt_utils_unique_combination_of_columns_quarterly_prices_ticker__quarter_ending.e147e2c325
+[0m16:56:48.439281 [info ] [Thread-1 (]: 3 of 14 START test dbt_utils_unique_combination_of_columns_quarterly_prices_ticker__quarter_ending  [RUN]
+[0m16:56:48.439641 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.qi_dbt_project.dbt_utils_unique_combination_of_columns_monthly_prices_ticker__month_ending.49db5807dd, now test.qi_dbt_project.dbt_utils_unique_combination_of_columns_quarterly_prices_ticker__quarter_ending.e147e2c325)
+[0m16:56:48.439921 [debug] [Thread-1 (]: Began compiling node test.qi_dbt_project.dbt_utils_unique_combination_of_columns_quarterly_prices_ticker__quarter_ending.e147e2c325
+[0m16:56:48.442408 [debug] [Thread-1 (]: Writing injected SQL for node "test.qi_dbt_project.dbt_utils_unique_combination_of_columns_quarterly_prices_ticker__quarter_ending.e147e2c325"
+[0m16:56:48.443159 [debug] [Thread-1 (]: Began executing node test.qi_dbt_project.dbt_utils_unique_combination_of_columns_quarterly_prices_ticker__quarter_ending.e147e2c325
+[0m16:56:48.444706 [debug] [Thread-1 (]: Writing runtime sql for node "test.qi_dbt_project.dbt_utils_unique_combination_of_columns_quarterly_prices_ticker__quarter_ending.e147e2c325"
+[0m16:56:48.445155 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.qi_dbt_project.dbt_utils_unique_combination_of_columns_quarterly_prices_ticker__quarter_ending.e147e2c325: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "test.qi_dbt_project.dbt_utils_unique_combination_of_columns_quarterly_prices_ticker__quarter_ending.e147e2c325"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+
+
+
+
+with validation_errors as (
+
+    select
+        ticker, quarter_ending
+    from `market`.`quarterly_prices`
+    group by ticker, quarter_ending
+    having count(*) > 1
+
+)
+
+select *
+from validation_errors
+
+
+
+  
+  
+    ) dbt_internal_test...
+[0m16:56:48.449017 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m16:56:48.450035 [info ] [Thread-1 (]: 3 of 14 PASS dbt_utils_unique_combination_of_columns_quarterly_prices_ticker__quarter_ending  [[32mPASS[0m in 0.01s]
+[0m16:56:48.450372 [debug] [Thread-1 (]: Finished running node test.qi_dbt_project.dbt_utils_unique_combination_of_columns_quarterly_prices_ticker__quarter_ending.e147e2c325
+[0m16:56:48.450605 [debug] [Thread-1 (]: Began running node test.qi_dbt_project.dbt_utils_unique_combination_of_columns_weekly_prices_ticker__week_ending.05b9c0ea20
+[0m16:56:48.450915 [info ] [Thread-1 (]: 4 of 14 START test dbt_utils_unique_combination_of_columns_weekly_prices_ticker__week_ending  [RUN]
+[0m16:56:48.451267 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.qi_dbt_project.dbt_utils_unique_combination_of_columns_quarterly_prices_ticker__quarter_ending.e147e2c325, now test.qi_dbt_project.dbt_utils_unique_combination_of_columns_weekly_prices_ticker__week_ending.05b9c0ea20)
+[0m16:56:48.451470 [debug] [Thread-1 (]: Began compiling node test.qi_dbt_project.dbt_utils_unique_combination_of_columns_weekly_prices_ticker__week_ending.05b9c0ea20
+[0m16:56:48.454008 [debug] [Thread-1 (]: Writing injected SQL for node "test.qi_dbt_project.dbt_utils_unique_combination_of_columns_weekly_prices_ticker__week_ending.05b9c0ea20"
+[0m16:56:48.454486 [debug] [Thread-1 (]: Began executing node test.qi_dbt_project.dbt_utils_unique_combination_of_columns_weekly_prices_ticker__week_ending.05b9c0ea20
+[0m16:56:48.455840 [debug] [Thread-1 (]: Writing runtime sql for node "test.qi_dbt_project.dbt_utils_unique_combination_of_columns_weekly_prices_ticker__week_ending.05b9c0ea20"
+[0m16:56:48.456443 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.qi_dbt_project.dbt_utils_unique_combination_of_columns_weekly_prices_ticker__week_ending.05b9c0ea20: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "test.qi_dbt_project.dbt_utils_unique_combination_of_columns_weekly_prices_ticker__week_ending.05b9c0ea20"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+
+
+
+
+with validation_errors as (
+
+    select
+        ticker, week_ending
+    from `market`.`weekly_prices`
+    group by ticker, week_ending
+    having count(*) > 1
+
+)
+
+select *
+from validation_errors
+
+
+
+  
+  
+    ) dbt_internal_test...
+[0m16:56:48.463886 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m16:56:48.464928 [info ] [Thread-1 (]: 4 of 14 PASS dbt_utils_unique_combination_of_columns_weekly_prices_ticker__week_ending  [[32mPASS[0m in 0.01s]
+[0m16:56:48.465229 [debug] [Thread-1 (]: Finished running node test.qi_dbt_project.dbt_utils_unique_combination_of_columns_weekly_prices_ticker__week_ending.05b9c0ea20
+[0m16:56:48.465425 [debug] [Thread-1 (]: Began running node test.qi_dbt_project.not_null_daily_prices_date.287ad299aa
+[0m16:56:48.465598 [info ] [Thread-1 (]: 5 of 14 START test not_null_daily_prices_date .................................. [RUN]
+[0m16:56:48.465802 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.qi_dbt_project.dbt_utils_unique_combination_of_columns_weekly_prices_ticker__week_ending.05b9c0ea20, now test.qi_dbt_project.not_null_daily_prices_date.287ad299aa)
+[0m16:56:48.465979 [debug] [Thread-1 (]: Began compiling node test.qi_dbt_project.not_null_daily_prices_date.287ad299aa
+[0m16:56:48.470736 [debug] [Thread-1 (]: Writing injected SQL for node "test.qi_dbt_project.not_null_daily_prices_date.287ad299aa"
+[0m16:56:48.471367 [debug] [Thread-1 (]: Began executing node test.qi_dbt_project.not_null_daily_prices_date.287ad299aa
+[0m16:56:48.472855 [debug] [Thread-1 (]: Writing runtime sql for node "test.qi_dbt_project.not_null_daily_prices_date.287ad299aa"
+[0m16:56:48.473603 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.qi_dbt_project.not_null_daily_prices_date.287ad299aa: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "test.qi_dbt_project.not_null_daily_prices_date.287ad299aa"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select date
+from `market`.`daily_prices`
+where date is null
+
+
+
+  
+  
+    ) dbt_internal_test...
+[0m16:56:48.479156 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m16:56:48.480177 [info ] [Thread-1 (]: 5 of 14 PASS not_null_daily_prices_date ........................................ [[32mPASS[0m in 0.01s]
+[0m16:56:48.480489 [debug] [Thread-1 (]: Finished running node test.qi_dbt_project.not_null_daily_prices_date.287ad299aa
+[0m16:56:48.480692 [debug] [Thread-1 (]: Began running node test.qi_dbt_project.not_null_daily_prices_ingested_at.4dbf84d837
+[0m16:56:48.480913 [info ] [Thread-1 (]: 6 of 14 START test not_null_daily_prices_ingested_at ........................... [RUN]
+[0m16:56:48.481164 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.qi_dbt_project.not_null_daily_prices_date.287ad299aa, now test.qi_dbt_project.not_null_daily_prices_ingested_at.4dbf84d837)
+[0m16:56:48.481350 [debug] [Thread-1 (]: Began compiling node test.qi_dbt_project.not_null_daily_prices_ingested_at.4dbf84d837
+[0m16:56:48.483869 [debug] [Thread-1 (]: Writing injected SQL for node "test.qi_dbt_project.not_null_daily_prices_ingested_at.4dbf84d837"
+[0m16:56:48.484728 [debug] [Thread-1 (]: Began executing node test.qi_dbt_project.not_null_daily_prices_ingested_at.4dbf84d837
+[0m16:56:48.486216 [debug] [Thread-1 (]: Writing runtime sql for node "test.qi_dbt_project.not_null_daily_prices_ingested_at.4dbf84d837"
+[0m16:56:48.486869 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.qi_dbt_project.not_null_daily_prices_ingested_at.4dbf84d837: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "test.qi_dbt_project.not_null_daily_prices_ingested_at.4dbf84d837"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select ingested_at
+from `market`.`daily_prices`
+where ingested_at is null
+
+
+
+  
+  
+    ) dbt_internal_test...
+[0m16:56:48.492263 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m16:56:48.493229 [info ] [Thread-1 (]: 6 of 14 PASS not_null_daily_prices_ingested_at ................................. [[32mPASS[0m in 0.01s]
+[0m16:56:48.493529 [debug] [Thread-1 (]: Finished running node test.qi_dbt_project.not_null_daily_prices_ingested_at.4dbf84d837
+[0m16:56:48.493741 [debug] [Thread-1 (]: Began running node test.qi_dbt_project.not_null_daily_prices_short_name.9e91e59f52
+[0m16:56:48.493962 [info ] [Thread-1 (]: 7 of 14 START test not_null_daily_prices_short_name ............................ [RUN]
+[0m16:56:48.494175 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.qi_dbt_project.not_null_daily_prices_ingested_at.4dbf84d837, now test.qi_dbt_project.not_null_daily_prices_short_name.9e91e59f52)
+[0m16:56:48.494343 [debug] [Thread-1 (]: Began compiling node test.qi_dbt_project.not_null_daily_prices_short_name.9e91e59f52
+[0m16:56:48.496552 [debug] [Thread-1 (]: Writing injected SQL for node "test.qi_dbt_project.not_null_daily_prices_short_name.9e91e59f52"
+[0m16:56:48.497016 [debug] [Thread-1 (]: Began executing node test.qi_dbt_project.not_null_daily_prices_short_name.9e91e59f52
+[0m16:56:48.498279 [debug] [Thread-1 (]: Writing runtime sql for node "test.qi_dbt_project.not_null_daily_prices_short_name.9e91e59f52"
+[0m16:56:48.498643 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.qi_dbt_project.not_null_daily_prices_short_name.9e91e59f52: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "test.qi_dbt_project.not_null_daily_prices_short_name.9e91e59f52"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select short_name
+from `market`.`daily_prices`
+where short_name is null
+
+
+
+  
+  
+    ) dbt_internal_test...
+[0m16:56:48.503993 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m16:56:48.505059 [info ] [Thread-1 (]: 7 of 14 PASS not_null_daily_prices_short_name .................................. [[32mPASS[0m in 0.01s]
+[0m16:56:48.505414 [debug] [Thread-1 (]: Finished running node test.qi_dbt_project.not_null_daily_prices_short_name.9e91e59f52
+[0m16:56:48.505632 [debug] [Thread-1 (]: Began running node test.qi_dbt_project.not_null_daily_prices_ticker.cbd48d58d1
+[0m16:56:48.505930 [info ] [Thread-1 (]: 8 of 14 START test not_null_daily_prices_ticker ................................ [RUN]
+[0m16:56:48.506271 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.qi_dbt_project.not_null_daily_prices_short_name.9e91e59f52, now test.qi_dbt_project.not_null_daily_prices_ticker.cbd48d58d1)
+[0m16:56:48.506464 [debug] [Thread-1 (]: Began compiling node test.qi_dbt_project.not_null_daily_prices_ticker.cbd48d58d1
+[0m16:56:48.508739 [debug] [Thread-1 (]: Writing injected SQL for node "test.qi_dbt_project.not_null_daily_prices_ticker.cbd48d58d1"
+[0m16:56:48.509224 [debug] [Thread-1 (]: Began executing node test.qi_dbt_project.not_null_daily_prices_ticker.cbd48d58d1
+[0m16:56:48.510621 [debug] [Thread-1 (]: Writing runtime sql for node "test.qi_dbt_project.not_null_daily_prices_ticker.cbd48d58d1"
+[0m16:56:48.511309 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.qi_dbt_project.not_null_daily_prices_ticker.cbd48d58d1: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "test.qi_dbt_project.not_null_daily_prices_ticker.cbd48d58d1"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select ticker
+from `market`.`daily_prices`
+where ticker is null
+
+
+
+  
+  
+    ) dbt_internal_test...
+[0m16:56:48.517627 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m16:56:48.518594 [info ] [Thread-1 (]: 8 of 14 PASS not_null_daily_prices_ticker ...................................... [[32mPASS[0m in 0.01s]
+[0m16:56:48.518875 [debug] [Thread-1 (]: Finished running node test.qi_dbt_project.not_null_daily_prices_ticker.cbd48d58d1
+[0m16:56:48.519066 [debug] [Thread-1 (]: Began running node test.qi_dbt_project.not_null_monthly_prices_month_ending.63079ad274
+[0m16:56:48.519356 [info ] [Thread-1 (]: 9 of 14 START test not_null_monthly_prices_month_ending ........................ [RUN]
+[0m16:56:48.519733 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.qi_dbt_project.not_null_daily_prices_ticker.cbd48d58d1, now test.qi_dbt_project.not_null_monthly_prices_month_ending.63079ad274)
+[0m16:56:48.519949 [debug] [Thread-1 (]: Began compiling node test.qi_dbt_project.not_null_monthly_prices_month_ending.63079ad274
+[0m16:56:48.522382 [debug] [Thread-1 (]: Writing injected SQL for node "test.qi_dbt_project.not_null_monthly_prices_month_ending.63079ad274"
+[0m16:56:48.523130 [debug] [Thread-1 (]: Began executing node test.qi_dbt_project.not_null_monthly_prices_month_ending.63079ad274
+[0m16:56:48.525645 [debug] [Thread-1 (]: Writing runtime sql for node "test.qi_dbt_project.not_null_monthly_prices_month_ending.63079ad274"
+[0m16:56:48.526144 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.qi_dbt_project.not_null_monthly_prices_month_ending.63079ad274: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "test.qi_dbt_project.not_null_monthly_prices_month_ending.63079ad274"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select month_ending
+from `market`.`monthly_prices`
+where month_ending is null
+
+
+
+  
+  
+    ) dbt_internal_test...
+[0m16:56:48.530757 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m16:56:48.531843 [info ] [Thread-1 (]: 9 of 14 PASS not_null_monthly_prices_month_ending .............................. [[32mPASS[0m in 0.01s]
+[0m16:56:48.532157 [debug] [Thread-1 (]: Finished running node test.qi_dbt_project.not_null_monthly_prices_month_ending.63079ad274
+[0m16:56:48.532353 [debug] [Thread-1 (]: Began running node test.qi_dbt_project.not_null_monthly_prices_ticker.6f879395e2
+[0m16:56:48.532618 [info ] [Thread-1 (]: 10 of 14 START test not_null_monthly_prices_ticker ............................. [RUN]
+[0m16:56:48.532924 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.qi_dbt_project.not_null_monthly_prices_month_ending.63079ad274, now test.qi_dbt_project.not_null_monthly_prices_ticker.6f879395e2)
+[0m16:56:48.533118 [debug] [Thread-1 (]: Began compiling node test.qi_dbt_project.not_null_monthly_prices_ticker.6f879395e2
+[0m16:56:48.535660 [debug] [Thread-1 (]: Writing injected SQL for node "test.qi_dbt_project.not_null_monthly_prices_ticker.6f879395e2"
+[0m16:56:48.536125 [debug] [Thread-1 (]: Began executing node test.qi_dbt_project.not_null_monthly_prices_ticker.6f879395e2
+[0m16:56:48.537335 [debug] [Thread-1 (]: Writing runtime sql for node "test.qi_dbt_project.not_null_monthly_prices_ticker.6f879395e2"
+[0m16:56:48.537955 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.qi_dbt_project.not_null_monthly_prices_ticker.6f879395e2: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "test.qi_dbt_project.not_null_monthly_prices_ticker.6f879395e2"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select ticker
+from `market`.`monthly_prices`
+where ticker is null
+
+
+
+  
+  
+    ) dbt_internal_test...
+[0m16:56:48.541605 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m16:56:48.542552 [info ] [Thread-1 (]: 10 of 14 PASS not_null_monthly_prices_ticker ................................... [[32mPASS[0m in 0.01s]
+[0m16:56:48.542847 [debug] [Thread-1 (]: Finished running node test.qi_dbt_project.not_null_monthly_prices_ticker.6f879395e2
+[0m16:56:48.543040 [debug] [Thread-1 (]: Began running node test.qi_dbt_project.not_null_quarterly_prices_quarter_ending.bc6e4297ab
+[0m16:56:48.543323 [info ] [Thread-1 (]: 11 of 14 START test not_null_quarterly_prices_quarter_ending ................... [RUN]
+[0m16:56:48.543664 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.qi_dbt_project.not_null_monthly_prices_ticker.6f879395e2, now test.qi_dbt_project.not_null_quarterly_prices_quarter_ending.bc6e4297ab)
+[0m16:56:48.543858 [debug] [Thread-1 (]: Began compiling node test.qi_dbt_project.not_null_quarterly_prices_quarter_ending.bc6e4297ab
+[0m16:56:48.546122 [debug] [Thread-1 (]: Writing injected SQL for node "test.qi_dbt_project.not_null_quarterly_prices_quarter_ending.bc6e4297ab"
+[0m16:56:48.546824 [debug] [Thread-1 (]: Began executing node test.qi_dbt_project.not_null_quarterly_prices_quarter_ending.bc6e4297ab
+[0m16:56:48.548412 [debug] [Thread-1 (]: Writing runtime sql for node "test.qi_dbt_project.not_null_quarterly_prices_quarter_ending.bc6e4297ab"
+[0m16:56:48.549055 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.qi_dbt_project.not_null_quarterly_prices_quarter_ending.bc6e4297ab: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "test.qi_dbt_project.not_null_quarterly_prices_quarter_ending.bc6e4297ab"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select quarter_ending
+from `market`.`quarterly_prices`
+where quarter_ending is null
+
+
+
+  
+  
+    ) dbt_internal_test...
+[0m16:56:48.554662 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m16:56:48.555721 [info ] [Thread-1 (]: 11 of 14 PASS not_null_quarterly_prices_quarter_ending ......................... [[32mPASS[0m in 0.01s]
+[0m16:56:48.556062 [debug] [Thread-1 (]: Finished running node test.qi_dbt_project.not_null_quarterly_prices_quarter_ending.bc6e4297ab
+[0m16:56:48.556344 [debug] [Thread-1 (]: Began running node test.qi_dbt_project.not_null_quarterly_prices_ticker.a4f0b0d137
+[0m16:56:48.556695 [info ] [Thread-1 (]: 12 of 14 START test not_null_quarterly_prices_ticker ........................... [RUN]
+[0m16:56:48.557002 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.qi_dbt_project.not_null_quarterly_prices_quarter_ending.bc6e4297ab, now test.qi_dbt_project.not_null_quarterly_prices_ticker.a4f0b0d137)
+[0m16:56:48.557202 [debug] [Thread-1 (]: Began compiling node test.qi_dbt_project.not_null_quarterly_prices_ticker.a4f0b0d137
+[0m16:56:48.559594 [debug] [Thread-1 (]: Writing injected SQL for node "test.qi_dbt_project.not_null_quarterly_prices_ticker.a4f0b0d137"
+[0m16:56:48.560275 [debug] [Thread-1 (]: Began executing node test.qi_dbt_project.not_null_quarterly_prices_ticker.a4f0b0d137
+[0m16:56:48.561568 [debug] [Thread-1 (]: Writing runtime sql for node "test.qi_dbt_project.not_null_quarterly_prices_ticker.a4f0b0d137"
+[0m16:56:48.561933 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.qi_dbt_project.not_null_quarterly_prices_ticker.a4f0b0d137: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "test.qi_dbt_project.not_null_quarterly_prices_ticker.a4f0b0d137"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select ticker
+from `market`.`quarterly_prices`
+where ticker is null
+
+
+
+  
+  
+    ) dbt_internal_test...
+[0m16:56:48.567077 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m16:56:48.568119 [info ] [Thread-1 (]: 12 of 14 PASS not_null_quarterly_prices_ticker ................................. [[32mPASS[0m in 0.01s]
+[0m16:56:48.568437 [debug] [Thread-1 (]: Finished running node test.qi_dbt_project.not_null_quarterly_prices_ticker.a4f0b0d137
+[0m16:56:48.568633 [debug] [Thread-1 (]: Began running node test.qi_dbt_project.not_null_weekly_prices_ticker.e525680469
+[0m16:56:48.568916 [info ] [Thread-1 (]: 13 of 14 START test not_null_weekly_prices_ticker .............................. [RUN]
+[0m16:56:48.569260 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.qi_dbt_project.not_null_quarterly_prices_ticker.a4f0b0d137, now test.qi_dbt_project.not_null_weekly_prices_ticker.e525680469)
+[0m16:56:48.569456 [debug] [Thread-1 (]: Began compiling node test.qi_dbt_project.not_null_weekly_prices_ticker.e525680469
+[0m16:56:48.571756 [debug] [Thread-1 (]: Writing injected SQL for node "test.qi_dbt_project.not_null_weekly_prices_ticker.e525680469"
+[0m16:56:48.572189 [debug] [Thread-1 (]: Began executing node test.qi_dbt_project.not_null_weekly_prices_ticker.e525680469
+[0m16:56:48.573406 [debug] [Thread-1 (]: Writing runtime sql for node "test.qi_dbt_project.not_null_weekly_prices_ticker.e525680469"
+[0m16:56:48.573816 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.qi_dbt_project.not_null_weekly_prices_ticker.e525680469: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "test.qi_dbt_project.not_null_weekly_prices_ticker.e525680469"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select ticker
+from `market`.`weekly_prices`
+where ticker is null
+
+
+
+  
+  
+    ) dbt_internal_test...
+[0m16:56:48.580205 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m16:56:48.581210 [info ] [Thread-1 (]: 13 of 14 PASS not_null_weekly_prices_ticker .................................... [[32mPASS[0m in 0.01s]
+[0m16:56:48.581496 [debug] [Thread-1 (]: Finished running node test.qi_dbt_project.not_null_weekly_prices_ticker.e525680469
+[0m16:56:48.581693 [debug] [Thread-1 (]: Began running node test.qi_dbt_project.not_null_weekly_prices_week_ending.1078b135de
+[0m16:56:48.581895 [info ] [Thread-1 (]: 14 of 14 START test not_null_weekly_prices_week_ending ......................... [RUN]
+[0m16:56:48.582091 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.qi_dbt_project.not_null_weekly_prices_ticker.e525680469, now test.qi_dbt_project.not_null_weekly_prices_week_ending.1078b135de)
+[0m16:56:48.582259 [debug] [Thread-1 (]: Began compiling node test.qi_dbt_project.not_null_weekly_prices_week_ending.1078b135de
+[0m16:56:48.585793 [debug] [Thread-1 (]: Writing injected SQL for node "test.qi_dbt_project.not_null_weekly_prices_week_ending.1078b135de"
+[0m16:56:48.586304 [debug] [Thread-1 (]: Began executing node test.qi_dbt_project.not_null_weekly_prices_week_ending.1078b135de
+[0m16:56:48.624553 [debug] [Thread-1 (]: Writing runtime sql for node "test.qi_dbt_project.not_null_weekly_prices_week_ending.1078b135de"
+[0m16:56:48.625150 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.qi_dbt_project.not_null_weekly_prices_week_ending.1078b135de: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "test.qi_dbt_project.not_null_weekly_prices_week_ending.1078b135de"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select week_ending
+from `market`.`weekly_prices`
+where week_ending is null
+
+
+
+  
+  
+    ) dbt_internal_test...
+[0m16:56:48.631561 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m16:56:48.632574 [info ] [Thread-1 (]: 14 of 14 PASS not_null_weekly_prices_week_ending ............................... [[32mPASS[0m in 0.05s]
+[0m16:56:48.632918 [debug] [Thread-1 (]: Finished running node test.qi_dbt_project.not_null_weekly_prices_week_ending.1078b135de
+[0m16:56:48.633564 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:56:48.633766 [debug] [MainThread]: Connection 'test.qi_dbt_project.not_null_weekly_prices_week_ending.1078b135de' was left open.
+[0m16:56:48.633931 [debug] [MainThread]: On test.qi_dbt_project.not_null_weekly_prices_week_ending.1078b135de: Close
+[0m16:56:48.634152 [info ] [MainThread]: 
+[0m16:56:48.634322 [info ] [MainThread]: Finished running 14 data tests in 0 hours 0 minutes and 0.65 seconds (0.65s).
+[0m16:56:48.635332 [debug] [MainThread]: Command end result
+[0m16:56:48.652485 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/target/manifest.json
+[0m16:56:48.653678 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/target/semantic_manifest.json
+[0m16:56:48.657714 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/target/run_results.json
+[0m16:56:48.657953 [info ] [MainThread]: 
+[0m16:56:48.658147 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:56:48.658306 [info ] [MainThread]: 
+[0m16:56:48.658480 [info ] [MainThread]: Done. PASS=14 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=14
+[0m16:56:48.660965 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 1.8028938, "process_in_blocks": "0", "process_kernel_time": 0.226894, "process_mem_max_rss": "175423488", "process_out_blocks": "0", "process_user_time": 2.15768}
+[0m16:56:48.661234 [debug] [MainThread]: Command `dbt test` succeeded at 16:56:48.661190 after 1.80 seconds
+[0m16:56:48.661430 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1063961b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1083008c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b624b0>]}
+[0m16:56:48.661623 [debug] [MainThread]: Flushing usage events
+[0m16:56:49.109451 [debug] [MainThread]: An error was encountered while trying to flush usage events

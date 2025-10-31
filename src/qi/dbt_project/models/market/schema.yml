@@ -1,6 +1,5 @@
 version: 2
 
-# (optional) enable this block after your loader writes to market.daily_prices
 sources:
   - name: market
     database: market
@@ -8,7 +7,7 @@ sources:
       - name: daily_prices
         loaded_at_field: ingested_at
         freshness:
-          warn_after: {count: 8, period: day}   # weekly pipeline: warn if >8d old
+          warn_after: {count: 8, period: day}
           error_after: {count: 15, period: day}
 
 models:
@@ -16,6 +15,15 @@ models:
     description: "Base table for OHLCV with metadata. Loaded from yfinance."
     tags: ["market"]
     owner: samuel
+
+    # <-- model-level tests go here
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns:
+              - ticker
+              - date
+
     columns:
       - name: ticker
         description: "Ticker symbol."
@@ -25,10 +33,7 @@ models:
         tests: [not_null]
       - name: date
         description: "Trading date (exchange-local)."
-        tests:
-          - not_null
-          - unique:
-              combination_of_columns: [ticker, date]
+        tests: [not_null]
       - name: open
         description: "Daily open."
       - name: high
@@ -53,15 +58,20 @@ models:
     description: "Weekly aggregates derived from daily_prices."
     tags: ["market"]
     owner: samuel
+
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns:
+              - ticker
+              - week_ending
+
     columns:
       - name: ticker
         tests: [not_null]
       - name: short_name
       - name: week_ending
-        tests:
-          - not_null
-          - unique:
-              combination_of_columns: [ticker, week_ending]
+        tests: [not_null]
       - name: open
       - name: high
       - name: low
@@ -77,15 +87,20 @@ models:
     description: "Monthly aggregates derived from daily_prices."
     tags: ["market"]
     owner: samuel
+
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns:
+              - ticker
+              - month_ending
+
     columns:
       - name: ticker
         tests: [not_null]
       - name: short_name
       - name: month_ending
-        tests:
-          - not_null
-          - unique:
-              combination_of_columns: [ticker, month_ending]
+        tests: [not_null]
       - name: open
       - name: high
       - name: low
@@ -99,15 +114,20 @@ models:
     description: "Quarterly aggregates derived from daily_prices."
     tags: ["market"]
     owner: samuel
+
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns:
+              - ticker
+              - quarter_ending
+
     columns:
       - name: ticker
         tests: [not_null]
       - name: short_name
       - name: quarter_ending
-        tests:
-          - not_null
-          - unique:
-              combination_of_columns: [ticker, quarter_ending]
+        tests: [not_null]
       - name: open
       - name: high
       - name: low
