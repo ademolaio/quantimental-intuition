@@ -1,0 +1,118 @@
+version: 2
+
+# (optional) enable this block after your loader writes to market.daily_prices
+sources:
+  - name: market
+    database: market
+    tables:
+      - name: daily_prices
+        loaded_at_field: ingested_at
+        freshness:
+          warn_after: {count: 8, period: day}   # weekly pipeline: warn if >8d old
+          error_after: {count: 15, period: day}
+
+models:
+  - name: daily_prices
+    description: "Base table for OHLCV with metadata. Loaded from yfinance."
+    tags: ["market"]
+    owner: samuel
+    columns:
+      - name: ticker
+        description: "Ticker symbol."
+        tests: [not_null]
+      - name: short_name
+        description: "Display label for the ticker (yfinance shortName)."
+        tests: [not_null]
+      - name: date
+        description: "Trading date (exchange-local)."
+        tests:
+          - not_null
+          - unique:
+              combination_of_columns: [ticker, date]
+      - name: open
+        description: "Daily open."
+      - name: high
+        description: "Daily high."
+      - name: low
+        description: "Daily low."
+      - name: close
+        description: "Daily close."
+      - name: adj_close
+        description: "Adjusted close (dividends/splits)."
+      - name: volume
+        description: "Daily volume (>= 0)."
+      - name: ingested_at
+        description: "When this row was written to ClickHouse."
+        tests: [not_null]
+      - name: batch_id
+        description: "Loader run identifier (UUID or run key)."
+      - name: source
+        description: "Upstream system label (e.g., 'yfinance')."
+
+  - name: weekly_prices
+    description: "Weekly aggregates derived from daily_prices."
+    tags: ["market"]
+    owner: samuel
+    columns:
+      - name: ticker
+        tests: [not_null]
+      - name: short_name
+      - name: week_ending
+        tests:
+          - not_null
+          - unique:
+              combination_of_columns: [ticker, week_ending]
+      - name: open
+      - name: high
+      - name: low
+      - name: close
+      - name: adj_close
+      - name: volume
+      - name: source_max_date
+        description: "Max daily date included in this build."
+      - name: built_at
+        description: "When this aggregate row was built."
+
+  - name: monthly_prices
+    description: "Monthly aggregates derived from daily_prices."
+    tags: ["market"]
+    owner: samuel
+    columns:
+      - name: ticker
+        tests: [not_null]
+      - name: short_name
+      - name: month_ending
+        tests:
+          - not_null
+          - unique:
+              combination_of_columns: [ticker, month_ending]
+      - name: open
+      - name: high
+      - name: low
+      - name: close
+      - name: adj_close
+      - name: volume
+      - name: source_max_date
+      - name: built_at
+
+  - name: quarterly_prices
+    description: "Quarterly aggregates derived from daily_prices."
+    tags: ["market"]
+    owner: samuel
+    columns:
+      - name: ticker
+        tests: [not_null]
+      - name: short_name
+      - name: quarter_ending
+        tests:
+          - not_null
+          - unique:
+              combination_of_columns: [ticker, quarter_ending]
+      - name: open
+      - name: high
+      - name: low
+      - name: close
+      - name: adj_close
+      - name: volume
+      - name: source_max_date
+      - name: built_at
