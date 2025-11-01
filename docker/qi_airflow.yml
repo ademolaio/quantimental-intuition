@@ -1,23 +1,49 @@
 version: "3.8"
 
-x-airflow-common:
-  &airflow-common
-  image: apache/airflow:2.9.3
+x-airflow-common: &airflow-common
+  image: qi-airflow:2.9.3
+  build:
+    context: ..
+    dockerfile: docker/airflow/Dockerfile
   environment:
+    # Executor & core
     - AIRFLOW__CORE__EXECUTOR=CeleryExecutor
+    - AIRFLOW__CORE__LOAD_EXAMPLES=False
+    - AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION=True
+    - AIRFLOW__CORE__FERNET_KEY=your_fernet_key_here
+
+    # DB & Celery broker/result
     - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@airflow-postgres/airflow
     - AIRFLOW__CELERY__RESULT_BACKEND=db+postgresql://airflow:airflow@airflow-postgres/airflow
     - AIRFLOW__CELERY__BROKER_URL=redis://:@airflow-redis:6379/0
-    - AIRFLOW__CORE__FERNET_KEY=your_fernet_key_here
-    - AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION=True
-    - AIRFLOW__CORE__LOAD_EXAMPLES=False
+
+    # Make your project importable inside DAGs
+    - PYTHONPATH=/opt/airflow/dags:/opt/airflow/dags/src
+
+    # Optional UID/GID mapping (only if you set them in your .env)
     - AIRFLOW_UID=${AIRFLOW_UID}
     - AIRFLOW_GID=${AIRFLOW_GID}
-  user: "${AIRFLOW_UID}:${AIRFLOW_GID}"
+
+  user: "${AIRFLOW_UID:-50000}:${AIRFLOW_GID:-0}"
+
   volumes:
+    # DAGs + your project code and data
     - ../airflow/dags:/opt/airflow/dags
+    - ../src:/opt/airflow/dags/src
+    - ../data:/opt/airflow/dags/data
+
+    # Logs & plugins
     - ../airflow/logs:/opt/airflow/logs
     - ../airflow/plugins:/opt/airflow/plugins
+
+    # Install your python deps at container start (yfinance, dbt-clickhouse, etc.)
+    - ../requirements.txt:/requirements.txt
+
+  command: >
+    bash -lc "
+      pip install --no-cache-dir -r /requirements.txt && exec airflow
+    "
+
   networks:
     - qi_net
 
@@ -25,10 +51,8 @@ services:
   airflow-redis:
     image: redis:7
     container_name: qi-airflow-redis
-    expose:
-      - "6379"
-    networks:
-      - qi_net
+    expose: ["6379"]
+    networks: [qi_net]
 
   airflow-postgres:
     image: postgres:15
@@ -37,18 +61,17 @@ services:
       - POSTGRES_USER=airflow
       - POSTGRES_PASSWORD=airflow
       - POSTGRES_DB=airflow
-    expose:
-      - "5432"
-    networks:
-      - qi_net
+    expose: ["5432"]
+    networks: [qi_net]
 
   airflow-init:
     <<: *airflow-common
     container_name: qi-airflow-init
     entrypoint: /bin/bash
     command:
-      - -c
+      - -lc
       - |
+        pip install --no-cache-dir -r /requirements.txt
         airflow db init
         airflow users create \
           --username admin \
@@ -64,18 +87,41 @@ services:
   airflow-webserver:
     <<: *airflow-common
     container_name: qi-airflow-web
+    command: webserver
     ports:
       - "8081:8080"
-    command: webserver
     depends_on:
       - airflow-init
       - airflow-postgres
       - airflow-redis
+      - airflow-scheduler
+      - airflow-worker
+      - airflow-triggerer
 
   airflow-scheduler:
     <<: *airflow-common
     container_name: qi-airflow-scheduler
     command: scheduler
+    depends_on:
+      - airflow-init
+      - airflow-postgres
+      - airflow-redis
+
+  # REQUIRED for CeleryExecutor
+  airflow-worker:
+    <<: *airflow-common
+    container_name: qi-airflow-worker
+    command: celery worker
+    depends_on:
+      - airflow-init
+      - airflow-postgres
+      - airflow-redis
+
+  # Good practice with CeleryExecutor (handles deferrable tasks)
+  airflow-triggerer:
+    <<: *airflow-common
+    container_name: qi-airflow-triggerer
+    command: triggerer
     depends_on:
       - airflow-init
       - airflow-postgres

@@ -5,14 +5,14 @@ from typing import Iterable
 
 import pandas as pd
 
-from qi.extract.yf_client import fetch_daily_history, fetch_short_name
-from qi.transform.market_normalize import to_daily_prices_df
-from qi.load.clickhouse_io import delete_window, insert_daily_prices
+from src.qi.extract.yf_client import fetch_daily_history, fetch_short_name
+from src.qi.transform.market_normalize import to_daily_prices_df
+from src.qi.load.clickhouse_io import delete_window, insert_daily_prices
 
 def _utc_now() -> pd.Timestamp:
     return pd.Timestamp(datetime.now(timezone.utc))
 
-def backfill_arcx(tickers: Iterable[str], start: str = "1999-12-31") -> None:
+def backfill_tickers(tickers: Iterable[str], start: str = "1999-12-31") -> None:
     """
     One-time historical load for ARCX tickers.
     """
@@ -33,7 +33,7 @@ def backfill_arcx(tickers: Iterable[str], start: str = "1999-12-31") -> None:
         insert_daily_prices(df)
         print(f"[backfill] {t}: {len(df):,} rows from {d1} to {d2}")
 
-def refresh_arcx(tickers: Iterable[str], lookback_days: int = 21) -> None:
+def refresh_tickers(tickers: Iterable[str], lookback_days: int = 21) -> None:
     """
     Weekly refresh: reload rolling window to cover holidays/dividends/splits.
     """

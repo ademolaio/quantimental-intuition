@@ -14,7 +14,7 @@ export PYTHONPATH="$$(pwd)/$(PY_SRC)" && \
 set -a && [ -f $(ENV_FILE) ] && . $(ENV_FILE) || true && set +a
 endef
 
-.PHONY: up down bootstrap venv install freeze shell dbt-debug backfill_arcx refresh_arcx dbt_agg weekly_close morning_catchup test_market counts tail_spy airflow-up airflow-down airflow-logs airflow-web print-env airflow-trigger airflow-run-logs airflow-task-logs# create external network if missing, start both stacks
+.PHONY: up down bootstrap venv install freeze shell dbt-debug backfill_us backfill_intl refresh_us refresh_intl dbt_agg weekly_close morning_catchup test_market counts tail_spy airflow-up airflow-down airflow-logs airflow-web print-env airflow-trigger airflow-run-logs airflow-task-logs# create external network if missing, start both stacks
 up:
 	@docker network create qi_net >/dev/null 2>&1 || true
 	docker compose --env-file $(ENV_FILE) -f $(C_CH) up -d
@@ -59,16 +59,29 @@ pip-upgrade:
 	@. $(VENV)/bin/activate && pip install --upgrade pip setuptools wheel
 
 # One-time historical load for ARCX tickers (1999-12-31 → today)
-backfill_arcx:
+backfill_us:
 	@$(ENV_EXPORT) && \
-	$(PY) -m qi.pipelines.backfill_arcx && \
+	$(PY) -m qi.pipelines.backfill_us && \
 	cd $(DBT_DIR) && dbt run --select market.weekly_prices market.monthly_prices market.quarterly_prices
 
 # Weekly refresh (reloads the last ~3 weeks to capture final closes/dividends/splits)
-refresh_arcx:
+refresh_us:
 	@$(ENV_EXPORT) && \
-	$(PY) -m qi.pipelines.refresh_arcx && \
+	$(PY) -m qi.pipelines.refresh_us && \
 	cd $(DBT_DIR) && dbt run --select market.weekly_prices market.monthly_prices market.quarterly_prices
+
+
+backfill_intl:
+	@$(ENV_EXPORT) && \
+	$(PY) -m qi.pipelines.backfill_intl && \
+	cd $(DBT_DIR) && dbt run --select market.weekly_prices market.monthly_prices market.quarterly_prices
+
+# Weekly refresh (reloads the last ~3 weeks to capture final closes/dividends/splits)
+refresh_intl:
+	@$(ENV_EXPORT) && \
+	$(PY) -m qi.pipelines.refresh_intl && \
+	cd $(DBT_DIR) && dbt run --select market.weekly_prices market.monthly_prices market.quarterly_prices
+
 
 # Just rebuild the aggregates (no new raw loads)
 dbt_agg:
@@ -76,10 +89,10 @@ dbt_agg:
 	cd $(DBT_DIR) && dbt run --select market.weekly_prices market.monthly_prices market.quarterly_prices
 
 # End-of-day: run after US cash close (or next morning)
-weekly_close: refresh_arcx
+weekly_close: refresh_us refresh_intl
 
 # Morning catch-up (if you skipped last night)
-morning_catchup: refresh_arcx
+morning_catchup: refresh_us refresh_intl
 
 # Run the dbt tests for market models
 test_market:
@@ -123,4 +136,8 @@ airflow-task-logs:
 
 print-env:
 	@$(ENV_EXPORT) && env | grep -E '^(CH_|CLICKHOUSE_|AIRFLOW_)'
+
+
+validate-exchanges:
+	python tools/validate_exchanges.py
 

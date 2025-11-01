@@ -1,0 +1,42 @@
+[2025-11-01T11:32:01.697+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-01T11:32:01.711+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: refresh_us_dag.refresh_us_pipeline manual__2025-11-01T11:10:10+00:00 [queued]>
+[2025-11-01T11:32:01.716+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: refresh_us_dag.refresh_us_pipeline manual__2025-11-01T11:10:10+00:00 [queued]>
+[2025-11-01T11:32:01.717+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2025-11-01T11:32:01.723+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): refresh_us_pipeline> on 2025-11-01 11:10:10+00:00
+[2025-11-01T11:32:01.728+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=159) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-11-01T11:32:01.729+0000] {standard_task_runner.py:64} INFO - Started process 179 to run task
+[2025-11-01T11:32:01.729+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'refresh_us_dag', 'refresh_us_pipeline', 'manual__2025-11-01T11:10:10+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/qi_refresh_us.py', '--cfg-path', '/tmp/tmpv2dgslpd']
+[2025-11-01T11:32:01.731+0000] {standard_task_runner.py:91} INFO - Job 8: Subtask refresh_us_pipeline
+[2025-11-01T11:32:01.760+0000] {task_command.py:426} INFO - Running <TaskInstance: refresh_us_dag.refresh_us_pipeline manual__2025-11-01T11:10:10+00:00 [running]> on host 85113e10ca45
+[2025-11-01T11:32:01.805+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='samuel' AIRFLOW_CTX_DAG_ID='refresh_us_dag' AIRFLOW_CTX_TASK_ID='refresh_us_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-11-01T11:10:10+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-11-01T11:10:10+00:00'
+[2025-11-01T11:32:01.806+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-11-01T11:32:01.821+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-11-01T11:32:01.822+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/qi_refresh_us.py", line 151, in _run_refresh_us
+    _validate_env()
+  File "/opt/airflow/dags/qi_refresh_us.py", line 144, in _validate_env
+    raise RuntimeError(f"Missing required environment variables: {missing}")
+RuntimeError: Missing required environment variables: ['CH_HOST', 'CH_PORT', 'CLICKHOUSE_USER', 'CLICKHOUSE_PASSWORD', 'CLICKHOUSE_DB']
+[2025-11-01T11:32:01.830+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=refresh_us_dag, task_id=refresh_us_pipeline, run_id=manual__2025-11-01T11:10:10+00:00, execution_date=20251101T111010, start_date=20251101T113201, end_date=20251101T113201
+[2025-11-01T11:32:01.835+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 8 for task refresh_us_pipeline (Missing required environment variables: ['CH_HOST', 'CH_PORT', 'CLICKHOUSE_USER', 'CLICKHOUSE_PASSWORD', 'CLICKHOUSE_DB']; 179)
+[2025-11-01T11:32:01.868+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2025-11-01T11:32:01.883+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-11-01T11:32:01.885+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

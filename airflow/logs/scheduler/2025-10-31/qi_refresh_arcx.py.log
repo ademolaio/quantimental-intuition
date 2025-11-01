@@ -2046,3 +2046,447 @@
 [2025-10-31T23:21:01.726+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
 [2025-10-31T23:21:01.744+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:21:01.744+0000] {dag.py:3089} INFO - Sync 1 DAGs
 [2025-10-31T23:21:01.763+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.058 seconds
+[2025-10-31T23:21:31.968+0000] {processor.py:161} INFO - Started process (PID=306) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:21:31.969+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:21:31.970+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:21:31.970+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:21:31.977+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:21:31.993+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:21:31.992+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:21:32.012+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.047 seconds
+[2025-10-31T23:22:02.212+0000] {processor.py:161} INFO - Started process (PID=307) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:22:02.212+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:22:02.213+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:22:02.213+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:22:02.220+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:22:02.237+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:22:02.237+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:22:02.255+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.046 seconds
+[2025-10-31T23:22:32.455+0000] {processor.py:161} INFO - Started process (PID=308) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:22:32.455+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:22:32.457+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:22:32.456+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:22:32.466+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:22:32.484+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:22:32.484+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:22:32.509+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.058 seconds
+[2025-10-31T23:23:02.693+0000] {processor.py:161} INFO - Started process (PID=309) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:23:02.693+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:23:02.695+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:23:02.694+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:23:02.702+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:23:02.718+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:23:02.718+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:23:02.746+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.056 seconds
+[2025-10-31T23:23:32.931+0000] {processor.py:161} INFO - Started process (PID=310) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:23:32.931+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:23:32.932+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:23:32.932+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:23:32.940+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:23:32.957+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:23:32.956+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:23:32.978+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.051 seconds
+[2025-10-31T23:24:03.108+0000] {processor.py:161} INFO - Started process (PID=311) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:24:03.108+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:24:03.110+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:24:03.109+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:24:03.118+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:24:03.136+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:24:03.136+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:24:03.157+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.053 seconds
+[2025-10-31T23:24:33.369+0000] {processor.py:161} INFO - Started process (PID=312) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:24:33.369+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:24:33.370+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:24:33.370+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:24:33.377+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:24:33.393+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:24:33.393+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:24:33.412+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.046 seconds
+[2025-10-31T23:25:03.587+0000] {processor.py:161} INFO - Started process (PID=313) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:25:03.588+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:25:03.589+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:25:03.589+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:25:03.598+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:25:03.617+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:25:03.616+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:25:03.636+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.054 seconds
+[2025-10-31T23:25:33.835+0000] {processor.py:161} INFO - Started process (PID=314) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:25:33.835+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:25:33.837+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:25:33.837+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:25:33.846+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:25:33.865+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:25:33.865+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:25:33.888+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.058 seconds
+[2025-10-31T23:26:04.062+0000] {processor.py:161} INFO - Started process (PID=315) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:26:04.063+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:26:04.064+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:26:04.064+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:26:04.071+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:26:04.088+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:26:04.088+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:26:04.107+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.048 seconds
+[2025-10-31T23:26:34.282+0000] {processor.py:161} INFO - Started process (PID=316) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:26:34.282+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:26:34.284+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:26:34.284+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:26:34.292+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:26:34.311+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:26:34.311+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:26:34.330+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.052 seconds
+[2025-10-31T23:27:04.496+0000] {processor.py:161} INFO - Started process (PID=317) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:27:04.497+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:27:04.499+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:27:04.498+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:27:04.507+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:27:04.527+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:27:04.526+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:27:04.548+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.057 seconds
+[2025-10-31T23:27:34.752+0000] {processor.py:161} INFO - Started process (PID=318) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:27:34.753+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:27:34.754+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:27:34.754+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:27:34.763+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:27:34.781+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:27:34.781+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:27:34.801+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.053 seconds
+[2025-10-31T23:28:04.982+0000] {processor.py:161} INFO - Started process (PID=319) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:28:04.982+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:28:04.984+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:28:04.984+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:28:04.991+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:28:05.011+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:28:05.010+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:28:05.031+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.053 seconds
+[2025-10-31T23:28:35.200+0000] {processor.py:161} INFO - Started process (PID=320) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:28:35.201+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:28:35.203+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:28:35.203+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:28:35.211+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:28:35.230+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:28:35.230+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:28:35.249+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.055 seconds
+[2025-10-31T23:29:05.451+0000] {processor.py:161} INFO - Started process (PID=321) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:29:05.451+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:29:05.453+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:29:05.453+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:29:05.462+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:29:05.481+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:29:05.480+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:29:05.500+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.054 seconds
+[2025-10-31T23:29:35.663+0000] {processor.py:161} INFO - Started process (PID=322) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:29:35.664+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:29:35.665+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:29:35.665+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:29:35.672+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:29:35.687+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:29:35.687+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:29:35.706+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.046 seconds
+[2025-10-31T23:30:05.911+0000] {processor.py:161} INFO - Started process (PID=323) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:30:05.912+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:30:05.913+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:30:05.913+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:30:05.920+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:30:05.936+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:30:05.936+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:30:05.953+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.046 seconds
+[2025-10-31T23:30:36.122+0000] {processor.py:161} INFO - Started process (PID=324) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:30:36.123+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:30:36.125+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:30:36.125+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:30:36.135+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:30:36.154+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:30:36.154+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:30:36.173+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.057 seconds
+[2025-10-31T23:31:06.375+0000] {processor.py:161} INFO - Started process (PID=325) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:31:06.375+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:31:06.376+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:31:06.376+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:31:06.381+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:31:06.395+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:31:06.395+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:31:06.413+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.041 seconds
+[2025-10-31T23:31:36.604+0000] {processor.py:161} INFO - Started process (PID=326) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:31:36.604+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:31:36.606+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:31:36.606+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:31:36.612+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:31:36.627+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:31:36.627+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:31:36.644+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.044 seconds
+[2025-10-31T23:32:06.853+0000] {processor.py:161} INFO - Started process (PID=327) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:32:06.853+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:32:06.854+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:32:06.854+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:32:06.861+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:32:06.875+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:32:06.875+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:32:06.892+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.042 seconds
+[2025-10-31T23:32:37.099+0000] {processor.py:161} INFO - Started process (PID=328) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:32:37.100+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:32:37.100+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:32:37.100+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:32:37.107+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:32:37.122+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:32:37.122+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:32:37.140+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.044 seconds
+[2025-10-31T23:33:07.312+0000] {processor.py:161} INFO - Started process (PID=329) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:33:07.313+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:33:07.314+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:33:07.314+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:33:07.321+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:33:07.338+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:33:07.338+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:33:07.359+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.049 seconds
+[2025-10-31T23:33:37.535+0000] {processor.py:161} INFO - Started process (PID=330) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:33:37.536+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:33:37.537+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:33:37.537+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:33:37.545+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:33:37.562+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:33:37.562+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:33:37.581+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.050 seconds
+[2025-10-31T23:34:07.758+0000] {processor.py:161} INFO - Started process (PID=331) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:34:07.758+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:34:07.759+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:34:07.759+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:34:07.766+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:34:07.782+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:34:07.782+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:34:07.802+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.047 seconds
+[2025-10-31T23:34:38.022+0000] {processor.py:161} INFO - Started process (PID=332) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:34:38.022+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:34:38.023+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:34:38.023+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:34:38.030+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:34:38.046+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:34:38.046+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:34:38.064+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.045 seconds
+[2025-10-31T23:35:08.251+0000] {processor.py:161} INFO - Started process (PID=333) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:35:08.252+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:35:08.253+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:35:08.253+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:35:08.260+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:35:08.276+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:35:08.276+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:35:08.293+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.045 seconds
+[2025-10-31T23:35:38.468+0000] {processor.py:161} INFO - Started process (PID=334) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:35:38.469+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:35:38.470+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:35:38.470+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:35:38.477+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:35:38.493+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:35:38.493+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:35:38.513+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.047 seconds
+[2025-10-31T23:36:08.715+0000] {processor.py:161} INFO - Started process (PID=335) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:36:08.716+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:36:08.717+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:36:08.717+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:36:08.724+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:36:08.739+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:36:08.739+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:36:08.756+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.043 seconds
+[2025-10-31T23:36:38.950+0000] {processor.py:161} INFO - Started process (PID=336) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:36:38.950+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:36:38.952+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:36:38.951+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:36:38.959+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:36:38.975+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:36:38.975+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:36:38.994+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.048 seconds
+[2025-10-31T23:37:09.179+0000] {processor.py:161} INFO - Started process (PID=337) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:37:09.180+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:37:09.181+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:37:09.181+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:37:09.188+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:37:09.204+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:37:09.204+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:37:09.226+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.050 seconds
+[2025-10-31T23:37:39.391+0000] {processor.py:161} INFO - Started process (PID=338) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:37:39.392+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:37:39.393+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:37:39.393+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:37:39.399+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:37:39.415+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:37:39.415+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:37:39.434+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.046 seconds
+[2025-10-31T23:38:09.582+0000] {processor.py:161} INFO - Started process (PID=339) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:38:09.582+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:38:09.583+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:38:09.583+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:38:09.591+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:38:09.609+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:38:09.609+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:38:09.628+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.049 seconds
+[2025-10-31T23:38:39.800+0000] {processor.py:161} INFO - Started process (PID=340) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:38:39.801+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:38:39.802+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:38:39.802+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:38:39.808+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:38:39.823+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:38:39.823+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:38:39.849+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.052 seconds
+[2025-10-31T23:39:10.061+0000] {processor.py:161} INFO - Started process (PID=341) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:39:10.061+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:39:10.062+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:39:10.062+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:39:10.069+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:39:10.085+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:39:10.085+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:39:10.105+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.047 seconds
+[2025-10-31T23:39:40.267+0000] {processor.py:161} INFO - Started process (PID=342) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:39:40.268+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:39:40.269+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:39:40.269+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:39:40.275+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:39:40.291+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:39:40.291+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:39:40.310+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.046 seconds
+[2025-10-31T23:40:10.534+0000] {processor.py:161} INFO - Started process (PID=343) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:40:10.535+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:40:10.536+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:40:10.536+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:40:10.544+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:40:10.561+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:40:10.561+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:40:10.582+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.051 seconds
+[2025-10-31T23:40:40.745+0000] {processor.py:161} INFO - Started process (PID=344) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:40:40.745+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:40:40.746+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:40:40.746+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:40:40.753+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:40:40.769+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:40:40.769+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:40:40.789+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.048 seconds
+[2025-10-31T23:41:10.990+0000] {processor.py:161} INFO - Started process (PID=345) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:41:10.991+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:41:10.992+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:41:10.992+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:41:11.000+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:41:11.017+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:41:11.016+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:41:11.034+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.047 seconds
+[2025-10-31T23:41:41.197+0000] {processor.py:161} INFO - Started process (PID=346) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:41:41.198+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:41:41.199+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:41:41.199+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:41:41.207+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:41:41.225+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:41:41.225+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:41:41.246+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.052 seconds
+[2025-10-31T23:42:11.453+0000] {processor.py:161} INFO - Started process (PID=347) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:42:11.454+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:42:11.455+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:42:11.455+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:42:11.462+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:42:11.481+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:42:11.480+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:42:11.503+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.053 seconds
+[2025-10-31T23:42:41.665+0000] {processor.py:161} INFO - Started process (PID=348) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:42:41.666+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:42:41.667+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:42:41.666+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:42:41.675+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:42:41.691+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:42:41.690+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:42:41.711+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.049 seconds
+[2025-10-31T23:43:11.895+0000] {processor.py:161} INFO - Started process (PID=349) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:43:11.895+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:43:11.897+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:43:11.896+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:43:11.903+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:43:11.918+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:43:11.918+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:43:11.937+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.045 seconds
+[2025-10-31T23:43:42.101+0000] {processor.py:161} INFO - Started process (PID=350) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:43:42.101+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:43:42.103+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:43:42.103+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:43:42.110+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:43:42.126+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:43:42.126+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:43:42.144+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.046 seconds
+[2025-10-31T23:44:12.325+0000] {processor.py:161} INFO - Started process (PID=351) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:44:12.325+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:44:12.327+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:44:12.326+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:44:12.333+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:44:12.348+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:44:12.348+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:44:12.365+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.043 seconds
+[2025-10-31T23:44:42.551+0000] {processor.py:161} INFO - Started process (PID=352) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:44:42.552+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:44:42.554+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:44:42.554+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:44:42.561+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:44:42.577+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:44:42.577+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:44:42.595+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.047 seconds
+[2025-10-31T23:45:12.757+0000] {processor.py:161} INFO - Started process (PID=353) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:45:12.758+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:45:12.759+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:45:12.759+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:45:12.767+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:45:12.784+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:45:12.784+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:45:12.803+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.049 seconds
+[2025-10-31T23:45:42.988+0000] {processor.py:161} INFO - Started process (PID=354) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:45:42.989+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:45:42.990+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:45:42.990+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:45:42.996+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:45:43.011+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:45:43.011+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:45:43.028+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.042 seconds
+[2025-10-31T23:46:13.238+0000] {processor.py:161} INFO - Started process (PID=355) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:46:13.239+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:46:13.240+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:46:13.240+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:46:13.248+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:46:13.265+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:46:13.264+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:46:13.283+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.048 seconds
+[2025-10-31T23:46:43.485+0000] {processor.py:161} INFO - Started process (PID=356) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:46:43.486+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:46:43.488+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:46:43.487+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:46:43.496+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:46:43.514+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:46:43.514+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:46:43.534+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.054 seconds
+[2025-10-31T23:47:13.722+0000] {processor.py:161} INFO - Started process (PID=357) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:47:13.723+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:47:13.724+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:47:13.723+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:47:13.730+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:47:13.745+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:47:13.745+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:47:13.763+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.044 seconds
+[2025-10-31T23:47:43.962+0000] {processor.py:161} INFO - Started process (PID=358) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:47:43.963+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:47:43.964+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:47:43.964+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:47:43.972+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:47:43.990+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:47:43.990+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:47:44.010+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.052 seconds
+[2025-10-31T23:48:14.181+0000] {processor.py:161} INFO - Started process (PID=359) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:48:14.182+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:48:14.184+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:48:14.183+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:48:14.192+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:48:14.210+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:48:14.210+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:48:14.230+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.054 seconds
+[2025-10-31T23:48:44.446+0000] {processor.py:161} INFO - Started process (PID=360) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:48:44.447+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:48:44.448+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:48:44.448+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:48:44.454+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:48:44.469+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:48:44.469+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:48:44.488+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.044 seconds
+[2025-10-31T23:49:14.698+0000] {processor.py:161} INFO - Started process (PID=361) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:49:14.699+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:49:14.700+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:49:14.700+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:49:14.707+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:49:14.724+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:49:14.724+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:49:14.743+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.048 seconds
+[2025-10-31T23:49:44.950+0000] {processor.py:161} INFO - Started process (PID=362) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:49:44.952+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:49:44.954+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:49:44.954+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:49:44.963+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:49:44.982+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:49:44.982+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:49:45.002+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.058 seconds
+[2025-10-31T23:50:15.175+0000] {processor.py:161} INFO - Started process (PID=363) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:50:15.176+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:50:15.177+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:50:15.177+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:50:15.183+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:50:15.198+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:50:15.198+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:50:15.217+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.045 seconds
+[2025-10-31T23:50:45.393+0000] {processor.py:161} INFO - Started process (PID=364) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:50:45.394+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:50:45.395+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:50:45.395+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:50:45.404+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:50:45.421+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:50:45.421+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:50:45.441+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.052 seconds
+[2025-10-31T23:51:15.629+0000] {processor.py:161} INFO - Started process (PID=365) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:51:15.630+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:51:15.631+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:51:15.631+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:51:15.638+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:51:15.655+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:51:15.655+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:51:15.672+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.046 seconds
+[2025-10-31T23:51:45.871+0000] {processor.py:161} INFO - Started process (PID=366) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:51:45.872+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:51:45.873+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:51:45.873+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:51:45.880+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:51:45.897+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:51:45.897+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:51:45.915+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.047 seconds
+[2025-10-31T23:52:16.147+0000] {processor.py:161} INFO - Started process (PID=367) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:52:16.147+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:52:16.148+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:52:16.148+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:52:16.154+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:52:16.169+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:52:16.169+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:52:16.186+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.042 seconds
+[2025-10-31T23:52:46.368+0000] {processor.py:161} INFO - Started process (PID=368) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:52:46.369+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:52:46.370+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:52:46.370+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:52:46.378+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:52:46.396+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:52:46.396+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:52:46.416+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.052 seconds
+[2025-10-31T23:54:36.194+0000] {processor.py:161} INFO - Started process (PID=369) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:54:36.195+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:54:36.196+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:54:36.196+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:54:36.206+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:54:36.225+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:54:36.225+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:54:36.245+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.055 seconds
+[2025-10-31T23:55:06.456+0000] {processor.py:161} INFO - Started process (PID=370) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:55:06.457+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:55:06.459+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:55:06.459+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:55:06.473+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:55:06.494+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:55:06.494+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:55:06.512+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.061 seconds
+[2025-10-31T23:55:36.656+0000] {processor.py:161} INFO - Started process (PID=371) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:55:36.656+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:55:36.657+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:55:36.657+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:55:36.663+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:55:36.678+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:55:36.678+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:55:36.698+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.045 seconds
+[2025-10-31T23:56:06.885+0000] {processor.py:161} INFO - Started process (PID=372) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:56:06.886+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:56:06.888+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:56:06.888+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:56:06.901+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:56:06.922+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:56:06.922+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:56:06.941+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.061 seconds
+[2025-10-31T23:56:37.130+0000] {processor.py:161} INFO - Started process (PID=373) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:56:37.131+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:56:37.134+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:56:37.134+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:56:37.147+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:56:37.165+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:56:37.165+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:56:37.187+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.063 seconds
+[2025-10-31T23:57:07.354+0000] {processor.py:161} INFO - Started process (PID=374) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:57:07.355+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:57:07.357+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:57:07.356+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:57:07.365+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:57:07.384+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:57:07.383+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:57:07.405+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.054 seconds
+[2025-10-31T23:57:37.566+0000] {processor.py:161} INFO - Started process (PID=375) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:57:37.566+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:57:37.567+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:57:37.567+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:57:37.574+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:57:37.590+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:57:37.590+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:57:37.608+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.045 seconds
+[2025-10-31T23:58:07.820+0000] {processor.py:161} INFO - Started process (PID=376) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:58:07.821+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:58:07.823+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:58:07.822+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:58:07.833+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:58:07.852+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:58:07.852+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:58:07.870+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.055 seconds
+[2025-10-31T23:58:38.075+0000] {processor.py:161} INFO - Started process (PID=377) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:58:38.077+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:58:38.079+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:58:38.079+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:58:38.092+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:58:38.114+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:58:38.114+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:58:38.131+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.062 seconds
+[2025-10-31T23:59:08.322+0000] {processor.py:161} INFO - Started process (PID=378) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:59:08.323+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:59:08.325+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:59:08.324+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:59:08.336+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:59:08.356+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:59:08.356+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:59:08.375+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.058 seconds
+[2025-10-31T23:59:38.557+0000] {processor.py:161} INFO - Started process (PID=379) to work on /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:59:38.558+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_refresh_arcx.py for tasks to queue
+[2025-10-31T23:59:38.560+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:59:38.560+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:59:38.573+0000] {processor.py:840} INFO - DAG(s) 'refresh_arcx_dag' retrieved from /opt/airflow/dags/qi_refresh_arcx.py
+[2025-10-31T23:59:38.593+0000] {logging_mixin.py:188} INFO - [2025-10-31T23:59:38.593+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-31T23:59:38.612+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_refresh_arcx.py took 0.061 seconds
