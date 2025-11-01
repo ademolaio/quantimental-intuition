@@ -9585,3 +9585,390 @@ drop table if exists `market`.`weekly_prices__dbt_backup`
 [0m00:19:44.447241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110e60320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117f6bf80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1201832c0>]}
 [0m00:19:44.447449 [debug] [MainThread]: Flushing usage events
 [0m00:19:44.911416 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:49:50.171993 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d32690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077249e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077242f0>]}
+
+
+============================== 12:49:50.174468 | d702f897-a161-463d-bfc8-d22593ac7c49 ==============================
+[0m12:49:50.174468 [info ] [MainThread]: Running with dbt=1.10.13
+[0m12:49:50.174808 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'target_path': 'None', 'log_cache_events': 'False', 'invocation_command': 'dbt run --select market.weekly_prices market.monthly_prices market.quarterly_prices', 'debug': 'False', 'use_colors': 'True', 'printer_width': '80', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/logs', 'log_format': 'default', 'empty': 'False', 'use_experimental_parser': 'False', 'static_parser': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'write_json': 'True', 'profiles_dir': '/Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'indirect_selection': 'eager'}
+[0m12:49:50.273042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd702f897-a161-463d-bfc8-d22593ac7c49', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107727290>]}
+[0m12:49:50.303183 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd702f897-a161-463d-bfc8-d22593ac7c49', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107862db0>]}
+[0m12:49:50.303655 [info ] [MainThread]: Registered adapter: clickhouse=1.9.5
+[0m12:49:50.373372 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m12:49:50.437600 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:49:50.437839 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:49:50.441137 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.qi_dbt_project.analytics
+- models.qi_dbt_project.fundamentals
+- models.qi_dbt_project.meta
+[0m12:49:50.462719 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd702f897-a161-463d-bfc8-d22593ac7c49', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10798df70>]}
+[0m12:49:50.510722 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/target/manifest.json
+[0m12:49:50.511930 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/target/semantic_manifest.json
+[0m12:49:50.519683 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd702f897-a161-463d-bfc8-d22593ac7c49', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d26fc0>]}
+[0m12:49:50.519942 [info ] [MainThread]: Found 4 models, 14 data tests, 1 source, 603 macros
+[0m12:49:50.520122 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd702f897-a161-463d-bfc8-d22593ac7c49', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b7d430>]}
+[0m12:49:50.521147 [info ] [MainThread]: 
+[0m12:49:50.521345 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m12:49:50.521497 [info ] [MainThread]: 
+[0m12:49:50.521742 [debug] [MainThread]: Acquiring new clickhouse connection 'master'
+[0m12:49:50.524562 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list_'
+[0m12:49:50.530229 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:49:50.881632 [debug] [ThreadPool]: dbt_clickhouse adapter: On list_: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "connection_name": "list_"} */
+
+    select name from system.databases
+  ...
+[0m12:49:50.883978 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m12:49:50.893242 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_, now list__market)
+[0m12:49:50.897050 [debug] [ThreadPool]: dbt_clickhouse adapter: On list__market: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "connection_name": "list__market"} */
+select
+      t.name as name,
+      t.database as schema,
+      multiIf(
+        engine in ('MaterializedView', 'View'), 'view',
+        engine = 'Dictionary', 'dictionary',
+        'table'
+      ) as type,
+      db.engine as db_engine,0 as is_on_cluster
+          from system.tables as t join system.databases as db on t.database = db.name
+        where schema = 'market'
+      
+
+  ...
+[0m12:49:50.908151 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m12:49:50.909665 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd702f897-a161-463d-bfc8-d22593ac7c49', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115e487a0>]}
+[0m12:49:50.911327 [debug] [Thread-1 (]: Began running node model.qi_dbt_project.monthly_prices
+[0m12:49:50.911675 [info ] [Thread-1 (]: 1 of 3 START sql table model `market`.`monthly_prices` ......................... [RUN]
+[0m12:49:50.911965 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list__market, now model.qi_dbt_project.monthly_prices)
+[0m12:49:50.912199 [debug] [Thread-1 (]: Began compiling node model.qi_dbt_project.monthly_prices
+[0m12:49:50.916163 [debug] [Thread-1 (]: Writing injected SQL for node "model.qi_dbt_project.monthly_prices"
+[0m12:49:50.916618 [debug] [Thread-1 (]: Began executing node model.qi_dbt_project.monthly_prices
+[0m12:49:50.947068 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.qi_dbt_project.monthly_prices: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "model.qi_dbt_project.monthly_prices"} */
+
+            
+
+    
+        create table `market`.`monthly_prices__dbt_backup`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS replicated_deduplication_window='0'
+
+                    
+            empty
+          as (
+            -- Real monthly aggregate: month_ending is last trading day of the month
+select
+  ticker,
+  argMax(short_name, date)        as short_name,
+  max(date)                       as month_ending,
+  argMin(open,  date)             as open,
+  max(high)                       as high,
+  min(low)                        as low,
+  argMax(close, date)             as close,
+  argMax(adj_close, date)         as adj_close,
+  sum(volume)                     as volume,
+  max(date)                       as source_max_date,
+  now()                           as built_at
+from market.daily_prices
+group by
+  ticker,
+  toStartOfMonth(date)
+order by ticker, month_ending
+          )
+        
+        ...
+[0m12:49:50.956645 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m12:49:50.966205 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.qi_dbt_project.monthly_prices: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "model.qi_dbt_project.monthly_prices"} */
+
+    select name, type from system.columns where table = 'monthly_prices__dbt_backup'
+    
+      
+        and database = 'market'
+      
+    
+    order by position
+  ...
+[0m12:49:50.970244 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m12:49:50.972884 [debug] [Thread-1 (]: Writing runtime sql for node "model.qi_dbt_project.monthly_prices"
+[0m12:49:50.973438 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.qi_dbt_project.monthly_prices: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "model.qi_dbt_project.monthly_prices"} */
+
+  
+    
+    
+    
+        
+         
+
+
+        insert into `market`.`monthly_prices__dbt_backup`
+        ("ticker", "short_name", "month_ending", "open", "high", "low", "close", "adj_close", "volume", "source_max_date", "built_at")-- Real monthly aggregate: month_ending is last trading day of the month
+select
+  ticker,
+  argMax(short_name, date)        as short_name,
+  max(date)                       as month_ending,
+  argMin(open,  date)             as open,
+  max(high)                       as high,
+  min(low)                        as low,
+  argMax(close, date)             as close,
+  argMax(adj_close, date)         as adj_close,
+  sum(volume)                     as volume,
+  max(date)                       as source_max_date,
+  now()                           as built_at
+from market.daily_prices
+group by
+  ticker,
+  toStartOfMonth(date)
+order by ticker, month_ending
+  ...
+[0m12:49:51.027568 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.05 seconds
+[0m12:49:51.030407 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.qi_dbt_project.monthly_prices: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "model.qi_dbt_project.monthly_prices"} */
+EXCHANGE TABLES `market`.`monthly_prices__dbt_backup` AND `market`.`monthly_prices` 
+  
+  ...
+[0m12:49:51.033053 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m12:49:51.046767 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.qi_dbt_project.monthly_prices: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "model.qi_dbt_project.monthly_prices"} */
+drop table if exists `market`.`monthly_prices__dbt_backup` 
+  ...
+[0m12:49:51.048411 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m12:49:51.050315 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd702f897-a161-463d-bfc8-d22593ac7c49', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1032c7860>]}
+[0m12:49:51.050685 [info ] [Thread-1 (]: 1 of 3 OK created sql table model `market`.`monthly_prices` .................... [[32mOK[0m in 0.14s]
+[0m12:49:51.051007 [debug] [Thread-1 (]: Finished running node model.qi_dbt_project.monthly_prices
+[0m12:49:51.051231 [debug] [Thread-1 (]: Began running node model.qi_dbt_project.quarterly_prices
+[0m12:49:51.051535 [info ] [Thread-1 (]: 2 of 3 START sql table model `market`.`quarterly_prices` ....................... [RUN]
+[0m12:49:51.051817 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.qi_dbt_project.monthly_prices, now model.qi_dbt_project.quarterly_prices)
+[0m12:49:51.052039 [debug] [Thread-1 (]: Began compiling node model.qi_dbt_project.quarterly_prices
+[0m12:49:51.053288 [debug] [Thread-1 (]: Writing injected SQL for node "model.qi_dbt_project.quarterly_prices"
+[0m12:49:51.053752 [debug] [Thread-1 (]: Began executing node model.qi_dbt_project.quarterly_prices
+[0m12:49:51.055633 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.qi_dbt_project.quarterly_prices: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "model.qi_dbt_project.quarterly_prices"} */
+
+            
+
+    
+        create table `market`.`quarterly_prices__dbt_backup`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS replicated_deduplication_window='0'
+
+                    
+            empty
+          as (
+            -- Real quarterly aggregate: quarter_ending is last trading day of the quarter
+select
+  ticker,
+  argMax(short_name, date)        as short_name,
+  max(date)                       as quarter_ending,
+  argMin(open,  date)             as open,
+  max(high)                       as high,
+  min(low)                        as low,
+  argMax(close, date)             as close,
+  argMax(adj_close, date)         as adj_close,
+  sum(volume)                     as volume,
+  max(date)                       as source_max_date,
+  now()                           as built_at
+from market.daily_prices
+group by
+  ticker,
+  toStartOfQuarter(date)
+order by ticker, quarter_ending
+          )
+        
+        ...
+[0m12:49:51.060901 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m12:49:51.062680 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.qi_dbt_project.quarterly_prices: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "model.qi_dbt_project.quarterly_prices"} */
+
+    select name, type from system.columns where table = 'quarterly_prices__dbt_backup'
+    
+      
+        and database = 'market'
+      
+    
+    order by position
+  ...
+[0m12:49:51.065282 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m12:49:51.066647 [debug] [Thread-1 (]: Writing runtime sql for node "model.qi_dbt_project.quarterly_prices"
+[0m12:49:51.067213 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.qi_dbt_project.quarterly_prices: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "model.qi_dbt_project.quarterly_prices"} */
+
+  
+    
+    
+    
+        
+         
+
+
+        insert into `market`.`quarterly_prices__dbt_backup`
+        ("ticker", "short_name", "quarter_ending", "open", "high", "low", "close", "adj_close", "volume", "source_max_date", "built_at")-- Real quarterly aggregate: quarter_ending is last trading day of the quarter
+select
+  ticker,
+  argMax(short_name, date)        as short_name,
+  max(date)                       as quarter_ending,
+  argMin(open,  date)             as open,
+  max(high)                       as high,
+  min(low)                        as low,
+  argMax(close, date)             as close,
+  argMax(adj_close, date)         as adj_close,
+  sum(volume)                     as volume,
+  max(date)                       as source_max_date,
+  now()                           as built_at
+from market.daily_prices
+group by
+  ticker,
+  toStartOfQuarter(date)
+order by ticker, quarter_ending
+  ...
+[0m12:49:51.101035 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.03 seconds
+[0m12:49:51.101855 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.qi_dbt_project.quarterly_prices: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "model.qi_dbt_project.quarterly_prices"} */
+EXCHANGE TABLES `market`.`quarterly_prices__dbt_backup` AND `market`.`quarterly_prices` 
+  
+  ...
+[0m12:49:51.105031 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m12:49:51.107881 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.qi_dbt_project.quarterly_prices: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "model.qi_dbt_project.quarterly_prices"} */
+drop table if exists `market`.`quarterly_prices__dbt_backup` 
+  ...
+[0m12:49:51.109425 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m12:49:51.110224 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd702f897-a161-463d-bfc8-d22593ac7c49', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116c2a7e0>]}
+[0m12:49:51.110556 [info ] [Thread-1 (]: 2 of 3 OK created sql table model `market`.`quarterly_prices` .................. [[32mOK[0m in 0.06s]
+[0m12:49:51.110842 [debug] [Thread-1 (]: Finished running node model.qi_dbt_project.quarterly_prices
+[0m12:49:51.111040 [debug] [Thread-1 (]: Began running node model.qi_dbt_project.weekly_prices
+[0m12:49:51.111279 [info ] [Thread-1 (]: 3 of 3 START sql table model `market`.`weekly_prices` .......................... [RUN]
+[0m12:49:51.111491 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.qi_dbt_project.quarterly_prices, now model.qi_dbt_project.weekly_prices)
+[0m12:49:51.111674 [debug] [Thread-1 (]: Began compiling node model.qi_dbt_project.weekly_prices
+[0m12:49:51.112858 [debug] [Thread-1 (]: Writing injected SQL for node "model.qi_dbt_project.weekly_prices"
+[0m12:49:51.113408 [debug] [Thread-1 (]: Began executing node model.qi_dbt_project.weekly_prices
+[0m12:49:51.115327 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.qi_dbt_project.weekly_prices: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "model.qi_dbt_project.weekly_prices"} */
+
+            
+
+    
+        create table `market`.`weekly_prices__dbt_backup`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS replicated_deduplication_window='0'
+
+                    
+            empty
+          as (
+            -- Real weekly aggregate: ISO week groups; week_ending is the last trading day in that week
+select
+  ticker,
+  argMax(short_name, date)        as short_name,       -- name as of last day in week
+  max(date)                       as week_ending,      -- last trading day in ISO week
+  argMin(open,  date)             as open,             -- first open in week
+  max(high)                       as high,             -- highest high in week
+  min(low)                        as low,              -- lowest low in week
+  argMax(close, date)             as close,            -- last close in week
+  argMax(adj_close, date)         as adj_close,        -- last adjusted close in week
+  sum(volume)                     as volume,           -- total volume in week
+  max(date)                       as source_max_date,  -- provenance
+  now()                           as built_at
+from market.daily_prices
+group by
+  ticker,
+  toISOYear(date),
+  toISOWeek(date)
+order by ticker, week_ending
+          )
+        
+        ...
+[0m12:49:51.120521 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m12:49:51.122176 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.qi_dbt_project.weekly_prices: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "model.qi_dbt_project.weekly_prices"} */
+
+    select name, type from system.columns where table = 'weekly_prices__dbt_backup'
+    
+      
+        and database = 'market'
+      
+    
+    order by position
+  ...
+[0m12:49:51.125011 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m12:49:51.126230 [debug] [Thread-1 (]: Writing runtime sql for node "model.qi_dbt_project.weekly_prices"
+[0m12:49:51.126726 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.qi_dbt_project.weekly_prices: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "model.qi_dbt_project.weekly_prices"} */
+
+  
+    
+    
+    
+        
+         
+
+
+        insert into `market`.`weekly_prices__dbt_backup`
+        ("ticker", "short_name", "week_ending", "open", "high", "low", "close", "adj_close", "volume", "source_max_date", "built_at")-- Real weekly aggregate: ISO week groups; week_ending is the last trading day in that week
+select
+  ticker,
+  argMax(short_name, date)        as short_name,       -- name as of last day in week
+  max(date)                       as week_ending,      -- last trading day in ISO week
+  argMin(open,  date)             as open,             -- first open in week
+  max(high)                       as high,             -- highest high in week
+  min(low)                        as low,              -- lowest low in week
+  argMax(close, date)             as close,            -- last close in week
+  argMax(adj_close, date)         as adj_close,        -- last adjusted close in week
+  sum(volume)                     as volume,           -- total volume in week
+  max(date)                       as source_max_date,  -- provenance
+  now()                           as built_at
+from market.daily_prices
+group by
+  ticker,
+  toISOYear(date),
+  toISOWeek(date)
+order by ticker, week_ending
+  ...
+[0m12:49:51.219538 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.09 seconds
+[0m12:49:51.220345 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.qi_dbt_project.weekly_prices: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "model.qi_dbt_project.weekly_prices"} */
+EXCHANGE TABLES `market`.`weekly_prices__dbt_backup` AND `market`.`weekly_prices` 
+  
+  ...
+[0m12:49:51.222866 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m12:49:51.224879 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.qi_dbt_project.weekly_prices: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "model.qi_dbt_project.weekly_prices"} */
+drop table if exists `market`.`weekly_prices__dbt_backup` 
+  ...
+[0m12:49:51.226357 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m12:49:51.227157 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd702f897-a161-463d-bfc8-d22593ac7c49', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116c0d550>]}
+[0m12:49:51.227492 [info ] [Thread-1 (]: 3 of 3 OK created sql table model `market`.`weekly_prices` ..................... [[32mOK[0m in 0.12s]
+[0m12:49:51.227775 [debug] [Thread-1 (]: Finished running node model.qi_dbt_project.weekly_prices
+[0m12:49:51.228453 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:49:51.228633 [debug] [MainThread]: Connection 'model.qi_dbt_project.weekly_prices' was left open.
+[0m12:49:51.228801 [debug] [MainThread]: On model.qi_dbt_project.weekly_prices: Close
+[0m12:49:51.229037 [info ] [MainThread]: 
+[0m12:49:51.229206 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 0.71 seconds (0.71s).
+[0m12:49:51.229646 [debug] [MainThread]: Command end result
+[0m12:49:51.249138 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/target/manifest.json
+[0m12:49:51.250409 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/target/semantic_manifest.json
+[0m12:49:51.254394 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/target/run_results.json
+[0m12:49:51.254643 [info ] [MainThread]: 
+[0m12:49:51.254861 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:49:51.255035 [info ] [MainThread]: 
+[0m12:49:51.255228 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m12:49:51.258214 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.1230044, "process_in_blocks": "0", "process_kernel_time": 0.213852, "process_mem_max_rss": "192151552", "process_out_blocks": "0", "process_user_time": 1.396095}
+[0m12:49:51.258549 [debug] [MainThread]: Command `dbt run` succeeded at 12:49:51.258490 after 1.12 seconds
+[0m12:49:51.258803 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107724680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078dade0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d1b1a0>]}
+[0m12:49:51.259048 [debug] [MainThread]: Flushing usage events
+[0m12:49:51.752903 [debug] [MainThread]: An error was encountered while trying to flush usage events
