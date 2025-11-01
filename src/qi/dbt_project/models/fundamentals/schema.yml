@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: quarterly_fundamentals_long
+    columns:
+      - name: ticker
+        tests: [not_null]
+      - name: fiscal_date
+        tests: [not_null]
+      - name: statement
+        tests: [not_null]
+      - name: metric
+        tests: [not_null]
+
+  - name: quarterly_fundamentals_wide
+    columns:
+      - name: ticker
+        tests: [not_null]
+      - name: fiscal_date
+        tests: [not_null]
+
+  - name: key_ratios
+    columns:
+      - name: ticker
+        tests: [not_null]
+      - name: fiscal_date
+        tests: [not_null]

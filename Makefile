@@ -10,8 +10,8 @@ DBT_DIR := src/qi/dbt_project
 # --- Common env bootstrap (venv + PYTHONPATH + .env) -------------------------
 define ENV_EXPORT
 . $(VENV)/bin/activate && \
-export PYTHONPATH="$$(pwd)/$(PY_SRC)" && \
-set -a && [ -f $(ENV_FILE) ] && . $(ENV_FILE) || true && set +a
+export PYTHONPATH="$$(pwd)/$(PY_SRC):$$(pwd)" && \
+set -a; [ -f $(ENV_FILE) ] && . $(ENV_FILE); set +a
 endef
 
 .PHONY: up down bootstrap venv install freeze shell \
@@ -22,7 +22,9 @@ endef
         airflow-trigger-us airflow-trigger-intl \
         airflow-runs-us airflow-runs-intl \
         airflow-task-logs-us airflow-task-logs-intl \
-        print-env validate-exchanges
+        print-env validate-exchanges funds-backfill funds-refresh \
+        env-shell dbt-provision-fundamentals refresh_fundamentals \
+        backfill_fundamentals
 
 # --- ClickHouse + Superset ----------------------------------------------------
 up:
@@ -76,26 +78,66 @@ test_market:
 # --- Pipelines (US / INTL) ----------------------------------------------------
 backfill_us:
 	@$(ENV_EXPORT) && \
+	cd $(DBT_DIR) && dbt deps && dbt run-operation provision_fundamentals_raw && \
 	$(PY) -m qi.pipelines.backfill_us && \
-	cd $(DBT_DIR) && dbt run --select market.weekly_prices market.monthly_prices market.quarterly_prices
+	$(PY) -c "from data.tickers.UNITED_STATES import ALL_US; \
+	  from src.qi.pipelines.refresh_fundamentals import run_refresh; \
+	  run_refresh(ALL_US, sleep_s=0)" && \
+	dbt run --select market.weekly_prices market.monthly_prices market.quarterly_prices
 
 refresh_us:
 	@$(ENV_EXPORT) && \
 	$(PY) -m qi.pipelines.refresh_us && \
+	$(PY) -c "from data.tickers.UNITED_STATES import ALL_US; \
+	  from src.qi.pipelines.refresh_fundamentals import run_refresh; \
+	  run_refresh(ALL_US, sleep_s=0)" && \
 	cd $(DBT_DIR) && dbt run --select market.weekly_prices market.monthly_prices market.quarterly_prices
 
 backfill_intl:
 	@$(ENV_EXPORT) && \
+	cd $(DBT_DIR) && dbt deps && dbt run-operation provision_fundamentals_raw && \
 	$(PY) -m qi.pipelines.backfill_intl && \
-	cd $(DBT_DIR) && dbt run --select market.weekly_prices market.monthly_prices market.quarterly_prices
+	$(PY) -c "from data.tickers.INTERNATIONAL import ALL_INTL; \
+	  from src.qi.pipelines.refresh_fundamentals import run_refresh; \
+	  run_refresh(ALL_INTL, sleep_s=0)" && \
+	dbt run --select market.weekly_prices market.monthly_prices market.quarterly_prices
 
 refresh_intl:
 	@$(ENV_EXPORT) && \
 	$(PY) -m qi.pipelines.refresh_intl && \
+	$(PY) -c "from data.tickers.INTERNATIONAL import ALL_INTL; \
+	  from src.qi.pipelines.refresh_fundamentals import run_refresh; \
+	  run_refresh(ALL_INTL, sleep_s=0)" && \
 	cd $(DBT_DIR) && dbt run --select market.weekly_prices market.monthly_prices market.quarterly_prices
+
+
+backfill_fundamentals:
+	@$(ENV_EXPORT) && \
+	cd $(DBT_DIR) && dbt deps && dbt run-operation provision_fundamentals_raw && \
+	$(PY) -c "from src.qi.pipelines.refresh_fundamentals import run_refresh; run_refresh(None, sleep_s=0)"
+
+
+refresh_fundamentals:
+	@$(ENV_EXPORT) && \
+	cd $(DBT_DIR) && dbt deps && dbt run-operation provision_fundamentals_raw && \
+	$(PY) -c "from src.qi.pipelines.refresh_fundamentals import run_refresh; run_refresh(None, sleep_s=0)"
 
 weekly_close: refresh_us refresh_intl
 morning_catchup: refresh_us refresh_intl
+
+funds-refresh:
+	@$(ENV_EXPORT) && \
+	$(PY) -m qi.pipelines.refresh_fundamentals && \
+	cd $(DBT_DIR) && dbt run --select fundamentals.quarterly_fundamentals fundamentals.key_ratios
+
+funds-backfill:
+	@$(ENV_EXPORT) && \
+	$(PY) -m qi.pipelines.refresh_fundamentals && \
+	cd $(DBT_DIR) && dbt run --select fundamentals.quarterly_fundamentals fundamentals.key_ratios
+
+
+dbt-provision-fundamentals:
+	@$(ENV_EXPORT) && cd $(DBT_DIR) && dbt deps && dbt run-operation provision_fundamentals_raw
 
 # --- Quick ClickHouse checks (optional; requires clickhouse-client) ----------
 counts:
@@ -147,6 +189,9 @@ airflow-task-logs-intl:
 # --- Misc ---------------------------------------------------------------------
 print-env:
 	@$(ENV_EXPORT) && env | grep -E '^(CH_|CLICKHOUSE_|AIRFLOW_|PYTHONPATH|DBT_|PY=)'
+
+env-shell:
+	@set -a && [ -f $(ENV_FILE) ] && . $(ENV_FILE) && set +a && bash -i
 
 validate-exchanges:
 	@$(ENV_EXPORT) && $(PY) tools/validate_exchanges.py
