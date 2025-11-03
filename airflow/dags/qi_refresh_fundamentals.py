@@ -13,7 +13,7 @@ DBT_PROJECT_DIR = "/opt/airflow/dags/src/qi/dbt_project"
 DBT_CMD = f"cd {DBT_PROJECT_DIR} && dbt deps && dbt run --select fundamentals.quarterly_fundamentals fundamentals.key_ratios"
 
 TZ = pendulum.timezone("Europe/Berlin")
-SCHEDULE = "0 7 * * MON"   # Mondays 07:00 CET
+SCHEDULE = "0 6 5 * *"  # 05th at 06:00 Berlin each month
 
 def _validate_env():
     missing = [k for k in REQUIRED_ENV if not os.getenv(k)]
@@ -31,7 +31,7 @@ with DAG(
     dag_id="refresh_fundamentals_dag",
     description="Refresh yfinance fundamentals into ClickHouse, then build dbt views",
     default_args=default_args,
-    start_date=pendulum.datetime(2025, 10, 31, 0, 0, tz=TZ),
+    start_date=pendulum.datetime(2025, 11, 5, 6, 0, tz=TZ),  # anchor on a real 5th @ 06:00
     schedule=SCHEDULE,
     catchup=False,
     max_active_runs=1,
