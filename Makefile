@@ -140,6 +140,31 @@ funds-backfill:
 dbt-provision-fundamentals:
 	@$(ENV_EXPORT) && cd $(DBT_DIR) && dbt deps && dbt run-operation provision_fundamentals_raw
 
+
+# assumes your existing ENV_EXPORT, DBT_DIR, etc.
+
+dbt-provision-analytics:
+	@$(ENV_EXPORT) && cd $(DBT_DIR) && dbt run-operation provision_analytics
+
+dbt-analytics:
+	@$(ENV_EXPORT) && cd $(DBT_DIR) && dbt deps && dbt run --select analytics
+
+dbt-analytics-test:
+	@$(ENV_EXPORT) && cd $(DBT_DIR) && dbt test --select analytics
+
+# Run inside the Airflow web container (uses in-network hostname)
+dbt-analytics-in-docker:
+	@docker exec -it qi-airflow-web bash -lc '\
+	  export DBT_PROFILES_DIR=/opt/airflow/dags/src/qi/dbt_project && \
+	  export CLICKHOUSE_HOST=qi-clickhouse && \
+	  export CLICKHOUSE_PORT=8123 && \
+	  export CLICKHOUSE_USER=qi && \
+	  export CLICKHOUSE_PASSWORD=mysecurepassword && \
+	  export CLICKHOUSE_DB=default && \
+	  cd /opt/airflow/dags/src/qi/dbt_project && \
+	  dbt deps && dbt run --select analytics && dbt test --select analytics \
+	'
+
 # --- Quick ClickHouse checks (optional; requires clickhouse-client) ----------
 counts:
 	@echo "Counts (if clickhouse-client installed):"

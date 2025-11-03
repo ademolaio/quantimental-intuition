@@ -35394,3 +35394,789 @@ File Path                                     PID    Runtime      # DAGs    # Er
 /opt/airflow/dags/qi_refresh_us.py                                     1           0  0.56s           2025-11-03T18:30:34
 /opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:30:34
 ================================================================================
+[2025-11-03T18:31:18.020+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.58s           2025-11-03T18:31:04
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.56s           2025-11-03T18:31:04
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:31:04
+================================================================================
+[2025-11-03T18:31:48.845+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.57s           2025-11-03T18:31:35
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.57s           2025-11-03T18:31:35
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.06s           2025-11-03T18:31:35
+================================================================================
+[2025-11-03T18:32:19.674+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.57s           2025-11-03T18:32:06
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.57s           2025-11-03T18:32:06
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:32:06
+================================================================================
+[2025-11-03T18:32:50.515+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.57s           2025-11-03T18:32:37
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.57s           2025-11-03T18:32:37
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:32:37
+================================================================================
+[2025-11-03T18:32:58.600+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-11-03T18:32:58.706+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2025-11-03T18:33:21.458+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.56s           2025-11-03T18:33:08
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.56s           2025-11-03T18:33:08
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:33:08
+================================================================================
+[2025-11-03T18:33:52.269+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.57s           2025-11-03T18:33:39
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.57s           2025-11-03T18:33:39
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:33:39
+================================================================================
+[2025-11-03T18:34:23.047+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.57s           2025-11-03T18:34:09
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.57s           2025-11-03T18:34:09
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:34:09
+================================================================================
+[2025-11-03T18:34:53.961+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.65s           2025-11-03T18:34:40
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.65s           2025-11-03T18:34:40
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:34:40
+================================================================================
+[2025-11-03T18:35:24.770+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.56s           2025-11-03T18:35:11
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.56s           2025-11-03T18:35:11
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:35:11
+================================================================================
+[2025-11-03T18:35:55.649+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.57s           2025-11-03T18:35:42
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.57s           2025-11-03T18:35:42
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:35:42
+================================================================================
+[2025-11-03T18:36:26.468+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.56s           2025-11-03T18:36:13
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.55s           2025-11-03T18:36:13
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.06s           2025-11-03T18:36:13
+================================================================================
+[2025-11-03T18:36:57.266+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.57s           2025-11-03T18:36:44
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.55s           2025-11-03T18:36:44
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:36:44
+================================================================================
+[2025-11-03T18:37:28.014+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.54s           2025-11-03T18:37:14
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.54s           2025-11-03T18:37:14
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:37:14
+================================================================================
+[2025-11-03T18:37:58.920+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-11-03T18:37:59.023+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2025-11-03T18:37:59.027+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.66s           2025-11-03T18:37:45
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.63s           2025-11-03T18:37:45
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.06s           2025-11-03T18:37:45
+================================================================================
+[2025-11-03T18:38:29.816+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.56s           2025-11-03T18:38:16
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.56s           2025-11-03T18:38:16
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:38:16
+================================================================================
+[2025-11-03T18:39:00.688+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.59s           2025-11-03T18:38:47
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.59s           2025-11-03T18:38:47
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.06s           2025-11-03T18:38:47
+================================================================================
+[2025-11-03T18:39:31.529+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.56s           2025-11-03T18:39:18
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.56s           2025-11-03T18:39:18
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:39:18
+================================================================================
+[2025-11-03T18:40:02.358+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.56s           2025-11-03T18:39:49
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.54s           2025-11-03T18:39:49
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:39:49
+================================================================================
+[2025-11-03T18:40:33.172+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.56s           2025-11-03T18:40:20
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.56s           2025-11-03T18:40:20
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:40:20
+================================================================================
+[2025-11-03T18:41:03.958+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.56s           2025-11-03T18:40:50
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.55s           2025-11-03T18:40:50
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:40:50
+================================================================================
+[2025-11-03T18:41:34.792+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.59s           2025-11-03T18:41:21
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.57s           2025-11-03T18:41:21
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:41:21
+================================================================================
+[2025-11-03T18:42:05.602+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.55s           2025-11-03T18:41:52
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.55s           2025-11-03T18:41:52
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:41:52
+================================================================================
+[2025-11-03T18:42:36.402+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.55s           2025-11-03T18:42:23
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.54s           2025-11-03T18:42:23
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.06s           2025-11-03T18:42:23
+================================================================================
+[2025-11-03T18:42:59.143+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-11-03T18:42:59.253+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2025-11-03T18:43:07.299+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.56s           2025-11-03T18:42:54
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.55s           2025-11-03T18:42:54
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:42:54
+================================================================================
+[2025-11-03T18:43:38.046+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.53s           2025-11-03T18:43:24
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.53s           2025-11-03T18:43:24
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:43:24
+================================================================================
+[2025-11-03T18:44:08.943+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.62s           2025-11-03T18:43:55
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.58s           2025-11-03T18:43:55
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.06s           2025-11-03T18:43:55
+================================================================================
+[2025-11-03T18:44:39.776+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.61s           2025-11-03T18:44:26
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.61s           2025-11-03T18:44:26
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.06s           2025-11-03T18:44:26
+================================================================================
+[2025-11-03T18:45:10.593+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.56s           2025-11-03T18:44:57
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.56s           2025-11-03T18:44:57
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:44:57
+================================================================================
+[2025-11-03T18:45:41.385+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.57s           2025-11-03T18:45:28
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.57s           2025-11-03T18:45:28
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:45:28
+================================================================================
+[2025-11-03T18:46:12.189+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.61s           2025-11-03T18:45:59
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.59s           2025-11-03T18:45:59
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.06s           2025-11-03T18:45:59
+================================================================================
+[2025-11-03T18:46:43.083+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.64s           2025-11-03T18:46:29
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.63s           2025-11-03T18:46:29
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.07s           2025-11-03T18:46:30
+================================================================================
+[2025-11-03T18:47:13.856+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.57s           2025-11-03T18:47:00
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.55s           2025-11-03T18:47:00
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:47:00
+================================================================================
+[2025-11-03T18:47:44.678+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.58s           2025-11-03T18:47:31
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.57s           2025-11-03T18:47:31
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.06s           2025-11-03T18:47:31
+================================================================================
+[2025-11-03T18:47:59.793+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-11-03T18:47:59.883+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2025-11-03T18:48:15.660+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.56s           2025-11-03T18:48:02
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.56s           2025-11-03T18:48:02
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.06s           2025-11-03T18:48:02
+================================================================================
+[2025-11-03T18:48:46.489+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.57s           2025-11-03T18:48:33
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.56s           2025-11-03T18:48:33
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.06s           2025-11-03T18:48:33
+================================================================================
+[2025-11-03T18:49:17.273+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.56s           2025-11-03T18:49:04
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.56s           2025-11-03T18:49:04
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:49:04
+================================================================================
+[2025-11-03T18:49:48.003+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.57s           2025-11-03T18:49:34
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.57s           2025-11-03T18:49:34
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:49:34
+================================================================================
+[2025-11-03T18:50:18.797+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.61s           2025-11-03T18:50:05
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.58s           2025-11-03T18:50:05
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.06s           2025-11-03T18:50:05
+================================================================================
+[2025-11-03T18:50:49.589+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.58s           2025-11-03T18:50:36
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.57s           2025-11-03T18:50:36
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:50:36
+================================================================================
+[2025-11-03T18:51:20.383+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.56s           2025-11-03T18:51:07
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.55s           2025-11-03T18:51:07
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:51:07
+================================================================================
+[2025-11-03T18:51:51.220+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.58s           2025-11-03T18:51:38
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.58s           2025-11-03T18:51:38
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:51:38
+================================================================================
+[2025-11-03T18:52:22.030+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.58s           2025-11-03T18:52:08
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.56s           2025-11-03T18:52:08
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:52:08
+================================================================================
+[2025-11-03T18:52:52.844+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.56s           2025-11-03T18:52:39
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.54s           2025-11-03T18:52:39
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:52:39
+================================================================================
+[2025-11-03T18:52:59.895+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-11-03T18:52:59.992+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2025-11-03T18:53:23.759+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.56s           2025-11-03T18:53:10
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.56s           2025-11-03T18:53:10
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:53:10
+================================================================================
+[2025-11-03T18:53:54.607+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.59s           2025-11-03T18:53:41
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.57s           2025-11-03T18:53:41
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.06s           2025-11-03T18:53:41
+================================================================================
+[2025-11-03T18:54:25.436+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.56s           2025-11-03T18:54:12
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.56s           2025-11-03T18:54:12
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:54:12
+================================================================================
+[2025-11-03T18:54:56.245+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.56s           2025-11-03T18:54:43
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.55s           2025-11-03T18:54:43
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:54:43
+================================================================================
+[2025-11-03T18:55:27.121+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.64s           2025-11-03T18:55:14
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.64s           2025-11-03T18:55:14
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:55:14
+================================================================================
+[2025-11-03T18:55:57.922+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.57s           2025-11-03T18:55:44
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.55s           2025-11-03T18:55:44
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:55:44
+================================================================================
+[2025-11-03T18:56:28.689+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.54s           2025-11-03T18:56:15
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.54s           2025-11-03T18:56:15
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:56:15
+================================================================================
+[2025-11-03T18:56:59.501+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.57s           2025-11-03T18:56:46
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.57s           2025-11-03T18:56:46
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:56:46
+================================================================================
+[2025-11-03T18:57:30.285+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.54s           2025-11-03T18:57:17
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.54s           2025-11-03T18:57:17
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:57:17
+================================================================================
+[2025-11-03T18:58:00.052+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-11-03T18:58:00.157+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2025-11-03T18:58:01.166+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.58s           2025-11-03T18:57:47
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.57s           2025-11-03T18:57:47
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.06s           2025-11-03T18:57:48
+================================================================================
+[2025-11-03T18:58:32.054+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.65s           2025-11-03T18:58:18
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.65s           2025-11-03T18:58:18
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:58:19
+================================================================================
+[2025-11-03T18:59:02.919+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.56s           2025-11-03T18:58:49
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.56s           2025-11-03T18:58:49
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:58:49
+================================================================================
+[2025-11-03T18:59:33.731+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.59s           2025-11-03T18:59:20
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.58s           2025-11-03T18:59:20
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.06s           2025-11-03T18:59:20
+================================================================================
+[2025-11-03T19:00:04.533+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.56s           2025-11-03T18:59:51
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.56s           2025-11-03T18:59:51
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T18:59:51
+================================================================================
+[2025-11-03T19:00:35.307+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.56s           2025-11-03T19:00:22
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.56s           2025-11-03T19:00:22
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.06s           2025-11-03T19:00:22
+================================================================================
+[2025-11-03T19:01:06.148+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.62s           2025-11-03T19:00:53
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.62s           2025-11-03T19:00:53
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T19:00:53
+================================================================================
+[2025-11-03T19:01:36.961+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.56s           2025-11-03T19:01:23
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.56s           2025-11-03T19:01:23
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.06s           2025-11-03T19:01:23
+================================================================================
+[2025-11-03T19:02:07.751+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.58s           2025-11-03T19:01:54
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.57s           2025-11-03T19:01:54
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.06s           2025-11-03T19:01:54
+================================================================================
+[2025-11-03T19:02:38.594+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.57s           2025-11-03T19:02:25
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.57s           2025-11-03T19:02:25
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T19:02:25
+================================================================================
+[2025-11-03T19:03:00.389+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-11-03T19:03:00.484+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2025-11-03T19:03:09.573+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.61s           2025-11-03T19:02:56
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.57s           2025-11-03T19:02:56
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.06s           2025-11-03T19:02:56
+================================================================================
+[2025-11-03T19:03:40.345+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.58s           2025-11-03T19:03:27
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.57s           2025-11-03T19:03:27
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.06s           2025-11-03T19:03:27
+================================================================================
+[2025-11-03T19:04:11.126+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.55s           2025-11-03T19:03:58
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.54s           2025-11-03T19:03:58
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T19:03:58
+================================================================================
+[2025-11-03T19:04:41.923+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.61s           2025-11-03T19:04:28
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.58s           2025-11-03T19:04:28
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.06s           2025-11-03T19:04:28
+================================================================================
+[2025-11-03T19:05:12.725+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.61s           2025-11-03T19:04:59
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.61s           2025-11-03T19:04:59
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.07s           2025-11-03T19:04:59
+================================================================================
+[2025-11-03T19:05:43.489+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.58s           2025-11-03T19:05:30
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.57s           2025-11-03T19:05:30
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T19:05:30
+================================================================================
+[2025-11-03T19:06:14.291+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.57s           2025-11-03T19:06:01
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.55s           2025-11-03T19:06:01
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.06s           2025-11-03T19:06:01
+================================================================================
+[2025-11-03T19:06:45.071+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.58s           2025-11-03T19:06:31
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.55s           2025-11-03T19:06:31
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.06s           2025-11-03T19:06:32
+================================================================================
+[2025-11-03T19:07:15.958+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.66s           2025-11-03T19:07:02
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.65s           2025-11-03T19:07:02
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.06s           2025-11-03T19:07:02
+================================================================================
+[2025-11-03T19:07:46.729+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.58s           2025-11-03T19:07:33
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.57s           2025-11-03T19:07:33
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T19:07:33
+================================================================================
+[2025-11-03T19:08:00.834+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-11-03T19:08:00.930+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2025-11-03T19:08:17.618+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.58s           2025-11-03T19:08:04
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.58s           2025-11-03T19:08:04
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.06s           2025-11-03T19:08:04
+================================================================================
+[2025-11-03T19:08:48.367+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.57s           2025-11-03T19:08:35
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.57s           2025-11-03T19:08:35
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.06s           2025-11-03T19:08:35
+================================================================================
+[2025-11-03T19:09:19.190+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.58s           2025-11-03T19:09:06
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.56s           2025-11-03T19:09:06
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.06s           2025-11-03T19:09:06
+================================================================================
+[2025-11-03T19:09:49.956+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.54s           2025-11-03T19:09:36
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.53s           2025-11-03T19:09:36
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.05s           2025-11-03T19:09:36
+================================================================================
+[2025-11-03T19:10:20.758+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/qi_refresh_us.py                                     1           0  0.58s           2025-11-03T19:10:07
+/opt/airflow/dags/qi_refresh_intl.py                                   1           0  0.58s           2025-11-03T19:10:07
+/opt/airflow/dags/qi_refresh_fundamentals.py                           1           0  0.06s           2025-11-03T19:10:07
+================================================================================

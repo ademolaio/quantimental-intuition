@@ -18728,3 +18728,1479 @@ FROM `fundamentals`.`quarterly_fundamentals_wide` AS w
 [0m10:59:50.886315 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9fef2a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9fef0440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9fef1af0>]}
 [0m10:59:50.886583 [debug] [MainThread]: Flushing usage events
 [0m10:59:51.338151 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:55:49.625925 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112006600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112115fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112115ee0>]}
+
+
+============================== 19:55:49.628936 | d3d932e7-f118-4b3f-b0ff-9f75f536eb00 ==============================
+[0m19:55:49.628936 [info ] [MainThread]: Running with dbt=1.10.13
+[0m19:55:49.629273 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'log_path': '/Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/logs', 'log_format': 'default', 'profiles_dir': '/Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'debug': 'False', 'use_colors': 'True', 'write_json': 'True', 'warn_error': 'None', 'version_check': 'True', 'partial_parse': 'True', 'log_cache_events': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'no_print': 'None', 'target_path': 'None', 'quiet': 'False', 'cache_selected_only': 'False', 'printer_width': '80', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt deps'}
+[0m19:55:49.694425 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd3d932e7-f118-4b3f-b0ff-9f75f536eb00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113246e70>]}
+[0m19:55:49.716579 [debug] [MainThread]: Set downloads directory='/var/folders/tf/lr49688s3sz7sp0s0dt7yhn40000gn/T/dbt-downloads-jjw0hl3q'
+[0m19:55:49.716820 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m19:55:49.849288 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m19:55:49.850433 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m19:55:49.920479 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m19:55:49.925358 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m19:55:50.331707 [info ] [MainThread]: Installed from version 1.3.1
+[0m19:55:50.332014 [info ] [MainThread]: Up to date!
+[0m19:55:50.332250 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'd3d932e7-f118-4b3f-b0ff-9f75f536eb00', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113aeb9b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113aa2a50>]}
+[0m19:55:50.334461 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.7441044, "process_in_blocks": "0", "process_kernel_time": 0.173244, "process_mem_max_rss": "114556928", "process_out_blocks": "0", "process_user_time": 0.828527}
+[0m19:55:50.334777 [debug] [MainThread]: Command `dbt deps` succeeded at 19:55:50.334715 after 0.74 seconds
+[0m19:55:50.334992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1137f1070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113c8cfb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113c8ec90>]}
+[0m19:55:50.335185 [debug] [MainThread]: Flushing usage events
+[0m19:55:50.945583 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:56:17.852102 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060da750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106115b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106115fa0>]}
+
+
+============================== 19:56:17.854551 | 14099bbf-e62a-4ae8-8cbf-eaab8eabda14 ==============================
+[0m19:56:17.854551 [info ] [MainThread]: Running with dbt=1.10.13
+[0m19:56:17.854870 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'log_path': '/Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/logs', 'empty': 'False', 'warn_error': 'None', 'introspect': 'True', 'log_cache_events': 'False', 'profiles_dir': '/Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project', 'log_format': 'default', 'use_experimental_parser': 'False', 'quiet': 'False', 'use_colors': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run --select analytics.market_signals', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'partial_parse': 'True', 'write_json': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'printer_width': '80', 'no_print': 'None', 'indirect_selection': 'eager', 'target_path': 'None'}
+[0m19:56:17.957955 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '14099bbf-e62a-4ae8-8cbf-eaab8eabda14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10696fce0>]}
+[0m19:56:17.988544 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '14099bbf-e62a-4ae8-8cbf-eaab8eabda14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070e5340>]}
+[0m19:56:17.989202 [info ] [MainThread]: Registered adapter: clickhouse=1.9.5
+[0m19:56:18.058064 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m19:56:18.109295 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m19:56:18.109573 [debug] [MainThread]: previous checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, current checksum: 87546e06832e1286bf2d49b8b108dd3f58da97cbfca650a1f147ec4aedfbbf25
+[0m19:56:18.109758 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '14099bbf-e62a-4ae8-8cbf-eaab8eabda14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107682510>]}
+[0m19:56:18.793718 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'key_ratios' in the 'models' section of file 'models/fundamentals/schema.yml'
+[0m19:56:18.906833 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_52w_performance' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:56:18.908027 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_top_1d_movers' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:56:18.908968 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_volume_surge' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:56:18.909991 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_gap_scan' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:56:18.910796 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_momentum_20d_60d' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:56:18.911878 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_distance_from_sma' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:56:18.912634 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_breadth_pct_above_sma' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:56:18.913156 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_52w_scanner' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:56:18.914033 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_atr14_pct' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:56:18.915489 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_inside_outside_day' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:56:18.916259 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_rv30_and_rank' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:56:18.944949 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_key_ratios_ticker.948b0ba38a' (models/fundamentals/schema.yml) depends on a node named 'key_ratios' in package '' which was not found
+[0m19:56:18.945287 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_key_ratios_fiscal_date.cadc0e1ad5' (models/fundamentals/schema.yml) depends on a node named 'key_ratios' in package '' which was not found
+[0m19:56:18.945495 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_52w_performance_ticker.4182c3bbda' (models/analytics/market_signals/schema.yml) depends on a node named 'v_52w_performance' in package '' which was not found
+[0m19:56:18.945665 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_52w_performance_last_date.993d1f2aca' (models/analytics/market_signals/schema.yml) depends on a node named 'v_52w_performance' in package '' which was not found
+[0m19:56:18.945824 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_52w_performance_last_close.b1d99a1682' (models/analytics/market_signals/schema.yml) depends on a node named 'v_52w_performance' in package '' which was not found
+[0m19:56:18.946050 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_top_1d_movers_ticker.8dee316137' (models/analytics/market_signals/schema.yml) depends on a node named 'v_top_1d_movers' in package '' which was not found
+[0m19:56:18.946262 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_top_1d_movers_last_date.677da194ca' (models/analytics/market_signals/schema.yml) depends on a node named 'v_top_1d_movers' in package '' which was not found
+[0m19:56:18.946436 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_top_1d_movers_close_last.d6aec1e87a' (models/analytics/market_signals/schema.yml) depends on a node named 'v_top_1d_movers' in package '' which was not found
+[0m19:56:18.946605 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_volume_surge_ticker.a7aa82d74f' (models/analytics/market_signals/schema.yml) depends on a node named 'v_volume_surge' in package '' which was not found
+[0m19:56:18.946764 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_volume_surge_last_date.e3a5008de8' (models/analytics/market_signals/schema.yml) depends on a node named 'v_volume_surge' in package '' which was not found
+[0m19:56:18.946918 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_volume_surge_volume_today.a1ae37125c' (models/analytics/market_signals/schema.yml) depends on a node named 'v_volume_surge' in package '' which was not found
+[0m19:56:18.947076 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_gap_scan_ticker.f99e0d187a' (models/analytics/market_signals/schema.yml) depends on a node named 'v_gap_scan' in package '' which was not found
+[0m19:56:18.947229 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_gap_scan_date.7441b9221f' (models/analytics/market_signals/schema.yml) depends on a node named 'v_gap_scan' in package '' which was not found
+[0m19:56:18.947379 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_gap_scan_open_today.40ab0af060' (models/analytics/market_signals/schema.yml) depends on a node named 'v_gap_scan' in package '' which was not found
+[0m19:56:18.947530 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_momentum_20d_60d_ticker.b25a293306' (models/analytics/market_signals/schema.yml) depends on a node named 'v_momentum_20d_60d' in package '' which was not found
+[0m19:56:18.947684 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_momentum_20d_60d_last_close.442620cd3a' (models/analytics/market_signals/schema.yml) depends on a node named 'v_momentum_20d_60d' in package '' which was not found
+[0m19:56:18.947831 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_distance_from_sma_ticker.6662159729' (models/analytics/market_signals/schema.yml) depends on a node named 'v_distance_from_sma' in package '' which was not found
+[0m19:56:18.947987 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_distance_from_sma_last_close.7427fc7378' (models/analytics/market_signals/schema.yml) depends on a node named 'v_distance_from_sma' in package '' which was not found
+[0m19:56:18.948137 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_breadth_pct_above_sma_pct_above_50d.7777477106' (models/analytics/market_signals/schema.yml) depends on a node named 'v_breadth_pct_above_sma' in package '' which was not found
+[0m19:56:18.948283 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_breadth_pct_above_sma_pct_above_200d.b19e289a7f' (models/analytics/market_signals/schema.yml) depends on a node named 'v_breadth_pct_above_sma' in package '' which was not found
+[0m19:56:18.948430 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_52w_scanner_ticker.2371a99fbf' (models/analytics/market_signals/schema.yml) depends on a node named 'v_52w_scanner' in package '' which was not found
+[0m19:56:18.948576 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_52w_scanner_last_close.58db4816c9' (models/analytics/market_signals/schema.yml) depends on a node named 'v_52w_scanner' in package '' which was not found
+[0m19:56:18.948721 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_atr14_pct_ticker.2a6e78ae79' (models/analytics/market_signals/schema.yml) depends on a node named 'v_atr14_pct' in package '' which was not found
+[0m19:56:18.948869 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_atr14_pct_date.d681a74f63' (models/analytics/market_signals/schema.yml) depends on a node named 'v_atr14_pct' in package '' which was not found
+[0m19:56:18.949022 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_atr14_pct_last_close.548af87d66' (models/analytics/market_signals/schema.yml) depends on a node named 'v_atr14_pct' in package '' which was not found
+[0m19:56:18.949170 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_inside_outside_day_ticker.a81d212474' (models/analytics/market_signals/schema.yml) depends on a node named 'v_inside_outside_day' in package '' which was not found
+[0m19:56:18.949314 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_inside_outside_day_date.7b7d43fcbc' (models/analytics/market_signals/schema.yml) depends on a node named 'v_inside_outside_day' in package '' which was not found
+[0m19:56:18.949460 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_inside_outside_day_day_type.57a3600234' (models/analytics/market_signals/schema.yml) depends on a node named 'v_inside_outside_day' in package '' which was not found
+[0m19:56:18.949608 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_rv30_and_rank_ticker.3d79b97341' (models/analytics/market_signals/schema.yml) depends on a node named 'v_rv30_and_rank' in package '' which was not found
+[0m19:56:19.003469 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.qi_dbt_project.meta
+[0m19:56:19.009476 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '14099bbf-e62a-4ae8-8cbf-eaab8eabda14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b15fb30>]}
+[0m19:56:19.090123 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/target/manifest.json
+[0m19:56:19.091247 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/target/semantic_manifest.json
+[0m19:56:19.101254 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '14099bbf-e62a-4ae8-8cbf-eaab8eabda14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b136ff0>]}
+[0m19:56:19.101510 [info ] [MainThread]: Found 19 models, 20 data tests, 1 source, 605 macros
+[0m19:56:19.101683 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '14099bbf-e62a-4ae8-8cbf-eaab8eabda14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b1de000>]}
+[0m19:56:19.102843 [info ] [MainThread]: 
+[0m19:56:19.103040 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:56:19.103188 [info ] [MainThread]: 
+[0m19:56:19.103432 [debug] [MainThread]: Acquiring new clickhouse connection 'master'
+[0m19:56:19.106677 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list_'
+[0m19:56:19.111932 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:56:19.572350 [debug] [ThreadPool]: dbt_clickhouse adapter: Got a retryable error when attempting to open a clickhouse connection.
+1 attempts remaining. Retrying in 1 seconds.
+Error:
+Error HTTPConnectionPool(host='qi-clickhouse', port=8123): Max retries exceeded with url: /? (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x1199e9f40>: Failed to resolve 'qi-clickhouse' ([Errno 8] nodename nor servname provided, or not known)")) executing HTTP request attempt 1 (http://qi-clickhouse:8123)
+[0m19:56:20.591127 [debug] [ThreadPool]: dbt_clickhouse adapter: Error running SQL: macro list_schemas
+[0m19:56:20.592713 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:56:20.593224 [debug] [MainThread]: Connection 'list_' was left open.
+[0m19:56:20.593594 [debug] [MainThread]: On list_: No close available on handle
+[0m19:56:20.593940 [info ] [MainThread]: 
+[0m19:56:20.594306 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 1.49 seconds (1.49s).
+[0m19:56:20.594888 [error] [MainThread]: Encountered an error:
+Database Error
+  Error HTTPConnectionPool(host='qi-clickhouse', port=8123): Max retries exceeded with url: /? (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x1199ea210>: Failed to resolve 'qi-clickhouse' ([Errno 8] nodename nor servname provided, or not known)")) executing HTTP request attempt 1 (http://qi-clickhouse:8123)
+[0m19:56:20.600762 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.783852, "process_in_blocks": "0", "process_kernel_time": 0.210467, "process_mem_max_rss": "195198976", "process_out_blocks": "0", "process_user_time": 2.111935}
+[0m19:56:20.601444 [debug] [MainThread]: Command `dbt run` failed at 19:56:20.601355 after 2.78 seconds
+[0m19:56:20.601794 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1062cf440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e1dcb00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e1dca40>]}
+[0m19:56:20.602148 [debug] [MainThread]: Flushing usage events
+[0m19:56:21.138120 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:59:17.001198 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115793d40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1155c95e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115aa4bc0>]}
+
+
+============================== 19:59:17.003887 | 935b63d6-2ffb-4bbc-8425-b9f37c235c53 ==============================
+[0m19:59:17.003887 [info ] [MainThread]: Running with dbt=1.10.13
+[0m19:59:17.004230 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'log_path': '/Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/logs', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_format': 'default', 'introspect': 'True', 'quiet': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'profiles_dir': '/Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project', 'debug': 'False', 'empty': 'None', 'invocation_command': 'dbt deps', 'warn_error': 'None', 'printer_width': '80', 'target_path': 'None', 'log_cache_events': 'False', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True'}
+[0m19:59:17.069808 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '935b63d6-2ffb-4bbc-8425-b9f37c235c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1161a0950>]}
+[0m19:59:17.088205 [debug] [MainThread]: Set downloads directory='/var/folders/tf/lr49688s3sz7sp0s0dt7yhn40000gn/T/dbt-downloads-uvjgn4q5'
+[0m19:59:17.088485 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m19:59:17.211052 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m19:59:17.212287 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m19:59:17.595109 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m19:59:17.600206 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m19:59:18.005037 [info ] [MainThread]: Installed from version 1.3.1
+[0m19:59:18.005303 [info ] [MainThread]: Up to date!
+[0m19:59:18.005517 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '935b63d6-2ffb-4bbc-8425-b9f37c235c53', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1162b13d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1162edfa0>]}
+[0m19:59:18.007238 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 1.0460229, "process_in_blocks": "0", "process_kernel_time": 0.178701, "process_mem_max_rss": "119799808", "process_out_blocks": "0", "process_user_time": 0.860013}
+[0m19:59:18.007529 [debug] [MainThread]: Command `dbt deps` succeeded at 19:59:18.007473 after 1.05 seconds
+[0m19:59:18.007718 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1151dfbf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1161a0b00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1161a0950>]}
+[0m19:59:18.007885 [debug] [MainThread]: Flushing usage events
+[0m19:59:18.658287 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:59:53.646096 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1118ada30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113019d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113019e50>]}
+
+
+============================== 19:59:53.648627 | c11767f7-8b32-41d7-b83e-58e161cf7417 ==============================
+[0m19:59:53.648627 [info ] [MainThread]: Running with dbt=1.10.13
+[0m19:59:53.648953 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'log_path': '/Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/logs', 'indirect_selection': 'eager', 'target_path': 'None', 'use_colors': 'True', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'write_json': 'True', 'no_print': 'None', 'introspect': 'True', 'warn_error': 'None', 'printer_width': '80', 'empty': 'None', 'invocation_command': 'dbt run-operation provision_analytics', 'use_experimental_parser': 'False', 'debug': 'False', 'static_parser': 'True', 'profiles_dir': '/Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project', 'partial_parse': 'True', 'log_cache_events': 'False', 'quiet': 'False'}
+[0m19:59:53.742909 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c11767f7-8b32-41d7-b83e-58e161cf7417', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110579580>]}
+[0m19:59:53.773834 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c11767f7-8b32-41d7-b83e-58e161cf7417', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113844590>]}
+[0m19:59:53.774464 [info ] [MainThread]: Registered adapter: clickhouse=1.9.5
+[0m19:59:53.842778 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m19:59:53.906333 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m19:59:53.906686 [debug] [MainThread]: Partial parsing: added file: qi_dbt_project://macros/provision_analytics.sql
+[0m19:59:53.947936 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.qi_dbt_project.meta
+[0m19:59:53.955594 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c11767f7-8b32-41d7-b83e-58e161cf7417', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1143402f0>]}
+[0m19:59:54.007199 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/target/manifest.json
+[0m19:59:54.008640 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/target/semantic_manifest.json
+[0m19:59:54.015760 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c11767f7-8b32-41d7-b83e-58e161cf7417', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114750b30>]}
+[0m19:59:54.016048 [info ] [MainThread]: Found 19 models, 20 data tests, 1 source, 606 macros
+[0m19:59:54.016223 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c11767f7-8b32-41d7-b83e-58e161cf7417', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1131cf560>]}
+[0m19:59:54.016510 [debug] [MainThread]: Acquiring new clickhouse connection 'macro_provision_analytics'
+[0m19:59:54.022309 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:59:54.330194 [debug] [MainThread]: dbt_clickhouse adapter: Got a retryable error when attempting to open a clickhouse connection.
+1 attempts remaining. Retrying in 1 seconds.
+Error:
+Error HTTPConnectionPool(host='qi-clickhouse', port=8123): Max retries exceeded with url: /? (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x11598bf50>: Failed to resolve 'qi-clickhouse' ([Errno 8] nodename nor servname provided, or not known)")) executing HTTP request attempt 1 (http://qi-clickhouse:8123)
+[0m19:59:55.347090 [debug] [MainThread]: dbt_clickhouse adapter: Error running SQL: macro provision_analytics
+[0m19:59:55.348148 [error] [MainThread]: Encountered an error while running operation: Database Error
+  Error HTTPConnectionPool(host='qi-clickhouse', port=8123): Max retries exceeded with url: /? (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x1231cf500>: Failed to resolve 'qi-clickhouse' ([Errno 8] nodename nor servname provided, or not known)")) executing HTTP request attempt 1 (http://qi-clickhouse:8123)
+[0m19:59:55.364848 [debug] [MainThread]: Traceback (most recent call last):
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.12/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/urllib3/connection.py", line 494, in request
+    self.endheaders()
+  File "/opt/homebrew/Cellar/python@3.12/3.12.12/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1333, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/opt/homebrew/Cellar/python@3.12/3.12.12/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1093, in _send_output
+    self.send(msg)
+  File "/opt/homebrew/Cellar/python@3.12/3.12.12/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1037, in send
+    self.connect()
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/urllib3/connection.py", line 325, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPConnection object at 0x11598bf50>: Failed to resolve 'qi-clickhouse' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/clickhouse_connect/driver/httpclient.py", line 522, in _raw_request
+    response = self.http.request(method, url, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/urllib3/_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/urllib3/_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/urllib3/poolmanager.py", line 459, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='qi-clickhouse', port=8123): Max retries exceeded with url: /? (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x11598bf50>: Failed to resolve 'qi-clickhouse' ([Errno 8] nodename nor servname provided, or not known)"))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/dbt/adapters/clickhouse/httpclient.py", line 57, in _create_client
+    return clickhouse_connect.get_client(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/clickhouse_connect/driver/__init__.py", line 125, in create_client
+    return HttpClient(interface, host, port, username, password, database, access_token,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/clickhouse_connect/driver/httpclient.py", line 174, in __init__
+    super().__init__(database=database,
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/clickhouse_connect/driver/client.py", line 71, in __init__
+    self._init_common_settings(apply_server_timezone)
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/clickhouse_connect/driver/client.py", line 76, in _init_common_settings
+    tuple(self.command('SELECT version(), timezone()', use_database=False))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/clickhouse_connect/driver/httpclient.py", line 412, in command
+    response = self._raw_request(payload, params, headers, method, fields=fields, server_wait=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/clickhouse_connect/driver/httpclient.py", line 534, in _raw_request
+    raise OperationalError(f'Error {ex} executing HTTP request attempt {attempts}{err_url}') from ex
+clickhouse_connect.driver.exceptions.OperationalError: Error HTTPConnectionPool(host='qi-clickhouse', port=8123): Max retries exceeded with url: /? (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x11598bf50>: Failed to resolve 'qi-clickhouse' ([Errno 8] nodename nor servname provided, or not known)")) executing HTTP request attempt 1 (http://qi-clickhouse:8123)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/dbt/adapters/base/connections.py", line 237, in retry_connection
+    connection.handle = connect()
+                        ^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/dbt/adapters/clickhouse/connections.py", line 44, in connect
+    return get_db_client(credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/dbt/adapters/clickhouse/dbclient.py", line 63, in get_db_client
+    return ChHttpClient(credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/dbt/adapters/clickhouse/dbclient.py", line 85, in __init__
+    self._client = self._create_client(credentials)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/dbt/adapters/clickhouse/httpclient.py", line 74, in _create_client
+    raise ChRetryableException(str(ex)) from ex
+dbt.adapters.clickhouse.dbclient.ChRetryableException: Error HTTPConnectionPool(host='qi-clickhouse', port=8123): Max retries exceeded with url: /? (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x11598bf50>: Failed to resolve 'qi-clickhouse' ([Errno 8] nodename nor servname provided, or not known)")) executing HTTP request attempt 1 (http://qi-clickhouse:8123)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.12/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/urllib3/connection.py", line 494, in request
+    self.endheaders()
+  File "/opt/homebrew/Cellar/python@3.12/3.12.12/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1333, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/opt/homebrew/Cellar/python@3.12/3.12.12/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1093, in _send_output
+    self.send(msg)
+  File "/opt/homebrew/Cellar/python@3.12/3.12.12/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1037, in send
+    self.connect()
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/urllib3/connection.py", line 325, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPConnection object at 0x1231cf500>: Failed to resolve 'qi-clickhouse' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/clickhouse_connect/driver/httpclient.py", line 522, in _raw_request
+    response = self.http.request(method, url, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/urllib3/_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/urllib3/_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/urllib3/poolmanager.py", line 459, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='qi-clickhouse', port=8123): Max retries exceeded with url: /? (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x1231cf500>: Failed to resolve 'qi-clickhouse' ([Errno 8] nodename nor servname provided, or not known)"))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/dbt/adapters/clickhouse/httpclient.py", line 57, in _create_client
+    return clickhouse_connect.get_client(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/clickhouse_connect/driver/__init__.py", line 125, in create_client
+    return HttpClient(interface, host, port, username, password, database, access_token,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/clickhouse_connect/driver/httpclient.py", line 174, in __init__
+    super().__init__(database=database,
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/clickhouse_connect/driver/client.py", line 71, in __init__
+    self._init_common_settings(apply_server_timezone)
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/clickhouse_connect/driver/client.py", line 76, in _init_common_settings
+    tuple(self.command('SELECT version(), timezone()', use_database=False))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/clickhouse_connect/driver/httpclient.py", line 412, in command
+    response = self._raw_request(payload, params, headers, method, fields=fields, server_wait=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/clickhouse_connect/driver/httpclient.py", line 534, in _raw_request
+    raise OperationalError(f'Error {ex} executing HTTP request attempt {attempts}{err_url}') from ex
+clickhouse_connect.driver.exceptions.OperationalError: Error HTTPConnectionPool(host='qi-clickhouse', port=8123): Max retries exceeded with url: /? (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x1231cf500>: Failed to resolve 'qi-clickhouse' ([Errno 8] nodename nor servname provided, or not known)")) executing HTTP request attempt 1 (http://qi-clickhouse:8123)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/dbt/adapters/base/connections.py", line 237, in retry_connection
+    connection.handle = connect()
+                        ^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/dbt/adapters/clickhouse/connections.py", line 44, in connect
+    return get_db_client(credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/dbt/adapters/clickhouse/dbclient.py", line 63, in get_db_client
+    return ChHttpClient(credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/dbt/adapters/clickhouse/dbclient.py", line 85, in __init__
+    self._client = self._create_client(credentials)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/dbt/adapters/clickhouse/httpclient.py", line 74, in _create_client
+    raise ChRetryableException(str(ex)) from ex
+dbt.adapters.clickhouse.dbclient.ChRetryableException: Error HTTPConnectionPool(host='qi-clickhouse', port=8123): Max retries exceeded with url: /? (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x1231cf500>: Failed to resolve 'qi-clickhouse' ([Errno 8] nodename nor servname provided, or not known)")) executing HTTP request attempt 1 (http://qi-clickhouse:8123)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/dbt/task/run_operation.py", line 64, in run
+    self._run_unsafe(package_name, macro_name)
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/dbt/task/run_operation.py", line 45, in _run_unsafe
+    res = adapter.execute_macro(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/dbt/adapters/base/impl.py", line 1282, in execute_macro
+    result = macro_function(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/dbt_common/clients/jinja.py", line 427, in __call__
+    return self.call_macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "<template>", line 20, in macro
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/dbt/clients/jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "<template>", line 33, in macro
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/dbt/clients/jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "<template>", line 52, in macro
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/dbt_common/record.py", line 512, in record_replay_wrapper
+    return func_to_record(*call_args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/dbt/adapters/base/impl.py", line 438, in execute
+    return self.connections.execute(sql=sql, auto_begin=auto_begin, fetch=fetch, limit=limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/dbt/adapters/clickhouse/connections.py", line 87, in execute
+    client = conn.handle
+             ^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/dbt/adapters/contracts/connection.py", line 96, in handle
+    self._handle.resolve(self)
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/dbt/adapters/contracts/connection.py", line 120, in resolve
+    return self.opener(connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/dbt/adapters/clickhouse/connections.py", line 46, in open
+    return cls.retry_connection(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/dbt/adapters/base/connections.py", line 254, in retry_connection
+    return cls.retry_connection(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deucalion/Developer/Python/Ademola/Family Office/qi/venv/lib/python3.12/site-packages/dbt/adapters/base/connections.py", line 245, in retry_connection
+    raise FailedToConnectError(str(e))
+dbt.adapters.exceptions.connection.FailedToConnectError: Database Error
+  Error HTTPConnectionPool(host='qi-clickhouse', port=8123): Max retries exceeded with url: /? (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x1231cf500>: Failed to resolve 'qi-clickhouse' ([Errno 8] nodename nor servname provided, or not known)")) executing HTTP request attempt 1 (http://qi-clickhouse:8123)
+
+[0m19:59:55.373359 [debug] [MainThread]: Wrote artifact RunResultsArtifact to /Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/target/run_results.json
+[0m19:59:55.377845 [debug] [MainThread]: Resource report: {"command_name": "run-operation", "command_success": false, "command_wall_clock_time": 1.7670968, "process_in_blocks": "0", "process_kernel_time": 0.199426, "process_mem_max_rss": "187482112", "process_out_blocks": "0", "process_user_time": 1.292503}
+[0m19:59:55.378400 [debug] [MainThread]: Command `dbt run-operation` failed at 19:59:55.378320 after 1.77 seconds
+[0m19:59:55.378694 [debug] [MainThread]: Connection 'macro_provision_analytics' was left open.
+[0m19:59:55.378919 [debug] [MainThread]: On macro_provision_analytics: No close available on handle
+[0m19:59:55.379168 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1140f3c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12148a360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1161dbf20>]}
+[0m19:59:55.379428 [debug] [MainThread]: Flushing usage events
+[0m19:59:55.856811 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:03:41.197360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa0539040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa309e930>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa0191820>]}
+
+
+============================== 19:03:41.201697 | 65040466-94a5-4b06-bbeb-a7a4a1a786fb ==============================
+[0m19:03:41.201697 [info ] [MainThread]: Running with dbt=1.10.13
+[0m19:03:41.202263 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'cache_selected_only': 'False', 'quiet': 'False', 'debug': 'False', 'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'version_check': 'True', 'log_path': '/opt/airflow/dags/src/qi/dbt_project/logs', 'partial_parse': 'True', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run-operation provision_analytics', 'static_parser': 'True', 'fail_fast': 'False', 'no_print': 'None', 'target_path': 'None', 'profiles_dir': '/opt/airflow/dags/src/qi/dbt_project', 'empty': 'None', 'use_colors': 'True', 'log_cache_events': 'False'}
+[0m19:03:41.325691 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '65040466-94a5-4b06-bbeb-a7a4a1a786fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa2dad820>]}
+[0m19:03:41.357460 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '65040466-94a5-4b06-bbeb-a7a4a1a786fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa08170b0>]}
+[0m19:03:41.358087 [info ] [MainThread]: Registered adapter: clickhouse=1.9.5
+[0m19:03:41.400630 [debug] [MainThread]: checksum: 87546e06832e1286bf2d49b8b108dd3f58da97cbfca650a1f147ec4aedfbbf25, vars: {}, profile: , target: dev, version: 1.10.13
+[0m19:03:41.455529 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m19:03:41.456156 [debug] [MainThread]: previous checksum: 87546e06832e1286bf2d49b8b108dd3f58da97cbfca650a1f147ec4aedfbbf25, current checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe
+[0m19:03:41.456475 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '65040466-94a5-4b06-bbeb-a7a4a1a786fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa0814680>]}
+[0m19:03:42.129424 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'key_ratios' in the 'models' section of file 'models/fundamentals/schema.yml'
+[0m19:03:42.247550 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_52w_performance' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:03:42.249285 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_top_1d_movers' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:03:42.250950 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_volume_surge' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:03:42.252351 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_gap_scan' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:03:42.253429 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_momentum_20d_60d' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:03:42.254853 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_distance_from_sma' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:03:42.256027 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_breadth_pct_above_sma' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:03:42.256942 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_52w_scanner' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:03:42.258456 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_atr14_pct' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:03:42.260208 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_inside_outside_day' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:03:42.261414 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_rv30_and_rank' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:03:42.290784 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_key_ratios_ticker.948b0ba38a' (models/fundamentals/schema.yml) depends on a node named 'key_ratios' in package '' which was not found
+[0m19:03:42.291424 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_key_ratios_fiscal_date.cadc0e1ad5' (models/fundamentals/schema.yml) depends on a node named 'key_ratios' in package '' which was not found
+[0m19:03:42.292036 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_52w_performance_ticker.4182c3bbda' (models/analytics/market_signals/schema.yml) depends on a node named 'v_52w_performance' in package '' which was not found
+[0m19:03:42.292475 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_52w_performance_last_date.993d1f2aca' (models/analytics/market_signals/schema.yml) depends on a node named 'v_52w_performance' in package '' which was not found
+[0m19:03:42.292882 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_52w_performance_last_close.b1d99a1682' (models/analytics/market_signals/schema.yml) depends on a node named 'v_52w_performance' in package '' which was not found
+[0m19:03:42.293353 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_top_1d_movers_ticker.8dee316137' (models/analytics/market_signals/schema.yml) depends on a node named 'v_top_1d_movers' in package '' which was not found
+[0m19:03:42.293761 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_top_1d_movers_last_date.677da194ca' (models/analytics/market_signals/schema.yml) depends on a node named 'v_top_1d_movers' in package '' which was not found
+[0m19:03:42.294095 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_top_1d_movers_close_last.d6aec1e87a' (models/analytics/market_signals/schema.yml) depends on a node named 'v_top_1d_movers' in package '' which was not found
+[0m19:03:42.294480 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_volume_surge_ticker.a7aa82d74f' (models/analytics/market_signals/schema.yml) depends on a node named 'v_volume_surge' in package '' which was not found
+[0m19:03:42.294845 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_volume_surge_last_date.e3a5008de8' (models/analytics/market_signals/schema.yml) depends on a node named 'v_volume_surge' in package '' which was not found
+[0m19:03:42.295215 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_volume_surge_volume_today.a1ae37125c' (models/analytics/market_signals/schema.yml) depends on a node named 'v_volume_surge' in package '' which was not found
+[0m19:03:42.295694 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_gap_scan_ticker.f99e0d187a' (models/analytics/market_signals/schema.yml) depends on a node named 'v_gap_scan' in package '' which was not found
+[0m19:03:42.296063 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_gap_scan_date.7441b9221f' (models/analytics/market_signals/schema.yml) depends on a node named 'v_gap_scan' in package '' which was not found
+[0m19:03:42.296399 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_gap_scan_open_today.40ab0af060' (models/analytics/market_signals/schema.yml) depends on a node named 'v_gap_scan' in package '' which was not found
+[0m19:03:42.296849 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_momentum_20d_60d_ticker.b25a293306' (models/analytics/market_signals/schema.yml) depends on a node named 'v_momentum_20d_60d' in package '' which was not found
+[0m19:03:42.297279 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_momentum_20d_60d_last_close.442620cd3a' (models/analytics/market_signals/schema.yml) depends on a node named 'v_momentum_20d_60d' in package '' which was not found
+[0m19:03:42.297701 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_distance_from_sma_ticker.6662159729' (models/analytics/market_signals/schema.yml) depends on a node named 'v_distance_from_sma' in package '' which was not found
+[0m19:03:42.298154 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_distance_from_sma_last_close.7427fc7378' (models/analytics/market_signals/schema.yml) depends on a node named 'v_distance_from_sma' in package '' which was not found
+[0m19:03:42.298555 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_breadth_pct_above_sma_pct_above_50d.7777477106' (models/analytics/market_signals/schema.yml) depends on a node named 'v_breadth_pct_above_sma' in package '' which was not found
+[0m19:03:42.298978 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_breadth_pct_above_sma_pct_above_200d.b19e289a7f' (models/analytics/market_signals/schema.yml) depends on a node named 'v_breadth_pct_above_sma' in package '' which was not found
+[0m19:03:42.299414 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_52w_scanner_ticker.2371a99fbf' (models/analytics/market_signals/schema.yml) depends on a node named 'v_52w_scanner' in package '' which was not found
+[0m19:03:42.299905 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_52w_scanner_last_close.58db4816c9' (models/analytics/market_signals/schema.yml) depends on a node named 'v_52w_scanner' in package '' which was not found
+[0m19:03:42.300277 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_atr14_pct_ticker.2a6e78ae79' (models/analytics/market_signals/schema.yml) depends on a node named 'v_atr14_pct' in package '' which was not found
+[0m19:03:42.300599 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_atr14_pct_date.d681a74f63' (models/analytics/market_signals/schema.yml) depends on a node named 'v_atr14_pct' in package '' which was not found
+[0m19:03:42.301134 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_atr14_pct_last_close.548af87d66' (models/analytics/market_signals/schema.yml) depends on a node named 'v_atr14_pct' in package '' which was not found
+[0m19:03:42.301612 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_inside_outside_day_ticker.a81d212474' (models/analytics/market_signals/schema.yml) depends on a node named 'v_inside_outside_day' in package '' which was not found
+[0m19:03:42.301981 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_inside_outside_day_date.7b7d43fcbc' (models/analytics/market_signals/schema.yml) depends on a node named 'v_inside_outside_day' in package '' which was not found
+[0m19:03:42.302469 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_inside_outside_day_day_type.57a3600234' (models/analytics/market_signals/schema.yml) depends on a node named 'v_inside_outside_day' in package '' which was not found
+[0m19:03:42.302926 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_rv30_and_rank_ticker.3d79b97341' (models/analytics/market_signals/schema.yml) depends on a node named 'v_rv30_and_rank' in package '' which was not found
+[0m19:03:42.357673 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.qi_dbt_project.meta
+[0m19:03:42.363481 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '65040466-94a5-4b06-bbeb-a7a4a1a786fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9f383170>]}
+[0m19:03:42.455688 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dags/src/qi/dbt_project/target/manifest.json
+[0m19:03:42.457195 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dags/src/qi/dbt_project/target/semantic_manifest.json
+[0m19:03:42.465675 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '65040466-94a5-4b06-bbeb-a7a4a1a786fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9ef883b0>]}
+[0m19:03:42.466015 [info ] [MainThread]: Found 19 models, 20 data tests, 1 source, 606 macros
+[0m19:03:42.466306 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '65040466-94a5-4b06-bbeb-a7a4a1a786fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9f3568a0>]}
+[0m19:03:42.466803 [debug] [MainThread]: Acquiring new clickhouse connection 'macro_provision_analytics'
+[0m19:03:42.472529 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:03:42.694077 [debug] [MainThread]: dbt_clickhouse adapter: On macro_provision_analytics: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "connection_name": "macro_provision_analytics"} */
+
+    CREATE DATABASE IF NOT EXISTS analytics
+  ...
+[0m19:03:42.700643 [debug] [MainThread]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m19:03:42.708193 [info ] [MainThread]: Provisioned analytics DB ✅
+[0m19:03:42.712360 [debug] [MainThread]: Wrote artifact RunResultsArtifact to /opt/airflow/dags/src/qi/dbt_project/target/run_results.json
+[0m19:03:42.713062 [debug] [MainThread]: Resource report: {"command_name": "run-operation", "command_success": true, "command_wall_clock_time": 1.5427992, "process_in_blocks": "11872", "process_kernel_time": 0.128907, "process_mem_max_rss": "201536", "process_out_blocks": "3384", "process_user_time": 3.295639}
+[0m19:03:42.713403 [debug] [MainThread]: Command `dbt run-operation` succeeded at 19:03:42.713352 after 1.54 seconds
+[0m19:03:42.713686 [debug] [MainThread]: Connection 'macro_provision_analytics' was left open.
+[0m19:03:42.713909 [debug] [MainThread]: On macro_provision_analytics: Close
+[0m19:03:42.714176 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa058d580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9ef8af30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff78b7b2c0>]}
+[0m19:03:42.714429 [debug] [MainThread]: Flushing usage events
+[0m19:03:43.292021 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:05:51.785845 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060ca180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064f1fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064f1f40>]}
+
+
+============================== 20:05:51.788423 | 699afb30-be28-4bea-b9c2-b7746edf9b86 ==============================
+[0m20:05:51.788423 [info ] [MainThread]: Running with dbt=1.10.13
+[0m20:05:51.788756 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'warn_error': 'None', 'use_experimental_parser': 'False', 'write_json': 'True', 'profiles_dir': '/Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project', 'quiet': 'False', 'use_colors': 'True', 'printer_width': '80', 'log_format': 'default', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'invocation_command': 'dbt run --select analytics', 'empty': 'False', 'version_check': 'True', 'fail_fast': 'False', 'log_cache_events': 'False', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'target_path': 'None', 'log_path': '/Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/logs', 'introspect': 'True', 'indirect_selection': 'eager'}
+[0m20:05:51.882090 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '699afb30-be28-4bea-b9c2-b7746edf9b86', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1072afe00>]}
+[0m20:05:51.912631 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '699afb30-be28-4bea-b9c2-b7746edf9b86', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106545610>]}
+[0m20:05:51.913111 [info ] [MainThread]: Registered adapter: clickhouse=1.9.5
+[0m20:05:51.981814 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m20:05:52.035277 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m20:05:52.035566 [debug] [MainThread]: previous checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, current checksum: 87546e06832e1286bf2d49b8b108dd3f58da97cbfca650a1f147ec4aedfbbf25
+[0m20:05:52.035746 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '699afb30-be28-4bea-b9c2-b7746edf9b86', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b4af00>]}
+[0m20:05:52.702423 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'key_ratios' in the 'models' section of file 'models/fundamentals/schema.yml'
+[0m20:05:52.812212 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_52w_performance' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m20:05:52.813255 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_top_1d_movers' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m20:05:52.814132 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_volume_surge' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m20:05:52.815122 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_gap_scan' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m20:05:52.815832 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_momentum_20d_60d' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m20:05:52.816767 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_distance_from_sma' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m20:05:52.817412 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_breadth_pct_above_sma' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m20:05:52.817881 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_52w_scanner' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m20:05:52.818668 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_atr14_pct' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m20:05:52.819623 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_inside_outside_day' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m20:05:52.820258 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_rv30_and_rank' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m20:05:52.848658 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_key_ratios_ticker.948b0ba38a' (models/fundamentals/schema.yml) depends on a node named 'key_ratios' in package '' which was not found
+[0m20:05:52.848972 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_key_ratios_fiscal_date.cadc0e1ad5' (models/fundamentals/schema.yml) depends on a node named 'key_ratios' in package '' which was not found
+[0m20:05:52.849177 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_52w_performance_ticker.4182c3bbda' (models/analytics/market_signals/schema.yml) depends on a node named 'v_52w_performance' in package '' which was not found
+[0m20:05:52.849344 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_52w_performance_last_date.993d1f2aca' (models/analytics/market_signals/schema.yml) depends on a node named 'v_52w_performance' in package '' which was not found
+[0m20:05:52.849504 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_52w_performance_last_close.b1d99a1682' (models/analytics/market_signals/schema.yml) depends on a node named 'v_52w_performance' in package '' which was not found
+[0m20:05:52.849656 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_top_1d_movers_ticker.8dee316137' (models/analytics/market_signals/schema.yml) depends on a node named 'v_top_1d_movers' in package '' which was not found
+[0m20:05:52.849806 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_top_1d_movers_last_date.677da194ca' (models/analytics/market_signals/schema.yml) depends on a node named 'v_top_1d_movers' in package '' which was not found
+[0m20:05:52.849958 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_top_1d_movers_close_last.d6aec1e87a' (models/analytics/market_signals/schema.yml) depends on a node named 'v_top_1d_movers' in package '' which was not found
+[0m20:05:52.850102 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_volume_surge_ticker.a7aa82d74f' (models/analytics/market_signals/schema.yml) depends on a node named 'v_volume_surge' in package '' which was not found
+[0m20:05:52.850246 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_volume_surge_last_date.e3a5008de8' (models/analytics/market_signals/schema.yml) depends on a node named 'v_volume_surge' in package '' which was not found
+[0m20:05:52.850390 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_volume_surge_volume_today.a1ae37125c' (models/analytics/market_signals/schema.yml) depends on a node named 'v_volume_surge' in package '' which was not found
+[0m20:05:52.850536 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_gap_scan_ticker.f99e0d187a' (models/analytics/market_signals/schema.yml) depends on a node named 'v_gap_scan' in package '' which was not found
+[0m20:05:52.850680 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_gap_scan_date.7441b9221f' (models/analytics/market_signals/schema.yml) depends on a node named 'v_gap_scan' in package '' which was not found
+[0m20:05:52.850824 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_gap_scan_open_today.40ab0af060' (models/analytics/market_signals/schema.yml) depends on a node named 'v_gap_scan' in package '' which was not found
+[0m20:05:52.850967 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_momentum_20d_60d_ticker.b25a293306' (models/analytics/market_signals/schema.yml) depends on a node named 'v_momentum_20d_60d' in package '' which was not found
+[0m20:05:52.851111 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_momentum_20d_60d_last_close.442620cd3a' (models/analytics/market_signals/schema.yml) depends on a node named 'v_momentum_20d_60d' in package '' which was not found
+[0m20:05:52.851255 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_distance_from_sma_ticker.6662159729' (models/analytics/market_signals/schema.yml) depends on a node named 'v_distance_from_sma' in package '' which was not found
+[0m20:05:52.851396 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_distance_from_sma_last_close.7427fc7378' (models/analytics/market_signals/schema.yml) depends on a node named 'v_distance_from_sma' in package '' which was not found
+[0m20:05:52.851539 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_breadth_pct_above_sma_pct_above_50d.7777477106' (models/analytics/market_signals/schema.yml) depends on a node named 'v_breadth_pct_above_sma' in package '' which was not found
+[0m20:05:52.851684 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_breadth_pct_above_sma_pct_above_200d.b19e289a7f' (models/analytics/market_signals/schema.yml) depends on a node named 'v_breadth_pct_above_sma' in package '' which was not found
+[0m20:05:52.851825 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_52w_scanner_ticker.2371a99fbf' (models/analytics/market_signals/schema.yml) depends on a node named 'v_52w_scanner' in package '' which was not found
+[0m20:05:52.851968 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_52w_scanner_last_close.58db4816c9' (models/analytics/market_signals/schema.yml) depends on a node named 'v_52w_scanner' in package '' which was not found
+[0m20:05:52.852110 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_atr14_pct_ticker.2a6e78ae79' (models/analytics/market_signals/schema.yml) depends on a node named 'v_atr14_pct' in package '' which was not found
+[0m20:05:52.852249 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_atr14_pct_date.d681a74f63' (models/analytics/market_signals/schema.yml) depends on a node named 'v_atr14_pct' in package '' which was not found
+[0m20:05:52.852390 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_atr14_pct_last_close.548af87d66' (models/analytics/market_signals/schema.yml) depends on a node named 'v_atr14_pct' in package '' which was not found
+[0m20:05:52.852532 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_inside_outside_day_ticker.a81d212474' (models/analytics/market_signals/schema.yml) depends on a node named 'v_inside_outside_day' in package '' which was not found
+[0m20:05:52.852676 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_inside_outside_day_date.7b7d43fcbc' (models/analytics/market_signals/schema.yml) depends on a node named 'v_inside_outside_day' in package '' which was not found
+[0m20:05:52.852819 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_inside_outside_day_day_type.57a3600234' (models/analytics/market_signals/schema.yml) depends on a node named 'v_inside_outside_day' in package '' which was not found
+[0m20:05:52.852963 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_rv30_and_rank_ticker.3d79b97341' (models/analytics/market_signals/schema.yml) depends on a node named 'v_rv30_and_rank' in package '' which was not found
+[0m20:05:52.905310 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.qi_dbt_project.meta
+[0m20:05:52.911114 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '699afb30-be28-4bea-b9c2-b7746edf9b86', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e48bc0>]}
+[0m20:05:52.991825 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/target/manifest.json
+[0m20:05:52.992948 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/target/semantic_manifest.json
+[0m20:05:53.001504 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '699afb30-be28-4bea-b9c2-b7746edf9b86', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e36a20>]}
+[0m20:05:53.001747 [info ] [MainThread]: Found 19 models, 20 data tests, 1 source, 606 macros
+[0m20:05:53.001918 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '699afb30-be28-4bea-b9c2-b7746edf9b86', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107edd7f0>]}
+[0m20:05:53.003006 [info ] [MainThread]: 
+[0m20:05:53.003172 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m20:05:53.003306 [info ] [MainThread]: 
+[0m20:05:53.003530 [debug] [MainThread]: Acquiring new clickhouse connection 'master'
+[0m20:05:53.006628 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list_'
+[0m20:05:53.012156 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:05:53.299188 [debug] [ThreadPool]: dbt_clickhouse adapter: Got a retryable error when attempting to open a clickhouse connection.
+1 attempts remaining. Retrying in 1 seconds.
+Error:
+Error HTTPConnectionPool(host='qi-clickhouse', port=8123): Max retries exceeded with url: /? (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x10bbfc680>: Failed to resolve 'qi-clickhouse' ([Errno 8] nodename nor servname provided, or not known)")) executing HTTP request attempt 1 (http://qi-clickhouse:8123)
+[0m20:05:54.317078 [debug] [ThreadPool]: dbt_clickhouse adapter: Error running SQL: macro list_schemas
+[0m20:05:54.318611 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:05:54.319156 [debug] [MainThread]: Connection 'list_' was left open.
+[0m20:05:54.319548 [debug] [MainThread]: On list_: No close available on handle
+[0m20:05:54.319927 [info ] [MainThread]: 
+[0m20:05:54.320334 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 1.32 seconds (1.32s).
+[0m20:05:54.321040 [error] [MainThread]: Encountered an error:
+Database Error
+  Error HTTPConnectionPool(host='qi-clickhouse', port=8123): Max retries exceeded with url: /? (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x10f2d96a0>: Failed to resolve 'qi-clickhouse' ([Errno 8] nodename nor servname provided, or not known)")) executing HTTP request attempt 1 (http://qi-clickhouse:8123)
+[0m20:05:54.326718 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.5768206, "process_in_blocks": "0", "process_kernel_time": 0.214128, "process_mem_max_rss": "194379776", "process_out_blocks": "0", "process_user_time": 2.118094}
+[0m20:05:54.327611 [debug] [MainThread]: Command `dbt run` failed at 20:05:54.327509 after 2.58 seconds
+[0m20:05:54.328039 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070c0ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dc7cef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba8a4e0>]}
+[0m20:05:54.328522 [debug] [MainThread]: Flushing usage events
+[0m20:05:54.919538 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:06:36.659961 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107bf8800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a15f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a15e80>]}
+
+
+============================== 20:06:36.662415 | efa92697-c4fa-4307-92d1-d8f6175ea147 ==============================
+[0m20:06:36.662415 [info ] [MainThread]: Running with dbt=1.10.13
+[0m20:06:36.662755 [debug] [MainThread]: running dbt with arguments {'empty': 'None', 'version_check': 'True', 'use_colors': 'True', 'no_print': 'None', 'static_parser': 'True', 'use_experimental_parser': 'False', 'target_path': 'None', 'debug': 'False', 'log_path': '/Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/logs', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'quiet': 'False', 'introspect': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'partial_parse': 'True', 'profiles_dir': '/Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project', 'write_json': 'True', 'invocation_command': 'dbt test --select analytics', 'log_format': 'default', 'warn_error': 'None'}
+[0m20:06:36.753273 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'efa92697-c4fa-4307-92d1-d8f6175ea147', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108bb5a30>]}
+[0m20:06:36.783165 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'efa92697-c4fa-4307-92d1-d8f6175ea147', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107965d30>]}
+[0m20:06:36.783713 [info ] [MainThread]: Registered adapter: clickhouse=1.9.5
+[0m20:06:36.851614 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m20:06:36.916185 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m20:06:36.916433 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m20:06:36.920017 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.qi_dbt_project.meta
+[0m20:06:36.942008 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'efa92697-c4fa-4307-92d1-d8f6175ea147', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108fbc980>]}
+[0m20:06:36.995308 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/target/manifest.json
+[0m20:06:36.996610 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/target/semantic_manifest.json
+[0m20:06:37.011555 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'efa92697-c4fa-4307-92d1-d8f6175ea147', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109c1b0b0>]}
+[0m20:06:37.011831 [info ] [MainThread]: Found 19 models, 20 data tests, 1 source, 606 macros
+[0m20:06:37.011999 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'efa92697-c4fa-4307-92d1-d8f6175ea147', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109bd7f80>]}
+[0m20:06:37.012942 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m20:06:37.013875 [debug] [MainThread]: Command end result
+[0m20:06:37.062645 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/target/manifest.json
+[0m20:06:37.063657 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/target/semantic_manifest.json
+[0m20:06:37.065499 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/deucalion/Developer/Python/Ademola/Family Office/qi/src/qi/dbt_project/target/run_results.json
+[0m20:06:37.066978 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 0.44247022, "process_in_blocks": "0", "process_kernel_time": 0.15533, "process_mem_max_rss": "125239296", "process_out_blocks": "0", "process_user_time": 1.074108}
+[0m20:06:37.067220 [debug] [MainThread]: Command `dbt test` succeeded at 20:06:37.067176 after 0.44 seconds
+[0m20:06:37.067430 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108474d40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105729e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a9a540>]}
+[0m20:06:37.067616 [debug] [MainThread]: Flushing usage events
+[0m20:06:37.588582 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:08:37.816000 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7fb36600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7f3d6240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7fb755b0>]}
+
+
+============================== 19:08:37.819965 | 57f09c34-4196-4aac-9f37-9a846caded17 ==============================
+[0m19:08:37.819965 [info ] [MainThread]: Running with dbt=1.10.13
+[0m19:08:37.820588 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'target_path': 'None', 'version_check': 'True', 'profiles_dir': '/opt/airflow/dags/src/qi/dbt_project', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'quiet': 'False', 'indirect_selection': 'eager', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'empty': 'False', 'no_print': 'None', 'use_colors': 'True', 'partial_parse': 'True', 'log_path': '/opt/airflow/dags/src/qi/dbt_project/logs', 'static_parser': 'True', 'fail_fast': 'False', 'introspect': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run --select analytics', 'printer_width': '80', 'cache_selected_only': 'False', 'log_cache_events': 'False'}
+[0m19:08:37.918363 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '57f09c34-4196-4aac-9f37-9a846caded17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7f0f0350>]}
+[0m19:08:37.949213 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '57f09c34-4196-4aac-9f37-9a846caded17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8009af90>]}
+[0m19:08:37.949780 [info ] [MainThread]: Registered adapter: clickhouse=1.9.5
+[0m19:08:37.992553 [debug] [MainThread]: checksum: 87546e06832e1286bf2d49b8b108dd3f58da97cbfca650a1f147ec4aedfbbf25, vars: {}, profile: , target: dev, version: 1.10.13
+[0m19:08:38.047565 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m19:08:38.048053 [debug] [MainThread]: previous checksum: 87546e06832e1286bf2d49b8b108dd3f58da97cbfca650a1f147ec4aedfbbf25, current checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe
+[0m19:08:38.048441 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '57f09c34-4196-4aac-9f37-9a846caded17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7fa1c890>]}
+[0m19:08:38.740387 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'key_ratios' in the 'models' section of file 'models/fundamentals/schema.yml'
+[0m19:08:38.862639 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_52w_performance' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:08:38.864161 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_top_1d_movers' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:08:38.865704 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_volume_surge' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:08:38.867064 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_gap_scan' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:08:38.868139 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_momentum_20d_60d' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:08:38.869469 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_distance_from_sma' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:08:38.870486 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_breadth_pct_above_sma' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:08:38.871263 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_52w_scanner' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:08:38.872433 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_atr14_pct' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:08:38.874163 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_inside_outside_day' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:08:38.875447 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_rv30_and_rank' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m19:08:38.905726 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_key_ratios_ticker.948b0ba38a' (models/fundamentals/schema.yml) depends on a node named 'key_ratios' in package '' which was not found
+[0m19:08:38.906397 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_key_ratios_fiscal_date.cadc0e1ad5' (models/fundamentals/schema.yml) depends on a node named 'key_ratios' in package '' which was not found
+[0m19:08:38.907073 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_52w_performance_ticker.4182c3bbda' (models/analytics/market_signals/schema.yml) depends on a node named 'v_52w_performance' in package '' which was not found
+[0m19:08:38.907514 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_52w_performance_last_date.993d1f2aca' (models/analytics/market_signals/schema.yml) depends on a node named 'v_52w_performance' in package '' which was not found
+[0m19:08:38.907979 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_52w_performance_last_close.b1d99a1682' (models/analytics/market_signals/schema.yml) depends on a node named 'v_52w_performance' in package '' which was not found
+[0m19:08:38.908367 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_top_1d_movers_ticker.8dee316137' (models/analytics/market_signals/schema.yml) depends on a node named 'v_top_1d_movers' in package '' which was not found
+[0m19:08:38.908712 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_top_1d_movers_last_date.677da194ca' (models/analytics/market_signals/schema.yml) depends on a node named 'v_top_1d_movers' in package '' which was not found
+[0m19:08:38.909134 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_top_1d_movers_close_last.d6aec1e87a' (models/analytics/market_signals/schema.yml) depends on a node named 'v_top_1d_movers' in package '' which was not found
+[0m19:08:38.909535 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_volume_surge_ticker.a7aa82d74f' (models/analytics/market_signals/schema.yml) depends on a node named 'v_volume_surge' in package '' which was not found
+[0m19:08:38.909888 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_volume_surge_last_date.e3a5008de8' (models/analytics/market_signals/schema.yml) depends on a node named 'v_volume_surge' in package '' which was not found
+[0m19:08:38.910355 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_volume_surge_volume_today.a1ae37125c' (models/analytics/market_signals/schema.yml) depends on a node named 'v_volume_surge' in package '' which was not found
+[0m19:08:38.910797 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_gap_scan_ticker.f99e0d187a' (models/analytics/market_signals/schema.yml) depends on a node named 'v_gap_scan' in package '' which was not found
+[0m19:08:38.911216 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_gap_scan_date.7441b9221f' (models/analytics/market_signals/schema.yml) depends on a node named 'v_gap_scan' in package '' which was not found
+[0m19:08:38.911542 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_gap_scan_open_today.40ab0af060' (models/analytics/market_signals/schema.yml) depends on a node named 'v_gap_scan' in package '' which was not found
+[0m19:08:38.911894 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_momentum_20d_60d_ticker.b25a293306' (models/analytics/market_signals/schema.yml) depends on a node named 'v_momentum_20d_60d' in package '' which was not found
+[0m19:08:38.912235 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_momentum_20d_60d_last_close.442620cd3a' (models/analytics/market_signals/schema.yml) depends on a node named 'v_momentum_20d_60d' in package '' which was not found
+[0m19:08:38.912676 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_distance_from_sma_ticker.6662159729' (models/analytics/market_signals/schema.yml) depends on a node named 'v_distance_from_sma' in package '' which was not found
+[0m19:08:38.913066 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_distance_from_sma_last_close.7427fc7378' (models/analytics/market_signals/schema.yml) depends on a node named 'v_distance_from_sma' in package '' which was not found
+[0m19:08:38.913426 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_breadth_pct_above_sma_pct_above_50d.7777477106' (models/analytics/market_signals/schema.yml) depends on a node named 'v_breadth_pct_above_sma' in package '' which was not found
+[0m19:08:38.913764 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_breadth_pct_above_sma_pct_above_200d.b19e289a7f' (models/analytics/market_signals/schema.yml) depends on a node named 'v_breadth_pct_above_sma' in package '' which was not found
+[0m19:08:38.914200 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_52w_scanner_ticker.2371a99fbf' (models/analytics/market_signals/schema.yml) depends on a node named 'v_52w_scanner' in package '' which was not found
+[0m19:08:38.914535 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_52w_scanner_last_close.58db4816c9' (models/analytics/market_signals/schema.yml) depends on a node named 'v_52w_scanner' in package '' which was not found
+[0m19:08:38.914933 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_atr14_pct_ticker.2a6e78ae79' (models/analytics/market_signals/schema.yml) depends on a node named 'v_atr14_pct' in package '' which was not found
+[0m19:08:38.915306 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_atr14_pct_date.d681a74f63' (models/analytics/market_signals/schema.yml) depends on a node named 'v_atr14_pct' in package '' which was not found
+[0m19:08:38.915843 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_atr14_pct_last_close.548af87d66' (models/analytics/market_signals/schema.yml) depends on a node named 'v_atr14_pct' in package '' which was not found
+[0m19:08:38.916239 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_inside_outside_day_ticker.a81d212474' (models/analytics/market_signals/schema.yml) depends on a node named 'v_inside_outside_day' in package '' which was not found
+[0m19:08:38.916658 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_inside_outside_day_date.7b7d43fcbc' (models/analytics/market_signals/schema.yml) depends on a node named 'v_inside_outside_day' in package '' which was not found
+[0m19:08:38.917119 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_inside_outside_day_day_type.57a3600234' (models/analytics/market_signals/schema.yml) depends on a node named 'v_inside_outside_day' in package '' which was not found
+[0m19:08:38.917518 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_rv30_and_rank_ticker.3d79b97341' (models/analytics/market_signals/schema.yml) depends on a node named 'v_rv30_and_rank' in package '' which was not found
+[0m19:08:38.972532 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.qi_dbt_project.meta
+[0m19:08:38.978460 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '57f09c34-4196-4aac-9f37-9a846caded17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7e90b2c0>]}
+[0m19:08:39.071561 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dags/src/qi/dbt_project/target/manifest.json
+[0m19:08:39.073161 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dags/src/qi/dbt_project/target/semantic_manifest.json
+[0m19:08:39.086841 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '57f09c34-4196-4aac-9f37-9a846caded17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7e139c10>]}
+[0m19:08:39.087228 [info ] [MainThread]: Found 19 models, 20 data tests, 1 source, 606 macros
+[0m19:08:39.087617 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '57f09c34-4196-4aac-9f37-9a846caded17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7e19c3e0>]}
+[0m19:08:39.089132 [info ] [MainThread]: 
+[0m19:08:39.089480 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:08:39.089904 [info ] [MainThread]: 
+[0m19:08:39.090395 [debug] [MainThread]: Acquiring new clickhouse connection 'master'
+[0m19:08:39.094022 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list_'
+[0m19:08:39.099716 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:08:39.309113 [debug] [ThreadPool]: dbt_clickhouse adapter: On list_: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "connection_name": "list_"} */
+
+    select name from system.databases
+  ...
+[0m19:08:39.310744 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m19:08:39.320080 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list__fundamentals'
+[0m19:08:39.323833 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:08:39.339411 [debug] [ThreadPool]: dbt_clickhouse adapter: On list__fundamentals: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "connection_name": "list__fundamentals"} */
+select
+      t.name as name,
+      t.database as schema,
+      multiIf(
+        engine in ('MaterializedView', 'View'), 'view',
+        engine = 'Dictionary', 'dictionary',
+        'table'
+      ) as type,
+      db.engine as db_engine,0 as is_on_cluster
+          from system.tables as t join system.databases as db on t.database = db.name
+        where schema = 'fundamentals'
+      
+
+  ...
+[0m19:08:39.342110 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m19:08:39.343208 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list__fundamentals, now list__analytics)
+[0m19:08:39.344880 [debug] [ThreadPool]: dbt_clickhouse adapter: On list__analytics: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "connection_name": "list__analytics"} */
+select
+      t.name as name,
+      t.database as schema,
+      multiIf(
+        engine in ('MaterializedView', 'View'), 'view',
+        engine = 'Dictionary', 'dictionary',
+        'table'
+      ) as type,
+      db.engine as db_engine,0 as is_on_cluster
+          from system.tables as t join system.databases as db on t.database = db.name
+        where schema = 'analytics'
+      
+
+  ...
+[0m19:08:39.350354 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m19:08:39.351303 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list__analytics, now list__market)
+[0m19:08:39.352619 [debug] [ThreadPool]: dbt_clickhouse adapter: On list__market: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "connection_name": "list__market"} */
+select
+      t.name as name,
+      t.database as schema,
+      multiIf(
+        engine in ('MaterializedView', 'View'), 'view',
+        engine = 'Dictionary', 'dictionary',
+        'table'
+      ) as type,
+      db.engine as db_engine,0 as is_on_cluster
+          from system.tables as t join system.databases as db on t.database = db.name
+        where schema = 'market'
+      
+
+  ...
+[0m19:08:39.355214 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m19:08:39.356500 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '57f09c34-4196-4aac-9f37-9a846caded17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7e5f8fe0>]}
+[0m19:08:39.359288 [debug] [Thread-1 (]: Began running node model.qi_dbt_project.00_v_52w_performance
+[0m19:08:39.359813 [info ] [Thread-1 (]: 1 of 11 START sql view model `analytics`.`00_v_52w_performance` ................ [RUN]
+[0m19:08:39.360237 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list__market, now model.qi_dbt_project.00_v_52w_performance)
+[0m19:08:39.360596 [debug] [Thread-1 (]: Began compiling node model.qi_dbt_project.00_v_52w_performance
+[0m19:08:39.364670 [debug] [Thread-1 (]: Writing injected SQL for node "model.qi_dbt_project.00_v_52w_performance"
+[0m19:08:39.365843 [debug] [Thread-1 (]: Began executing node model.qi_dbt_project.00_v_52w_performance
+[0m19:08:39.373353 [debug] [Thread-1 (]: Creating new relation 00_v_52w_performance
+[0m19:08:39.381956 [debug] [Thread-1 (]: Writing runtime sql for node "model.qi_dbt_project.00_v_52w_performance"
+[0m19:08:39.383221 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.qi_dbt_project.00_v_52w_performance: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "model.qi_dbt_project.00_v_52w_performance"} */
+
+
+  create or replace view `analytics`.`00_v_52w_performance` 
+  
+    
+  
+  
+    
+    
+  as (
+    
+
+WITH addYears(today(), -1) AS cutoff
+SELECT
+    ticker,
+    argMax(short_name, date) AS name,
+    max(date)                AS last_date,
+    argMax(close, date)      AS last_close,
+    maxIf(close, date >= cutoff) AS high_52w,
+    minIf(close, date >= cutoff) AS low_52w,
+    round(100 * (argMax(close, date) - minIf(close, date >= cutoff))
+          / nullIf(minIf(close, date >= cutoff), 0), 2) AS pct_from_low,
+    round(100 * (argMax(close, date) - maxIf(close, date >= cutoff))
+          / nullIf(maxIf(close, date >= cutoff), 0), 2) AS pct_from_high
+FROM market.daily_prices
+WHERE date >= cutoff
+GROUP BY ticker
+ORDER BY pct_from_low DESC
+LIMIT 20
+    
+  )
+      
+      
+                    -- end_of_sql
+                    
+                    ...
+[0m19:08:39.387803 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m19:08:39.398671 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '57f09c34-4196-4aac-9f37-9a846caded17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff484d2ab0>]}
+[0m19:08:39.399198 [info ] [Thread-1 (]: 1 of 11 OK created sql view model `analytics`.`00_v_52w_performance` ........... [[32mOK[0m in 0.04s]
+[0m19:08:39.399733 [debug] [Thread-1 (]: Finished running node model.qi_dbt_project.00_v_52w_performance
+[0m19:08:39.400074 [debug] [Thread-1 (]: Began running node model.qi_dbt_project.01_v_top_1d_movers
+[0m19:08:39.400420 [info ] [Thread-1 (]: 2 of 11 START sql view model `analytics`.`01_v_top_1d_movers` .................. [RUN]
+[0m19:08:39.400826 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.qi_dbt_project.00_v_52w_performance, now model.qi_dbt_project.01_v_top_1d_movers)
+[0m19:08:39.401110 [debug] [Thread-1 (]: Began compiling node model.qi_dbt_project.01_v_top_1d_movers
+[0m19:08:39.450041 [debug] [Thread-1 (]: Writing injected SQL for node "model.qi_dbt_project.01_v_top_1d_movers"
+[0m19:08:39.451156 [debug] [Thread-1 (]: Began executing node model.qi_dbt_project.01_v_top_1d_movers
+[0m19:08:39.452475 [debug] [Thread-1 (]: Creating new relation 01_v_top_1d_movers
+[0m19:08:39.452979 [debug] [Thread-1 (]: Writing runtime sql for node "model.qi_dbt_project.01_v_top_1d_movers"
+[0m19:08:39.453743 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.qi_dbt_project.01_v_top_1d_movers: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "model.qi_dbt_project.01_v_top_1d_movers"} */
+
+
+  create or replace view `analytics`.`01_v_top_1d_movers` 
+  
+    
+  
+  
+    
+    
+  as (
+    
+
+WITH
+  d AS (SELECT max(date) AS d FROM market.daily_prices),
+  prev_d AS (
+    SELECT max(date) AS d
+    FROM market.daily_prices
+    WHERE date < (SELECT d FROM d)
+  )
+SELECT
+  ticker,
+  argMax(short_name, date)                                           AS name,
+  (SELECT d FROM d)                                                  AS last_date,
+  argMaxIf(close, date, date = (SELECT d FROM d))                    AS close_last,
+  argMaxIf(close, date, date = (SELECT d FROM prev_d))               AS close_prev,
+  round(100 * (close_last - nullIf(close_prev, 0)) / nullIf(close_prev, 0), 2) AS pct_change
+FROM market.daily_prices
+WHERE date IN ((SELECT d FROM d), (SELECT d FROM prev_d))
+GROUP BY ticker
+HAVING close_last IS NOT NULL AND close_prev IS NOT NULL
+ORDER BY pct_change DESC
+LIMIT 50
+    
+  )
+      
+      
+                    -- end_of_sql
+                    
+                    ...
+[0m19:08:39.459753 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m19:08:39.461389 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '57f09c34-4196-4aac-9f37-9a846caded17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff484bd850>]}
+[0m19:08:39.462066 [info ] [Thread-1 (]: 2 of 11 OK created sql view model `analytics`.`01_v_top_1d_movers` ............. [[32mOK[0m in 0.06s]
+[0m19:08:39.462664 [debug] [Thread-1 (]: Finished running node model.qi_dbt_project.01_v_top_1d_movers
+[0m19:08:39.463018 [debug] [Thread-1 (]: Began running node model.qi_dbt_project.02_v_volume_surge
+[0m19:08:39.463377 [info ] [Thread-1 (]: 3 of 11 START sql view model `analytics`.`02_v_volume_surge` ................... [RUN]
+[0m19:08:39.463755 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.qi_dbt_project.01_v_top_1d_movers, now model.qi_dbt_project.02_v_volume_surge)
+[0m19:08:39.464135 [debug] [Thread-1 (]: Began compiling node model.qi_dbt_project.02_v_volume_surge
+[0m19:08:39.466133 [debug] [Thread-1 (]: Writing injected SQL for node "model.qi_dbt_project.02_v_volume_surge"
+[0m19:08:39.466952 [debug] [Thread-1 (]: Began executing node model.qi_dbt_project.02_v_volume_surge
+[0m19:08:39.468311 [debug] [Thread-1 (]: Creating new relation 02_v_volume_surge
+[0m19:08:39.468859 [debug] [Thread-1 (]: Writing runtime sql for node "model.qi_dbt_project.02_v_volume_surge"
+[0m19:08:39.469613 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.qi_dbt_project.02_v_volume_surge: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "model.qi_dbt_project.02_v_volume_surge"} */
+
+
+  create or replace view `analytics`.`02_v_volume_surge` 
+  
+    
+  
+  
+    
+    
+  as (
+    
+
+WITH d AS (SELECT max(date) AS d FROM market.daily_prices)
+SELECT
+  ticker,
+  argMax(short_name, date)                                             AS name,
+  (SELECT d FROM d)                                                    AS last_date,
+  argMaxIf(volume, date, date = (SELECT d FROM d))                     AS volume_today,
+  avgIf(volume, date >= (SELECT d FROM d) - toIntervalDay(20)
+                 AND date <= (SELECT d FROM d))                        AS vol_20d_avg,
+  round(volume_today / nullIf(vol_20d_avg, 0), 2)                      AS vol_surge
+FROM market.daily_prices
+WHERE date >= (SELECT d FROM d) - toIntervalDay(20)
+GROUP BY ticker
+HAVING volume_today IS NOT NULL AND vol_20d_avg > 0
+ORDER BY vol_surge DESC
+LIMIT 50
+    
+  )
+      
+      
+                    -- end_of_sql
+                    
+                    ...
+[0m19:08:39.474995 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m19:08:39.476391 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '57f09c34-4196-4aac-9f37-9a846caded17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff4848db20>]}
+[0m19:08:39.476883 [info ] [Thread-1 (]: 3 of 11 OK created sql view model `analytics`.`02_v_volume_surge` .............. [[32mOK[0m in 0.01s]
+[0m19:08:39.477433 [debug] [Thread-1 (]: Finished running node model.qi_dbt_project.02_v_volume_surge
+[0m19:08:39.477769 [debug] [Thread-1 (]: Began running node model.qi_dbt_project.03_v_gap_scan
+[0m19:08:39.478109 [info ] [Thread-1 (]: 4 of 11 START sql view model `analytics`.`03_v_gap_scan` ....................... [RUN]
+[0m19:08:39.478521 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.qi_dbt_project.02_v_volume_surge, now model.qi_dbt_project.03_v_gap_scan)
+[0m19:08:39.478986 [debug] [Thread-1 (]: Began compiling node model.qi_dbt_project.03_v_gap_scan
+[0m19:08:39.480810 [debug] [Thread-1 (]: Writing injected SQL for node "model.qi_dbt_project.03_v_gap_scan"
+[0m19:08:39.481629 [debug] [Thread-1 (]: Began executing node model.qi_dbt_project.03_v_gap_scan
+[0m19:08:39.483199 [debug] [Thread-1 (]: Creating new relation 03_v_gap_scan
+[0m19:08:39.483913 [debug] [Thread-1 (]: Writing runtime sql for node "model.qi_dbt_project.03_v_gap_scan"
+[0m19:08:39.484787 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.qi_dbt_project.03_v_gap_scan: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "model.qi_dbt_project.03_v_gap_scan"} */
+
+
+  create or replace view `analytics`.`03_v_gap_scan` 
+  
+    
+  
+  
+    
+    
+  as (
+    
+
+WITH latest AS (SELECT max(date) d FROM market.daily_prices)
+SELECT
+  t.ticker,
+  argMax(t.short_name, t.date) AS name,
+  anyLast(t.date)              AS date,
+  anyLast(t.open)              AS open_today,
+  anyLast(prev_close)          AS prev_close,
+  (open_today - prev_close) / nullIf(prev_close, 0) * 100 AS gap_pct
+FROM
+(
+  SELECT
+    ticker, date, short_name, open,
+    lagInFrame(close, 1) OVER (PARTITION BY ticker ORDER BY date) AS prev_close
+  FROM market.daily_prices
+) AS t
+GROUP BY t.ticker
+HAVING anyLast(t.date) = (SELECT d FROM latest)
+ORDER BY gap_pct DESC
+LIMIT 50
+    
+  )
+      
+      
+                    -- end_of_sql
+                    
+                    ...
+[0m19:08:39.488984 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m19:08:39.490330 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '57f09c34-4196-4aac-9f37-9a846caded17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff484be270>]}
+[0m19:08:39.490892 [info ] [Thread-1 (]: 4 of 11 OK created sql view model `analytics`.`03_v_gap_scan` .................. [[32mOK[0m in 0.01s]
+[0m19:08:39.491334 [debug] [Thread-1 (]: Finished running node model.qi_dbt_project.03_v_gap_scan
+[0m19:08:39.491646 [debug] [Thread-1 (]: Began running node model.qi_dbt_project.04_v_momentum_20d_60d
+[0m19:08:39.492046 [info ] [Thread-1 (]: 5 of 11 START sql view model `analytics`.`04_v_momentum_20d_60d` ............... [RUN]
+[0m19:08:39.492472 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.qi_dbt_project.03_v_gap_scan, now model.qi_dbt_project.04_v_momentum_20d_60d)
+[0m19:08:39.492790 [debug] [Thread-1 (]: Began compiling node model.qi_dbt_project.04_v_momentum_20d_60d
+[0m19:08:39.494836 [debug] [Thread-1 (]: Writing injected SQL for node "model.qi_dbt_project.04_v_momentum_20d_60d"
+[0m19:08:39.495787 [debug] [Thread-1 (]: Began executing node model.qi_dbt_project.04_v_momentum_20d_60d
+[0m19:08:39.497361 [debug] [Thread-1 (]: Creating new relation 04_v_momentum_20d_60d
+[0m19:08:39.498058 [debug] [Thread-1 (]: Writing runtime sql for node "model.qi_dbt_project.04_v_momentum_20d_60d"
+[0m19:08:39.498868 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.qi_dbt_project.04_v_momentum_20d_60d: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "model.qi_dbt_project.04_v_momentum_20d_60d"} */
+
+
+  create or replace view `analytics`.`04_v_momentum_20d_60d` 
+  
+    
+  
+  
+    
+    
+  as (
+    
+
+WITH latest AS (SELECT max(date) d FROM market.daily_prices)
+SELECT
+  ticker,
+  argMax(short_name, date) AS name,
+  anyLast(close)           AS last_close,
+  (anyLast(close) - anyLast(close_20d)) / nullIf(anyLast(close_20d), 0) * 100 AS ret_20d_pct,
+  (anyLast(close) - anyLast(close_60d)) / nullIf(anyLast(close_60d), 0) * 100 AS ret_60d_pct
+FROM
+(
+  SELECT
+    ticker, date, short_name, close,
+    lagInFrame(close, 20) OVER (PARTITION BY ticker ORDER BY date) AS close_20d,
+    lagInFrame(close, 60) OVER (PARTITION BY ticker ORDER BY date) AS close_60d
+  FROM market.daily_prices
+) t
+GROUP BY ticker
+HAVING max(date) = (SELECT d FROM latest)
+ORDER BY ret_20d_pct DESC
+LIMIT 100
+    
+  )
+      
+      
+                    -- end_of_sql
+                    
+                    ...
+[0m19:08:39.503249 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m19:08:39.504563 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '57f09c34-4196-4aac-9f37-9a846caded17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff540afb90>]}
+[0m19:08:39.505047 [info ] [Thread-1 (]: 5 of 11 OK created sql view model `analytics`.`04_v_momentum_20d_60d` .......... [[32mOK[0m in 0.01s]
+[0m19:08:39.506582 [debug] [Thread-1 (]: Finished running node model.qi_dbt_project.04_v_momentum_20d_60d
+[0m19:08:39.506945 [debug] [Thread-1 (]: Began running node model.qi_dbt_project.05_v_distance_from_sma
+[0m19:08:39.507369 [info ] [Thread-1 (]: 6 of 11 START sql view model `analytics`.`05_v_distance_from_sma` .............. [RUN]
+[0m19:08:39.507864 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.qi_dbt_project.04_v_momentum_20d_60d, now model.qi_dbt_project.05_v_distance_from_sma)
+[0m19:08:39.508140 [debug] [Thread-1 (]: Began compiling node model.qi_dbt_project.05_v_distance_from_sma
+[0m19:08:39.509933 [debug] [Thread-1 (]: Writing injected SQL for node "model.qi_dbt_project.05_v_distance_from_sma"
+[0m19:08:39.510637 [debug] [Thread-1 (]: Began executing node model.qi_dbt_project.05_v_distance_from_sma
+[0m19:08:39.511906 [debug] [Thread-1 (]: Creating new relation 05_v_distance_from_sma
+[0m19:08:39.512415 [debug] [Thread-1 (]: Writing runtime sql for node "model.qi_dbt_project.05_v_distance_from_sma"
+[0m19:08:39.513097 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.qi_dbt_project.05_v_distance_from_sma: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "model.qi_dbt_project.05_v_distance_from_sma"} */
+
+
+  create or replace view `analytics`.`05_v_distance_from_sma` 
+  
+    
+  
+  
+    
+    
+  as (
+    
+
+WITH latest AS (SELECT max(date) d FROM market.daily_prices)
+SELECT
+  ticker,
+  argMax(short_name, date) AS name,
+  anyLast(close) AS last_close,
+  anyLast(sma50) AS sma50,
+  anyLast(sma200) AS sma200,
+  (last_close - sma50) / nullIf(sma50, 0) * 100 AS dist_sma50_pct,
+  (last_close - sma200)/ nullIf(sma200,0) * 100 AS dist_sma200_pct
+FROM
+(
+  SELECT
+    ticker,
+    date,
+    short_name,
+    close,
+    avg(close) OVER (PARTITION BY ticker ORDER BY date ROWS BETWEEN 49 PRECEDING AND CURRENT ROW)  AS sma50,
+    avg(close) OVER (PARTITION BY ticker ORDER BY date ROWS BETWEEN 199 PRECEDING AND CURRENT ROW) AS sma200
+  FROM market.daily_prices
+) s
+GROUP BY ticker
+HAVING max(date) = (SELECT d FROM latest)
+ORDER BY dist_sma50_pct DESC
+LIMIT 100
+    
+  )
+      
+      
+                    -- end_of_sql
+                    
+                    ...
+[0m19:08:39.516886 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m19:08:39.518129 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '57f09c34-4196-4aac-9f37-9a846caded17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff484fcf20>]}
+[0m19:08:39.518717 [info ] [Thread-1 (]: 6 of 11 OK created sql view model `analytics`.`05_v_distance_from_sma` ......... [[32mOK[0m in 0.01s]
+[0m19:08:39.519227 [debug] [Thread-1 (]: Finished running node model.qi_dbt_project.05_v_distance_from_sma
+[0m19:08:39.519627 [debug] [Thread-1 (]: Began running node model.qi_dbt_project.06_v_breadth_pct_above_sma
+[0m19:08:39.520066 [info ] [Thread-1 (]: 7 of 11 START sql view model `analytics`.`06_v_breadth_pct_above_sma` .......... [RUN]
+[0m19:08:39.520559 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.qi_dbt_project.05_v_distance_from_sma, now model.qi_dbt_project.06_v_breadth_pct_above_sma)
+[0m19:08:39.520883 [debug] [Thread-1 (]: Began compiling node model.qi_dbt_project.06_v_breadth_pct_above_sma
+[0m19:08:39.522878 [debug] [Thread-1 (]: Writing injected SQL for node "model.qi_dbt_project.06_v_breadth_pct_above_sma"
+[0m19:08:39.523772 [debug] [Thread-1 (]: Began executing node model.qi_dbt_project.06_v_breadth_pct_above_sma
+[0m19:08:39.525193 [debug] [Thread-1 (]: Creating new relation 06_v_breadth_pct_above_sma
+[0m19:08:39.525871 [debug] [Thread-1 (]: Writing runtime sql for node "model.qi_dbt_project.06_v_breadth_pct_above_sma"
+[0m19:08:39.526772 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.qi_dbt_project.06_v_breadth_pct_above_sma: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "model.qi_dbt_project.06_v_breadth_pct_above_sma"} */
+
+
+  create or replace view `analytics`.`06_v_breadth_pct_above_sma` 
+  
+    
+  
+  
+    
+    
+  as (
+    
+
+WITH d AS (SELECT max(date) AS d FROM market.daily_prices)
+SELECT
+  countIf(last_close > sma50)  / toFloat64(count()) * 100 AS pct_above_50d,
+  countIf(last_close > sma200) / toFloat64(count()) * 100 AS pct_above_200d
+FROM
+(
+  SELECT
+    ticker,
+    date,
+    close AS last_close,
+    avg(close) OVER (PARTITION BY ticker ORDER BY date
+                     ROWS BETWEEN 49 PRECEDING AND CURRENT ROW)  AS sma50,
+    avg(close) OVER (PARTITION BY ticker ORDER BY date
+                     ROWS BETWEEN 199 PRECEDING AND CURRENT ROW) AS sma200,
+    row_number() OVER (PARTITION BY ticker ORDER BY date DESC)    AS rn
+  FROM market.daily_prices
+  WHERE date <= (SELECT d FROM d)
+)
+WHERE rn = 1
+    
+  )
+      
+      
+                    -- end_of_sql
+                    
+                    ...
+[0m19:08:39.530768 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m19:08:39.532100 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '57f09c34-4196-4aac-9f37-9a846caded17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff4847db50>]}
+[0m19:08:39.532545 [info ] [Thread-1 (]: 7 of 11 OK created sql view model `analytics`.`06_v_breadth_pct_above_sma` ..... [[32mOK[0m in 0.01s]
+[0m19:08:39.532992 [debug] [Thread-1 (]: Finished running node model.qi_dbt_project.06_v_breadth_pct_above_sma
+[0m19:08:39.533382 [debug] [Thread-1 (]: Began running node model.qi_dbt_project.07_v_52w_scanner
+[0m19:08:39.533751 [info ] [Thread-1 (]: 8 of 11 START sql view model `analytics`.`07_v_52w_scanner` .................... [RUN]
+[0m19:08:39.534171 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.qi_dbt_project.06_v_breadth_pct_above_sma, now model.qi_dbt_project.07_v_52w_scanner)
+[0m19:08:39.534464 [debug] [Thread-1 (]: Began compiling node model.qi_dbt_project.07_v_52w_scanner
+[0m19:08:39.536399 [debug] [Thread-1 (]: Writing injected SQL for node "model.qi_dbt_project.07_v_52w_scanner"
+[0m19:08:39.537355 [debug] [Thread-1 (]: Began executing node model.qi_dbt_project.07_v_52w_scanner
+[0m19:08:39.539057 [debug] [Thread-1 (]: Creating new relation 07_v_52w_scanner
+[0m19:08:39.539719 [debug] [Thread-1 (]: Writing runtime sql for node "model.qi_dbt_project.07_v_52w_scanner"
+[0m19:08:39.540570 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.qi_dbt_project.07_v_52w_scanner: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "model.qi_dbt_project.07_v_52w_scanner"} */
+
+
+  create or replace view `analytics`.`07_v_52w_scanner` 
+  
+    
+  
+  
+    
+    
+  as (
+    
+
+WITH
+  (SELECT max(date) FROM market.daily_prices) AS latest,
+  addYears(latest, -1) AS cutoff
+SELECT
+  ticker,
+  argMax(short_name, date)               AS name,
+  maxIf(close, date >= cutoff)           AS high_52w,
+  minIf(close, date >= cutoff)           AS low_52w,
+  argMax(close, date)                    AS last_close,
+  round(100 * (last_close - low_52w)  / nullIf(low_52w,  0), 2) AS pct_from_low,
+  round(100 * (last_close - high_52w) / nullIf(high_52w, 0), 2) AS pct_from_high
+FROM market.daily_prices
+WHERE date >= cutoff
+GROUP BY ticker
+ORDER BY pct_from_low DESC
+LIMIT 100
+    
+  )
+      
+      
+                    -- end_of_sql
+                    
+                    ...
+[0m19:08:39.545380 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m19:08:39.546701 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '57f09c34-4196-4aac-9f37-9a846caded17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff484898e0>]}
+[0m19:08:39.547218 [info ] [Thread-1 (]: 8 of 11 OK created sql view model `analytics`.`07_v_52w_scanner` ............... [[32mOK[0m in 0.01s]
+[0m19:08:39.547668 [debug] [Thread-1 (]: Finished running node model.qi_dbt_project.07_v_52w_scanner
+[0m19:08:39.548015 [debug] [Thread-1 (]: Began running node model.qi_dbt_project.08_v_atr14_pct
+[0m19:08:39.548349 [info ] [Thread-1 (]: 9 of 11 START sql view model `analytics`.`08_v_atr14_pct` ...................... [RUN]
+[0m19:08:39.548831 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.qi_dbt_project.07_v_52w_scanner, now model.qi_dbt_project.08_v_atr14_pct)
+[0m19:08:39.549139 [debug] [Thread-1 (]: Began compiling node model.qi_dbt_project.08_v_atr14_pct
+[0m19:08:39.551288 [debug] [Thread-1 (]: Writing injected SQL for node "model.qi_dbt_project.08_v_atr14_pct"
+[0m19:08:39.552233 [debug] [Thread-1 (]: Began executing node model.qi_dbt_project.08_v_atr14_pct
+[0m19:08:39.553811 [debug] [Thread-1 (]: Creating new relation 08_v_atr14_pct
+[0m19:08:39.554575 [debug] [Thread-1 (]: Writing runtime sql for node "model.qi_dbt_project.08_v_atr14_pct"
+[0m19:08:39.555356 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.qi_dbt_project.08_v_atr14_pct: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "model.qi_dbt_project.08_v_atr14_pct"} */
+
+
+  create or replace view `analytics`.`08_v_atr14_pct` 
+  
+    
+  
+  
+    
+    
+  as (
+    
+
+WITH
+  (SELECT max(date) FROM market.daily_prices) AS latest
+SELECT
+  t.ticker,
+  t.name,
+  t.last_date AS date,
+  t.last_close,
+  t.last_atr14,
+  round(t.last_atr14 / nullIf(t.last_close, 0) * 100, 2) AS atr14_pct
+FROM
+(
+  SELECT
+    ticker,
+    argMax(short_name, date) AS name,
+    max(date)                AS last_date,
+    argMax(close,  date)     AS last_close,
+    argMax(atr14,  date)     AS last_atr14
+  FROM
+  (
+    SELECT
+      ticker,
+      date,
+      short_name,
+      close,
+      avg(tr) OVER (
+        PARTITION BY ticker
+        ORDER BY date
+        ROWS BETWEEN 13 PRECEDING AND CURRENT ROW
+      ) AS atr14
+    FROM
+    (
+      SELECT
+        ticker,
+        date,
+        short_name,
+        close,
+        high,
+        low,
+        abs(high - low) AS hl,
+        abs(high - lagInFrame(close, 1) OVER (PARTITION BY ticker ORDER BY date)) AS hc,
+        abs(low  - lagInFrame(close, 1) OVER (PARTITION BY ticker ORDER BY date)) AS lc,
+        greatest(hl, greatest(hc, lc)) AS tr
+      FROM market.daily_prices
+    )
+  )
+  GROUP BY ticker
+) AS t
+WHERE t.last_date = latest
+ORDER BY atr14_pct DESC
+LIMIT 100
+    
+  )
+      
+      
+                    -- end_of_sql
+                    
+                    ...
+[0m19:08:39.561271 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m19:08:39.562600 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '57f09c34-4196-4aac-9f37-9a846caded17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff48136cf0>]}
+[0m19:08:39.563272 [info ] [Thread-1 (]: 9 of 11 OK created sql view model `analytics`.`08_v_atr14_pct` ................. [[32mOK[0m in 0.01s]
+[0m19:08:39.563947 [debug] [Thread-1 (]: Finished running node model.qi_dbt_project.08_v_atr14_pct
+[0m19:08:39.564324 [debug] [Thread-1 (]: Began running node model.qi_dbt_project.09_v_inside_outside_day
+[0m19:08:39.564781 [info ] [Thread-1 (]: 10 of 11 START sql view model `analytics`.`09_v_inside_outside_day` ............ [RUN]
+[0m19:08:39.565212 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.qi_dbt_project.08_v_atr14_pct, now model.qi_dbt_project.09_v_inside_outside_day)
+[0m19:08:39.565487 [debug] [Thread-1 (]: Began compiling node model.qi_dbt_project.09_v_inside_outside_day
+[0m19:08:39.568755 [debug] [Thread-1 (]: Writing injected SQL for node "model.qi_dbt_project.09_v_inside_outside_day"
+[0m19:08:39.569669 [debug] [Thread-1 (]: Began executing node model.qi_dbt_project.09_v_inside_outside_day
+[0m19:08:39.571179 [debug] [Thread-1 (]: Creating new relation 09_v_inside_outside_day
+[0m19:08:39.571836 [debug] [Thread-1 (]: Writing runtime sql for node "model.qi_dbt_project.09_v_inside_outside_day"
+[0m19:08:39.572605 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.qi_dbt_project.09_v_inside_outside_day: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "model.qi_dbt_project.09_v_inside_outside_day"} */
+
+
+  create or replace view `analytics`.`09_v_inside_outside_day` 
+  
+    
+  
+  
+    
+    
+  as (
+    
+
+WITH
+  (SELECT max(date) FROM market.daily_prices) AS latest
+SELECT
+  t.ticker,
+  t.name,
+  t.last_date AS date,
+  t.open_today,
+  t.high_today,
+  t.low_today,
+  t.close_today,
+  case
+    when t.high_today > t.prev_high AND t.low_today < t.prev_low then 'outside'
+    when t.high_today < t.prev_high AND t.low_today > t.prev_low then 'inside'
+    else 'normal'
+  end AS day_type
+FROM
+(
+  SELECT
+    ticker,
+    argMax(short_name, date) AS name,
+    max(date)                AS last_date,
+    argMax(open, date)       AS open_today,
+    argMax(high, date)       AS high_today,
+    argMax(low, date)        AS low_today,
+    argMax(close, date)      AS close_today,
+    argMax(prev_high, date)  AS prev_high,
+    argMax(prev_low, date)   AS prev_low
+  FROM
+  (
+    SELECT
+      ticker,
+      date,
+      short_name,
+      open,
+      high,
+      low,
+      close,
+      lagInFrame(high, 1) OVER (PARTITION BY ticker ORDER BY date) AS prev_high,
+      lagInFrame(low, 1)  OVER (PARTITION BY ticker ORDER BY date) AS prev_low
+    FROM market.daily_prices
+  )
+  GROUP BY ticker
+) AS t
+WHERE t.last_date = latest
+ORDER BY
+  case
+    when day_type = 'outside' then 1
+    when day_type = 'inside'  then 2
+    else 3
+  end,
+  t.ticker
+LIMIT 200
+    
+  )
+      
+      
+                    -- end_of_sql
+                    
+                    ...
+[0m19:08:39.578331 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m19:08:39.579663 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '57f09c34-4196-4aac-9f37-9a846caded17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff48137fe0>]}
+[0m19:08:39.580112 [info ] [Thread-1 (]: 10 of 11 OK created sql view model `analytics`.`09_v_inside_outside_day` ....... [[32mOK[0m in 0.01s]
+[0m19:08:39.580840 [debug] [Thread-1 (]: Finished running node model.qi_dbt_project.09_v_inside_outside_day
+[0m19:08:39.581301 [debug] [Thread-1 (]: Began running node model.qi_dbt_project.10_v_rv30_and_rank
+[0m19:08:39.581736 [info ] [Thread-1 (]: 11 of 11 START sql view model `analytics`.`10_v_rv30_and_rank` ................. [RUN]
+[0m19:08:39.582167 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.qi_dbt_project.09_v_inside_outside_day, now model.qi_dbt_project.10_v_rv30_and_rank)
+[0m19:08:39.582465 [debug] [Thread-1 (]: Began compiling node model.qi_dbt_project.10_v_rv30_and_rank
+[0m19:08:39.584481 [debug] [Thread-1 (]: Writing injected SQL for node "model.qi_dbt_project.10_v_rv30_and_rank"
+[0m19:08:39.585265 [debug] [Thread-1 (]: Began executing node model.qi_dbt_project.10_v_rv30_and_rank
+[0m19:08:39.586554 [debug] [Thread-1 (]: Creating new relation 10_v_rv30_and_rank
+[0m19:08:39.587042 [debug] [Thread-1 (]: Writing runtime sql for node "model.qi_dbt_project.10_v_rv30_and_rank"
+[0m19:08:39.587702 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.qi_dbt_project.10_v_rv30_and_rank: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "model.qi_dbt_project.10_v_rv30_and_rank"} */
+
+
+  create or replace view `analytics`.`10_v_rv30_and_rank` 
+  
+    
+  
+  
+    
+    
+  as (
+    
+
+WITH
+  (SELECT max(date) FROM market.daily_prices) AS latest,
+  addYears(latest, -1) AS cutoff_1y
+SELECT
+  s.ticker,
+  argMax(s.short_name, s.date) AS name,
+  argMax(s.rv30, s.date)       AS rv30,         -- current rv30
+  round(
+    100 * sumIf(s.rv30 <= cur.curr_rv30, s.date >= cutoff_1y)
+        / nullIf(countIf(s.date >= cutoff_1y), 0),
+    2
+  )                            AS rv30_rank_1y
+FROM
+(
+  SELECT
+    b.ticker,
+    b.date,
+    b.short_name,
+    stddevPop(b.ret)
+      OVER (PARTITION BY b.ticker ORDER BY b.date ROWS BETWEEN 29 PRECEDING AND CURRENT ROW)
+      * sqrt(252)              AS rv30
+  FROM
+  (
+    SELECT
+      ticker,
+      date,
+      short_name,
+      (log(close) - log(lagInFrame(close, 1) OVER (PARTITION BY ticker ORDER BY date))) AS ret
+    FROM market.daily_prices
+  ) AS b
+) AS s
+INNER JOIN
+(
+  SELECT
+    v.ticker,
+    max(v.date)            AS last_date,
+    argMax(v.rv30, v.date) AS curr_rv30
+  FROM
+  (
+    SELECT
+      b.ticker,
+      b.date,
+      stddevPop(b.ret)
+        OVER (PARTITION BY b.ticker ORDER BY b.date ROWS BETWEEN 29 PRECEDING AND CURRENT ROW)
+        * sqrt(252)        AS rv30
+    FROM
+    (
+      SELECT
+        ticker,
+        date,
+        (log(close) - log(lagInFrame(close, 1) OVER (PARTITION BY ticker ORDER BY date))) AS ret
+      FROM market.daily_prices
+    ) AS b
+  ) AS v
+  GROUP BY v.ticker
+) AS cur USING (ticker)
+WHERE s.date >= cutoff_1y
+GROUP BY s.ticker
+HAVING max(s.date) = latest
+ORDER BY rv30_rank_1y DESC
+LIMIT 100
+    
+  )
+      
+      
+                    -- end_of_sql
+                    
+                    ...
+[0m19:08:39.593418 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m19:08:39.594827 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '57f09c34-4196-4aac-9f37-9a846caded17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff48104d70>]}
+[0m19:08:39.595316 [info ] [Thread-1 (]: 11 of 11 OK created sql view model `analytics`.`10_v_rv30_and_rank` ............ [[32mOK[0m in 0.01s]
+[0m19:08:39.595920 [debug] [Thread-1 (]: Finished running node model.qi_dbt_project.10_v_rv30_and_rank
+[0m19:08:39.597239 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:08:39.597614 [debug] [MainThread]: Connection 'list_' was left open.
+[0m19:08:39.597884 [debug] [MainThread]: On list_: Close
+[0m19:08:39.598220 [debug] [MainThread]: Connection 'model.qi_dbt_project.10_v_rv30_and_rank' was left open.
+[0m19:08:39.598481 [debug] [MainThread]: On model.qi_dbt_project.10_v_rv30_and_rank: Close
+[0m19:08:39.598914 [info ] [MainThread]: 
+[0m19:08:39.599234 [info ] [MainThread]: Finished running 11 view models in 0 hours 0 minutes and 0.51 seconds (0.51s).
+[0m19:08:39.600358 [debug] [MainThread]: Command end result
+[0m19:08:39.631535 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dags/src/qi/dbt_project/target/manifest.json
+[0m19:08:39.633293 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dags/src/qi/dbt_project/target/semantic_manifest.json
+[0m19:08:39.637609 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/dags/src/qi/dbt_project/target/run_results.json
+[0m19:08:39.637937 [info ] [MainThread]: 
+[0m19:08:39.638300 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:08:39.638573 [info ] [MainThread]: 
+[0m19:08:39.638829 [info ] [MainThread]: Done. PASS=11 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=11
+[0m19:08:39.639580 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.8507568, "process_in_blocks": "0", "process_kernel_time": 0.180528, "process_mem_max_rss": "208424", "process_out_blocks": "5165", "process_user_time": 3.534347}
+[0m19:08:39.639962 [debug] [MainThread]: Command `dbt run` succeeded at 19:08:39.639889 after 1.85 seconds
+[0m19:08:39.640291 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7f240d70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7fb755b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7e1eec30>]}
+[0m19:08:39.640568 [debug] [MainThread]: Flushing usage events
+[0m19:08:40.460099 [debug] [MainThread]: An error was encountered while trying to flush usage events
