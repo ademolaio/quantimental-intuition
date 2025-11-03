@@ -28,7 +28,8 @@ endef
         print-env validate-exchanges funds-backfill funds-refresh \
         env-shell dbt-provision-fundamentals refresh_fundamentals \
         backfill_fundamentals \
-        container-dbt-profile container-dbt-deps container-dbt-run container-dbt-test container-dbt-build
+        container-dbt-profile container-dbt-deps container-dbt-run container-dbt-test container-dbt-build \
+        dbt-analytics dbt-analytics-in-docker
 
 # --- ClickHouse + Superset ----------------------------------------------------
 up:
@@ -164,6 +165,27 @@ dbt-analytics-in-docker:
 	  cd /opt/airflow/dags/src/qi/dbt_project && \
 	  dbt deps && dbt run --select analytics && dbt test --select analytics \
 	'
+
+dbt-regimes:
+	@docker exec -it qi-airflow-web bash -lc '\
+	  export DBT_PROFILES_DIR=/opt/airflow/dags/src/qi/dbt_project && \
+	  export CLICKHOUSE_HOST=qi-clickhouse && \
+	  export CLICKHOUSE_PORT=8123 && \
+	  export CLICKHOUSE_USER=qi && \
+	  export CLICKHOUSE_PASSWORD=mysecurepassword && \
+	  export CLICKHOUSE_DB=default && \
+	  cd /opt/airflow/dags/src/qi/dbt_project && \
+	  dbt deps && \
+	  dbt run-operation provision_analytics && \
+	  dbt run --select analytics.market_regimes \
+	'
+
+dbt-analytics-stats:
+	@$(ENV_EXPORT) && \
+	cd $(DBT_DIR) && dbt deps && dbt run-operation provision_analytics && \
+	dbt run  --select models/analytics/market_stats/* && \
+	dbt test --select models/analytics/market_stats/*
+
 
 # --- Quick ClickHouse checks (optional; requires clickhouse-client) ----------
 counts:

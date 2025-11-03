@@ -1,0 +1,91 @@
+version: 2
+
+models:
+  - name: v_daily_regime_120_zscore
+    description: >
+      Daily return z-score vs prior 20 trading days (ex-current) with a simple
+      regime tag (Neutral, Bull/Bear – Volatile/Outlier). Keeps the latest ~120
+      days per ticker.
+    columns:
+      - name: ticker
+        tests: [not_null]
+      - name: trade_date
+        tests: [not_null]
+      - name: close_price
+      - name: prev_close
+      - name: net_change
+      - name: pct_change
+      - name: pct_change_pct
+      - name: mean_20d
+      - name: std_20d
+      - name: zscore_20d
+      - name: regime
+        tests:
+          - accepted_values:
+              values: ['N/A','Neutral – Typical','Bull – Volatile','Bear – Volatile','Bull – Outlier','Bear – Outlier']
+
+  - name: v_weekly_regime_100_zscore
+    description: >
+      Weekly return z-score vs prior 12 weeks (ex-current) with regime tag.
+      Keeps the latest ~100 weeks per ticker.
+    columns:
+      - name: ticker
+        tests: [not_null]
+      - name: week_ending
+        tests: [not_null]
+      - name: close_price
+      - name: prev_close
+      - name: net_change
+      - name: pct_change
+      - name: pct_change_pct
+      - name: mean_12w
+      - name: std_12w
+      - name: zscore_12w
+      - name: regime
+        tests:
+          - accepted_values:
+              values: ['N/A','Neutral – Typical','Bull – Volatile','Bear – Volatile','Bull – Outlier','Bear – Outlier']
+
+  - name: v_monthly_regime_60_zscore
+    description: >
+      Monthly return z-score vs prior 12 months (ex-current) with regime tag.
+      Keeps the latest 60 months per ticker (~5y).
+    columns:
+      - name: ticker
+        tests: [not_null]
+      - name: month_ending
+        tests: [not_null]
+      - name: close_price
+      - name: prev_close
+      - name: net_change
+      - name: pct_change
+      - name: pct_change_pct
+      - name: mean_12m
+      - name: std_12m
+      - name: zscore_12m
+      - name: regime
+        tests:
+          - accepted_values:
+              values: ['N/A','Neutral – Typical','Bull – Volatile','Bear – Volatile','Bull – Outlier','Bear – Outlier']
+
+  - name: v_quarterly_regime_20_zscore
+    description: >
+      Quarterly return z-score vs prior 12 quarters (ex-current) with regime tag.
+      Keeps the latest 20 quarters per ticker (~5y).
+    columns:
+      - name: ticker
+        tests: [not_null]
+      - name: quarter_ending
+        tests: [not_null]
+      - name: close_price
+      - name: prev_close
+      - name: net_change
+      - name: pct_change
+      - name: pct_change_pct
+      - name: mean_12q
+      - name: std_12q
+      - name: zscore_12q
+      - name: regime
+        tests:
+          - accepted_values:
+              values: ['N/A','Neutral – Typical','Bull – Volatile','Bear – Volatile','Bull – Outlier','Bear – Outlier']

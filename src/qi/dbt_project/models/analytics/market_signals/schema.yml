@@ -126,3 +126,21 @@ models:
         tests: [not_null]
       - name: rv30
       - name: rv30_rank_1y
+
+  - name: 18_vix_weekly_snapshot
+    description: "VIX weekly snapshot for the last ~22 weeks, with raw/adjusted closes, WoW changes, and simple regime buckets."
+    columns:
+      - name: week_start
+        tests: [ not_null ]
+      - name: last_trading_date
+        tests: [ not_null ]
+      - name: vix_regime
+        tests:
+          - accepted_values:
+              values: [ "Calm", "Normal", "Fear" ]
+      - name: vix_close_raw
+      - name: vix_net_change_raw
+      - name: vix_pct_change_raw_pct
+      - name: vix_close_adj
+      - name: vix_net_change_adj
+      - name: vix_pct_change_adj_pct

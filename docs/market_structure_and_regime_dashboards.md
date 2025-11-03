@@ -494,12 +494,13 @@ LIMIT 100;
 
 ## 🧩 Thematic Summary
 
-| Theme | Queries | What They Tell You |
-|--------|----------|-------------------|
-| **Momentum & Strength** | 0, 4, 5, 7 | Trend leaders vs laggards |
-| **Sentiment & Flow** | 1, 2, 3 | Where money & attention concentrate |
-| **Market Health** | 6 | Participation & breadth |
-| **Volatility & Regime** | 8, 9, 10 | Risk expansion vs compression |
+| Theme | Queries       | What They Tell You                                                              |
+|------|---------------|---------------------------------------------------------------------------------|
+| **Momentum & Strength** | 0, 4, 5, 7    | Trend leaders vs laggards                                                       |
+| **Sentiment & Flow** | 1, 2, 3       | Where money & attention concentrate                                             |
+| **Market Health** | 6, + 15–17 (these) | Participation & breadth                                                         |
+| **Volatility & Regime** | 8, 9, 10      | Risk expansion vs compression                                                   |
+| **Macro Regime & Cyclicality** | 11, 12, 13, 14 | Macro trend regime detection Portfolio alignment, and volatility normalization. |
 
 ---
 

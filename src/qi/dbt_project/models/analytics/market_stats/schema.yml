@@ -1,0 +1,71 @@
+version: 2
+
+models:
+  - name: 15_v_metrics_5y_weekly
+    description: >
+      5-year (≈260-week) summary of historical weekly returns per ticker.
+      Computes log-return moments (mean, sigma, skew, kurtosis), hit rate,
+      volatility buckets, payoff ratio, and expectancy in dollar terms.
+      Based on `market.weekly_prices` data.
+    columns:
+      - name: ticker
+        description: "Unique security symbol or identifier."
+        tests: [not_null]
+      - name: n_weeks
+        description: "Number of total weeks in the 5-year window."
+      - name: mu_log
+        description: "Mean of weekly log returns over 5 years."
+      - name: sigma_log
+        description: "Standard deviation of weekly log returns."
+      - name: hit_rate
+        description: "Fraction of positive weekly returns."
+      - name: payoff
+        description: "Ratio of average gain to average loss."
+      - name: expectancy_per_wk
+        description: "Expected dollar gain per week at current price."
+
+  - name: 16_v_metrics_5y_monthly
+    description: >
+      5-year (≈60-month) summary of historical monthly returns per ticker.
+      Includes distribution moments, hit rate, return buckets, payoff ratio,
+      and expectancy metrics in dollar terms.
+      Based on `market.monthly_prices` data.
+    columns:
+      - name: ticker
+        description: "Unique security symbol or identifier."
+        tests: [not_null]
+      - name: n_months
+        description: "Number of months in the 5-year window."
+      - name: mu_log
+        description: "Mean of monthly log returns over 5 years."
+      - name: sigma_log
+        description: "Standard deviation of monthly log returns."
+      - name: hit_rate
+        description: "Fraction of positive monthly returns."
+      - name: payoff
+        description: "Ratio of average gain to average loss."
+      - name: expectancy_per_mo
+        description: "Expected dollar gain per month at current price."
+
+  - name: 17_v_metrics_5y_quarterly
+    description: >
+      5-year (≈20-quarter) summary of historical quarterly returns per ticker.
+      Provides quarterly log-return statistics, hit rate, volatility buckets,
+      payoff ratio, and expectancy in dollar terms.
+      Based on `market.quarterly_prices` data.
+    columns:
+      - name: ticker
+        description: "Unique security symbol or identifier."
+        tests: [not_null]
+      - name: n_quarters
+        description: "Number of quarters in the 5-year window."
+      - name: mu_log
+        description: "Mean of quarterly log returns over 5 years."
+      - name: sigma_log
+        description: "Standard deviation of quarterly log returns."
+      - name: hit_rate
+        description: "Fraction of positive quarterly returns."
+      - name: payoff
+        description: "Ratio of average gain to average loss."
+      - name: expectancy_per_qtr
+        description: "Expected dollar gain per quarter at current price."
