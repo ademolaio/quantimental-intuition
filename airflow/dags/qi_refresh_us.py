@@ -64,7 +64,7 @@ with DAG(
     dag_id="refresh_us_dag",
     description="Weekly US refresh (YF → ClickHouse) + dbt aggregates",
     default_args=default_args,
-    start_date=pendulum.datetime(2025, 10, 31, 0, 0, tz=TZ),
+    start_date = pendulum.datetime(2025, 10, 31, 20, 30, tz=TZ) , # 19:30Z == 20:30 Berlin
     schedule=SCHEDULE,
     catchup=False,
     max_active_runs=1,

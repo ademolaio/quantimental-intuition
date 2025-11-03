@@ -1,11 +1,14 @@
+# ====== Python / local ======
 PY ?= python3.12
 VENV := venv
 ENV_FILE := .env
+PY_SRC := src
+DBT_DIR := src/qi/dbt_project
+
+# ====== Docker compose files ======
 C_CH := docker/qi_clickhouse.yml
 C_SS := docker/qi_superset.yml
 C_AF := docker/qi_airflow.yml
-PY_SRC := src
-DBT_DIR := src/qi/dbt_project
 
 # --- Common env bootstrap (venv + PYTHONPATH + .env) -------------------------
 define ENV_EXPORT
@@ -14,7 +17,7 @@ export PYTHONPATH="$$(pwd)/$(PY_SRC):$$(pwd)" && \
 set -a; [ -f $(ENV_FILE) ] && . $(ENV_FILE); set +a
 endef
 
-.PHONY: up down bootstrap venv install freeze shell \
+.PHONY: up down bootstrap_superset venv install freeze shell \
         dbt-debug dbt-deps pip-upgrade \
         backfill_us backfill_intl refresh_us refresh_intl dbt_agg \
         weekly_close morning_catchup test_market counts tail_spy \
@@ -24,7 +27,8 @@ endef
         airflow-task-logs-us airflow-task-logs-intl \
         print-env validate-exchanges funds-backfill funds-refresh \
         env-shell dbt-provision-fundamentals refresh_fundamentals \
-        backfill_fundamentals
+        backfill_fundamentals \
+        container-dbt-profile container-dbt-deps container-dbt-run container-dbt-test container-dbt-build
 
 # --- ClickHouse + Superset ----------------------------------------------------
 up:
@@ -36,7 +40,7 @@ down:
 	docker compose -f $(C_SS) down
 	docker compose -f $(C_CH) down
 
-bootstrap:
+bootstrap_superset:
 	bash ./scripts/bootstrap_superset.sh
 
 # --- Python venv --------------------------------------------------------------
@@ -60,7 +64,7 @@ shell:
 pip-upgrade:
 	@. $(VENV)/bin/activate && pip install --upgrade pip setuptools wheel
 
-# --- dbt ----------------------------------------------------------------------
+# --- dbt (LOCAL venv) ---------------------------------------------------------
 dbt-debug:
 	@$(ENV_EXPORT) && cd $(DBT_DIR) && dbt debug
 
@@ -75,7 +79,7 @@ test_market:
 	@$(ENV_EXPORT) && \
 	cd $(DBT_DIR) && dbt test --select market
 
-# --- Pipelines (US / INTL) ----------------------------------------------------
+# --- Pipelines (US / INTL) via LOCAL python ----------------------------------
 backfill_us:
 	@$(ENV_EXPORT) && \
 	cd $(DBT_DIR) && dbt deps && dbt run-operation provision_fundamentals_raw && \
@@ -110,12 +114,10 @@ refresh_intl:
 	  run_refresh(ALL_INTL, sleep_s=0)" && \
 	cd $(DBT_DIR) && dbt run --select market.weekly_prices market.monthly_prices market.quarterly_prices
 
-
 backfill_fundamentals:
 	@$(ENV_EXPORT) && \
 	cd $(DBT_DIR) && dbt deps && dbt run-operation provision_fundamentals_raw && \
 	$(PY) -c "from src.qi.pipelines.refresh_fundamentals import run_refresh; run_refresh(None, sleep_s=0)"
-
 
 refresh_fundamentals:
 	@$(ENV_EXPORT) && \
@@ -134,7 +136,6 @@ funds-backfill:
 	@$(ENV_EXPORT) && \
 	$(PY) -m qi.pipelines.refresh_fundamentals && \
 	cd $(DBT_DIR) && dbt run --select fundamentals.quarterly_fundamentals fundamentals.key_ratios
-
 
 dbt-provision-fundamentals:
 	@$(ENV_EXPORT) && cd $(DBT_DIR) && dbt deps && dbt run-operation provision_fundamentals_raw
@@ -178,13 +179,85 @@ airflow-runs-us:
 airflow-runs-intl:
 	@docker exec -it qi-airflow-scheduler bash -lc "airflow dags list-runs -d refresh_intl_dag --no-backfill -o table | tail -n 20"
 
-# Fetch task logs for a given RUN_ID and TASK_ID:
+# Fetch task logs for a given RUN_ID and TASK_ID
 # make airflow-task-logs-us RUN_ID=manual__2025-11-01T10:00:00+00:00 TASK_ID=refresh_us_pipeline
 airflow-task-logs-us:
 	@docker exec -it qi-airflow-scheduler bash -lc "airflow tasks logs refresh_us_dag $(TASK_ID) $(RUN_ID)"
 
 airflow-task-logs-intl:
 	@docker exec -it qi-airflow-scheduler bash -lc "airflow tasks logs refresh_intl_dag $(TASK_ID) $(RUN_ID)"
+
+# --- dbt INSIDE AIRFLOW CONTAINER --------------------------------------------
+# (useful when you want dbt to run in the same environment as your dags)
+DBT_CONTAINER ?= qi-airflow-web
+PROFILES_DIR  ?= /opt/airflow/dags/src/qi/dbt_project
+
+# ClickHouse connection for container dbt (override via .env if you like)
+CLICKHOUSE_HOST ?= qi-clickhouse
+CLICKHOUSE_PORT ?= 8123
+CLICKHOUSE_USER ?= qi
+CLICKHOUSE_PASSWORD ?= mysecurepassword
+CLICKHOUSE_DB ?= default
+
+# Optional selection (override: make container-dbt-run SELECT="fundamentals.key_ratios_*")
+SELECT ?=
+
+container-dbt-profile:
+	@docker exec -it $(DBT_CONTAINER) bash -lc 'cat > $(PROFILES_DIR)/profiles.yml <<EOF
+qi_dbt_project:
+  target: dev
+  outputs:
+    dev:
+      type: clickhouse
+      threads: 1
+      host: "{{ env_var(\"CLICKHOUSE_HOST\", \"$(CLICKHOUSE_HOST)\") }}"
+      port: "{{ env_var(\"CLICKHOUSE_PORT\", \"$(CLICKHOUSE_PORT)\") | int }}"
+      user: "{{ env_var(\"CLICKHOUSE_USER\", \"$(CLICKHOUSE_USER)\") }}"
+      password: "{{ env_var(\"CLICKHOUSE_PASSWORD\", \"$(CLICKHOUSE_PASSWORD)\") }}"
+      database: "{{ env_var(\"CLICKHOUSE_DB\", \"$(CLICKHOUSE_DB)\") }}"
+      schema: "{{ env_var(\"CLICKHOUSE_DB\", \"$(CLICKHOUSE_DB)\") }}"
+      secure: false
+EOF'
+
+container-dbt-deps: container-dbt-profile
+	@docker exec \
+		-e DBT_PROFILES_DIR=$(PROFILES_DIR) \
+		-e CLICKHOUSE_HOST=$(CLICKHOUSE_HOST) \
+		-e CLICKHOUSE_PORT=$(CLICKHOUSE_PORT) \
+		-e CLICKHOUSE_USER=$(CLICKHOUSE_USER) \
+		-e CLICKHOUSE_PASSWORD=$(CLICKHOUSE_PASSWORD) \
+		-e CLICKHOUSE_DB=$(CLICKHOUSE_DB) \
+		-it $(DBT_CONTAINER) bash -lc 'cd $(PROFILES_DIR) && dbt deps'
+
+container-dbt-run: container-dbt-deps
+	@docker exec \
+		-e DBT_PROFILES_DIR=$(PROFILES_DIR) \
+		-e CLICKHOUSE_HOST=$(CLICKHOUSE_HOST) \
+		-e CLICKHOUSE_PORT=$(CLICKHOUSE_PORT) \
+		-e CLICKHOUSE_USER=$(CLICKHOUSE_USER) \
+		-e CLICKHOUSE_PASSWORD=$(CLICKHOUSE_PASSWORD) \
+		-e CLICKHOUSE_DB=$(CLICKHOUSE_DB) \
+		-it $(DBT_CONTAINER) bash -lc 'cd $(PROFILES_DIR) && dbt run $(if $(SELECT),--select "$(SELECT)",)'
+
+container-dbt-test: container-dbt-deps
+	@docker exec \
+		-e DBT_PROFILES_DIR=$(PROFILES_DIR) \
+		-e CLICKHOUSE_HOST=$(CLICKHOUSE_HOST) \
+		-e CLICKHOUSE_PORT=$(CLICKHOUSE_PORT) \
+		-e CLICKHOUSE_USER=$(CLICKHOUSE_USER) \
+		-e CLICKHOUSE_PASSWORD=$(CLICKHOUSE_PASSWORD) \
+		-e CLICKHOUSE_DB=$(CLICKHOUSE_DB) \
+		-it $(DBT_CONTAINER) bash -lc 'cd $(PROFILES_DIR) && dbt test $(if $(SELECT),--select "$(SELECT)",)'
+
+container-dbt-build: container-dbt-deps
+	@docker exec \
+		-e DBT_PROFILES_DIR=$(PROFILES_DIR) \
+		-e CLICKHOUSE_HOST=$(CLICKHOUSE_HOST) \
+		-e CLICKHOUSE_PORT=$(CLICKHOUSE_PORT) \
+		-e CLICKHOUSE_USER=$(CLICKHOUSE_USER) \
+		-e CLICKHOUSE_PASSWORD=$(CLICKHOUSE_PASSWORD) \
+		-e CLICKHOUSE_DB=$(CLICKHOUSE_DB) \
+		-it $(DBT_CONTAINER) bash -lc 'cd $(PROFILES_DIR) && dbt build $(if $(SELECT),--select "$(SELECT)",)'
 
 # --- Misc ---------------------------------------------------------------------
 print-env:

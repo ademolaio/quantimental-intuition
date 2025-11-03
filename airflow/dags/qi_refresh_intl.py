@@ -65,7 +65,7 @@ with DAG(
     dag_id="refresh_intl_dag",
     description="Weekly INTL refresh (YF → ClickHouse) + dbt aggregates",
     default_args=default_args,
-    start_date=pendulum.datetime(2025, 10, 31, 0, 0, tz=TZ),
+    start_date = pendulum.datetime(2025, 10, 31, 20, 30, tz=TZ) ,  # anchor Friday @ 20:30 Berlin
     schedule=SCHEDULE,
     catchup=False,
     max_active_runs=1,
