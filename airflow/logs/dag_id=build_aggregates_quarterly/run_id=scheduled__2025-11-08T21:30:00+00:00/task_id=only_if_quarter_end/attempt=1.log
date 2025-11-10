@@ -1,0 +1,23 @@
+[2025-11-10T12:34:12.279+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-10T12:34:12.295+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: build_aggregates_quarterly.only_if_quarter_end scheduled__2025-11-08T21:30:00+00:00 [queued]>
+[2025-11-10T12:34:12.300+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: build_aggregates_quarterly.only_if_quarter_end scheduled__2025-11-08T21:30:00+00:00 [queued]>
+[2025-11-10T12:34:12.300+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-11-10T12:34:12.306+0000] {taskinstance.py:2330} INFO - Executing <Task(ShortCircuitOperator): only_if_quarter_end> on 2025-11-08 21:30:00+00:00
+[2025-11-10T12:34:12.310+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=376) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-11-10T12:34:12.311+0000] {standard_task_runner.py:64} INFO - Started process 379 to run task
+[2025-11-10T12:34:12.311+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'build_aggregates_quarterly', 'only_if_quarter_end', 'scheduled__2025-11-08T21:30:00+00:00', '--job-id', '43', '--raw', '--subdir', 'DAGS_FOLDER/qi_aggregate_dbt.py', '--cfg-path', '/tmp/tmpdi7y53bb']
+[2025-11-10T12:34:12.312+0000] {standard_task_runner.py:91} INFO - Job 43: Subtask only_if_quarter_end
+[2025-11-10T12:34:12.386+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='samuel' AIRFLOW_CTX_DAG_ID='build_aggregates_quarterly' AIRFLOW_CTX_TASK_ID='only_if_quarter_end' AIRFLOW_CTX_EXECUTION_DATE='2025-11-08T21:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-11-08T21:30:00+00:00'
+[2025-11-10T12:34:12.387+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-11-10T12:34:12.395+0000] {baseoperator.py:400} WARNING - ShortCircuitOperator.execute cannot be called outside TaskInstance!
+[2025-11-10T12:34:12.395+0000] {python.py:237} INFO - Done. Returned value was: False
+[2025-11-10T12:34:12.396+0000] {python.py:304} INFO - Condition result is False
+[2025-11-10T12:34:12.396+0000] {python.py:331} INFO - Skipping downstream tasks
+[2025-11-10T12:34:12.410+0000] {python.py:339} INFO - Done.
+[2025-11-10T12:34:12.410+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-11-10T12:34:12.422+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=build_aggregates_quarterly, task_id=only_if_quarter_end, run_id=scheduled__2025-11-08T21:30:00+00:00, execution_date=20251108T213000, start_date=20251110T123412, end_date=20251110T123412
+[2025-11-10T12:34:12.449+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-11-10T12:34:12.462+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-11-10T12:34:12.463+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

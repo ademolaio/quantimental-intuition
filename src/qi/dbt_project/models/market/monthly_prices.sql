@@ -1,4 +1,5 @@
 -- Real monthly aggregate: month_ending is last trading day of the month
+{{ config(materialized='table', tags=['agg_monthly']) }}select
 select
   ticker,
   argMax(short_name, date)        as short_name,

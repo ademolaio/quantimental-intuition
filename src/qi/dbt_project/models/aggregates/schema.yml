@@ -1,0 +1,10 @@
+# models/aggregates/schema.yml
+version: 2
+
+models:
+  - name: weekly_sales
+    tags: [agg_weekly]
+  - name: monthly_sales
+    tags: [agg_monthly]
+  - name: quarterly_sales
+    tags: [agg_quarterly]

@@ -1,5 +1,5 @@
 -- Real quarterly aggregate: quarter_ending is last trading day of the quarter
-select
+{{ config(materialized='table', tags=['agg_quarterly']) }}select
   ticker,
   argMax(short_name, date)        as short_name,
   max(date)                       as quarter_ending,

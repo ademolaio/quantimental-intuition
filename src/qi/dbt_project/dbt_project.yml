@@ -13,6 +13,12 @@ models:
       +database: market
       +schema: market        # harmless; macro ignores it
       +materialized: table
+      weekly_prices:
+        +tags: [ 'agg_weekly' ]
+      monthly_prices:
+        +tags: [ 'agg_monthly' ]
+      quarterly_prices:
+        +tags: [ 'agg_quarterly' ]
     fundamentals:
       +database: fundamentals
       +schema: fundamentals  # harmless; macro ignores it
