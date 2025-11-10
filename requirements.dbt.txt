@@ -1,0 +1,2 @@
+dbt-clickhouse==1.9.5
+protobuf>=6,<7

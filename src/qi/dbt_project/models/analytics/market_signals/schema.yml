@@ -1,0 +1,146 @@
+version: 2
+
+models:
+  - name: v_52w_performance
+    description: "Top performers vs 52-week range; shows last close, 52w high/low, and % from low/high."
+    columns:
+      - name: ticker
+        tests: [not_null]
+      - name: last_date
+        tests: [not_null]
+      - name: last_close
+        tests: [not_null]
+      - name: high_52w
+      - name: low_52w
+      - name: pct_from_low
+      - name: pct_from_high
+
+  - name: v_top_1d_movers
+    description: "Latest session top % gainers/losers vs the prior session."
+    columns:
+      - name: ticker
+        tests: [not_null]
+      - name: last_date
+        tests: [not_null]
+      - name: close_last
+        tests: [not_null]
+      - name: close_prev
+      - name: pct_change
+
+  - name: v_volume_surge
+    description: "Volume today vs rolling 20-day average volume."
+    columns:
+      - name: ticker
+        tests: [not_null]
+      - name: last_date
+        tests: [not_null]
+      - name: volume_today
+        tests: [not_null]
+      - name: vol_20d_avg
+      - name: vol_surge
+
+  - name: v_gap_scan
+    description: "Gap up/down scanner: today’s open vs yesterday’s close."
+    columns:
+      - name: ticker
+        tests: [not_null]
+      - name: date
+        tests: [not_null]
+      - name: open_today
+        tests: [not_null]
+      - name: prev_close
+      - name: gap_pct
+
+  - name: v_momentum_20d_60d
+    description: "Short vs medium-term momentum: 20d and 60d returns."
+    columns:
+      - name: ticker
+        tests: [not_null]
+      - name: last_close
+        tests: [not_null]
+      - name: ret_20d_pct
+      - name: ret_60d_pct
+
+  - name: v_distance_from_sma
+    description: "Distance from 50d/200d SMAs as % of SMA."
+    columns:
+      - name: ticker
+        tests: [not_null]
+      - name: last_close
+        tests: [not_null]
+      - name: sma50
+      - name: sma200
+      - name: dist_sma50_pct
+      - name: dist_sma200_pct
+
+  - name: v_breadth_pct_above_sma
+    description: "Market breadth snapshot: % of tickers above 50d/200d SMAs on the latest date."
+    columns:
+      - name: pct_above_50d
+        tests: [not_null]
+      - name: pct_above_200d
+        tests: [not_null]
+
+  - name: v_52w_scanner
+    description: "52-week range positioning for each ticker (last close vs 52w high/low)."
+    columns:
+      - name: ticker
+        tests: [not_null]
+      - name: last_close
+        tests: [not_null]
+      - name: high_52w
+      - name: low_52w
+      - name: pct_from_low
+      - name: pct_from_high
+
+  - name: v_atr14_pct
+    description: "ATR(14) as a % of price (volatility proxy) at the latest close."
+    columns:
+      - name: ticker
+        tests: [not_null]
+      - name: date
+        tests: [not_null]
+      - name: last_close
+        tests: [not_null]
+      - name: last_atr14
+      - name: atr14_pct
+
+  - name: v_inside_outside_day
+    description: "Classifies the latest session as inside, outside, or normal day vs the prior session."
+    columns:
+      - name: ticker
+        tests: [not_null]
+      - name: date
+        tests: [not_null]
+      - name: open_today
+      - name: high_today
+      - name: low_today
+      - name: close_today
+      - name: day_type
+        tests: [not_null]
+
+  - name: v_rv30_and_rank
+    description: "Realized volatility (30d, annualized) and its 1-year percentile rank (vol rank)."
+    columns:
+      - name: ticker
+        tests: [not_null]
+      - name: rv30
+      - name: rv30_rank_1y
+
+  - name: 18_vix_weekly_snapshot
+    description: "VIX weekly snapshot for the last ~22 weeks, with raw/adjusted closes, WoW changes, and simple regime buckets."
+    columns:
+      - name: week_start
+        tests: [ not_null ]
+      - name: last_trading_date
+        tests: [ not_null ]
+      - name: vix_regime
+        tests:
+          - accepted_values:
+              values: [ "Calm", "Normal", "Fear" ]
+      - name: vix_close_raw
+      - name: vix_net_change_raw
+      - name: vix_pct_change_raw_pct
+      - name: vix_close_adj
+      - name: vix_net_change_adj
+      - name: vix_pct_change_adj_pct
