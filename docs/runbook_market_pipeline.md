@@ -16,3 +16,5 @@
   CLICKHOUSE_USER=qi
   CLICKHOUSE_PASSWORD=mysecurepassword
   CLICKHOUSE_DB=market
+```
+

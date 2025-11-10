@@ -1,0 +1,6 @@
+[2025-11-10T07:27:27.254+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-10T07:27:27.306+0000] {taskinstance.py:2066} INFO - Dependencies not met for <TaskInstance: refresh_intl_dag.refresh_intl_pipeline manual__2025-11-01T19:44:07.987794+00:00 [failed]>, dependency 'Task Instance State' FAILED: Task is in the 'failed' state.
+[2025-11-10T07:27:27.318+0000] {local_task_job_runner.py:163} INFO - Task is not able to be run
+[2025-11-10T07:27:27.436+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-10T07:27:27.470+0000] {taskinstance.py:2066} INFO - Dependencies not met for <TaskInstance: refresh_intl_dag.refresh_intl_pipeline manual__2025-11-01T19:44:07.987794+00:00 [failed]>, dependency 'Task Instance State' FAILED: Task is in the 'failed' state.
+[2025-11-10T07:27:27.474+0000] {local_task_job_runner.py:163} INFO - Task is not able to be run

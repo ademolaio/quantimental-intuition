@@ -26,6 +26,9 @@ x-airflow-common: &airflow-common
 
   user: "${AIRFLOW_UID:-50000}:${AIRFLOW_GID:-0}"
 
+  extra_hosts:
+    - "host.docker.internal:host-gateway"
+
   volumes:
     # DAGs + your project code and data
     - ../airflow/dags:/opt/airflow/dags
@@ -48,6 +51,19 @@ x-airflow-common: &airflow-common
     - qi_net
 
 services:
+  dbt-runner:
+    build:
+      context: ..
+      dockerfile: docker/dbt/Dockerfile
+    container_name: qi-dbt-runner
+    networks: [ qi_net ]
+    volumes:
+      - ../airflow/dags:/opt/airflow/dags
+      - ../src:/opt/airflow/dags/src
+      - ../data:/opt/airflow/dags/data
+    # so you can run dbt exactly where your project lives
+    working_dir: /opt/airflow/dags/src/qi/dbt_project
+    command: bash -lc "sleep infinity"
   airflow-redis:
     image: redis:7
     container_name: qi-airflow-redis
@@ -111,7 +127,14 @@ services:
   airflow-worker:
     <<: *airflow-common
     container_name: qi-airflow-worker
-    command: celery worker
+    command: >
+      bash -lc "
+        mkdir -p /opt/airflow/celery &&
+        pip install --no-cache-dir -r /requirements.txt &&
+        exec celery --app airflow.executors.celery_executor.app worker
+            --loglevel=INFO
+            --pidfile /opt/airflow/celery/%n.pid
+      "
     depends_on:
       - airflow-init
       - airflow-postgres

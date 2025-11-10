@@ -1,0 +1,122 @@
+[2025-11-10T10:30:01.946+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-10T10:30:01.960+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: refresh_us_dag.refresh_us_pipeline manual__2025-11-10T10:30:00.154079+00:00 [queued]>
+[2025-11-10T10:30:01.964+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: refresh_us_dag.refresh_us_pipeline manual__2025-11-10T10:30:00.154079+00:00 [queued]>
+[2025-11-10T10:30:01.964+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-11-10T10:30:01.972+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): refresh_us_pipeline> on 2025-11-10 10:30:00.154079+00:00
+[2025-11-10T10:30:01.976+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=79) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-11-10T10:30:01.977+0000] {standard_task_runner.py:64} INFO - Started process 82 to run task
+[2025-11-10T10:30:01.977+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'refresh_us_dag', 'refresh_us_pipeline', 'manual__2025-11-10T10:30:00.154079+00:00', '--job-id', '38', '--raw', '--subdir', 'DAGS_FOLDER/qi_refresh_us.py', '--cfg-path', '/tmp/tmp7cxatkiz']
+[2025-11-10T10:30:01.979+0000] {standard_task_runner.py:91} INFO - Job 38: Subtask refresh_us_pipeline
+[2025-11-10T10:30:02.046+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='samuel' AIRFLOW_CTX_DAG_ID='refresh_us_dag' AIRFLOW_CTX_TASK_ID='refresh_us_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-11-10T10:30:00.154079+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-11-10T10:30:00.154079+00:00'
+[2025-11-10T10:30:02.047+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-11-10T10:30:03.667+0000] {logging_mixin.py:188} INFO - [refresh] JNJ: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:04.920+0000] {logging_mixin.py:188} INFO - [refresh] LLY: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:07.588+0000] {logging_mixin.py:188} INFO - [refresh] MA: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:08.831+0000] {logging_mixin.py:188} INFO - [refresh] MCD: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:10.125+0000] {logging_mixin.py:188} INFO - [refresh] WMT: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:11.350+0000] {logging_mixin.py:188} INFO - [refresh] LMT: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:12.501+0000] {logging_mixin.py:188} INFO - [refresh] JPM: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:13.794+0000] {logging_mixin.py:188} INFO - [refresh] UNH: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:14.936+0000] {logging_mixin.py:188} INFO - [refresh] XOM: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:16.128+0000] {logging_mixin.py:188} INFO - [refresh] MCK: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:17.408+0000] {logging_mixin.py:188} INFO - [refresh] GE: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:18.484+0000] {logging_mixin.py:188} INFO - [refresh] BRK-B: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:19.579+0000] {logging_mixin.py:188} INFO - [refresh] GM: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:20.713+0000] {logging_mixin.py:188} INFO - [refresh] T: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:21.911+0000] {logging_mixin.py:188} INFO - [refresh] K: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:23.112+0000] {logging_mixin.py:188} INFO - [refresh] F: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:24.338+0000] {logging_mixin.py:188} INFO - [refresh] DAL: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:25.439+0000] {logging_mixin.py:188} INFO - [refresh] GS: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:26.768+0000] {logging_mixin.py:188} INFO - [refresh] MSI: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:27.849+0000] {logging_mixin.py:188} INFO - [refresh] V: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:29.591+0000] {logging_mixin.py:188} INFO - [refresh] CAT: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:30.763+0000] {logging_mixin.py:188} INFO - [refresh] SHW: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:31.976+0000] {logging_mixin.py:188} INFO - [refresh] IBM: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:33.095+0000] {logging_mixin.py:188} INFO - [refresh] HD: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:34.271+0000] {logging_mixin.py:188} INFO - [refresh] BA: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:35.444+0000] {logging_mixin.py:188} INFO - [refresh] MMM: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:36.661+0000] {logging_mixin.py:188} INFO - [refresh] DIS: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:37.988+0000] {logging_mixin.py:188} INFO - [refresh] PG: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:39.230+0000] {logging_mixin.py:188} INFO - [refresh] CVX: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:40.416+0000] {logging_mixin.py:188} INFO - [refresh] MRK: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:41.653+0000] {logging_mixin.py:188} INFO - [refresh] VZ: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:42.886+0000] {logging_mixin.py:188} INFO - [refresh] KO: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:44.111+0000] {logging_mixin.py:188} INFO - [refresh] AXP: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:45.191+0000] {logging_mixin.py:188} INFO - [refresh] TRV: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:46.264+0000] {logging_mixin.py:188} INFO - [refresh] NKE: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:47.508+0000] {logging_mixin.py:188} INFO - [refresh] BB: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:48.944+0000] {logging_mixin.py:188} INFO - [refresh] TOST: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:49.934+0000] {logging_mixin.py:188} INFO - [refresh] FUBO: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:50.963+0000] {logging_mixin.py:188} INFO - [refresh] CHPT: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:52.189+0000] {logging_mixin.py:188} INFO - [refresh] SNAP: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:53.295+0000] {logging_mixin.py:188} INFO - [refresh] PLTR: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:59.435+0000] {logging_mixin.py:188} INFO - [refresh] LMND: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:00.829+0000] {logging_mixin.py:188} INFO - [refresh] CRM: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:01.893+0000] {logging_mixin.py:188} INFO - [refresh] ORCL: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:02.966+0000] {logging_mixin.py:188} INFO - [refresh] NOW: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:04.276+0000] {logging_mixin.py:188} INFO - [refresh] SHOP: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:05.506+0000] {logging_mixin.py:188} INFO - [refresh] AAPL: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:07.121+0000] {logging_mixin.py:188} INFO - [refresh] MSFT: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:08.500+0000] {logging_mixin.py:188} INFO - [refresh] AMZN: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:09.528+0000] {logging_mixin.py:188} INFO - [refresh] GOOGL: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:10.778+0000] {logging_mixin.py:188} INFO - [refresh] GOOG: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:11.826+0000] {logging_mixin.py:188} INFO - [refresh] META: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:13.005+0000] {logging_mixin.py:188} INFO - [refresh] NVDA: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:14.114+0000] {logging_mixin.py:188} INFO - [refresh] TSLA: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:15.165+0000] {logging_mixin.py:188} INFO - [refresh] AVGO: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:16.291+0000] {logging_mixin.py:188} INFO - [refresh] AMD: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:17.463+0000] {logging_mixin.py:188} INFO - [refresh] INTC: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:18.677+0000] {logging_mixin.py:188} INFO - [refresh] AMAT: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:20.007+0000] {logging_mixin.py:188} INFO - [refresh] LRCX: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:21.173+0000] {logging_mixin.py:188} INFO - [refresh] QCOM: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:22.443+0000] {logging_mixin.py:188} INFO - [refresh] ADBE: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:23.486+0000] {logging_mixin.py:188} INFO - [refresh] INTU: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:24.979+0000] {logging_mixin.py:188} INFO - [refresh] NFLX: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:26.134+0000] {logging_mixin.py:188} INFO - [refresh] PEP: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:27.232+0000] {logging_mixin.py:188} INFO - [refresh] SBUX: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:28.327+0000] {logging_mixin.py:188} INFO - [refresh] COST: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:29.474+0000] {logging_mixin.py:188} INFO - [refresh] PYPL: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:30.519+0000] {logging_mixin.py:188} INFO - [refresh] AMGN: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:31.900+0000] {logging_mixin.py:188} INFO - [refresh] GILD: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:33.127+0000] {logging_mixin.py:188} INFO - [refresh] REGN: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:34.350+0000] {logging_mixin.py:188} INFO - [refresh] CSX: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:35.683+0000] {logging_mixin.py:188} INFO - [refresh] ADP: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:36.893+0000] {logging_mixin.py:188} INFO - [refresh] MAR: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:38.062+0000] {logging_mixin.py:188} INFO - [refresh] QQQ: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:39.258+0000] {logging_mixin.py:188} INFO - [refresh] IEI: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:40.571+0000] {logging_mixin.py:188} INFO - [refresh] HON: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:41.662+0000] {logging_mixin.py:188} INFO - [refresh] SPY: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:42.896+0000] {logging_mixin.py:188} INFO - [refresh] IWM: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:44.219+0000] {logging_mixin.py:188} INFO - [refresh] DIA: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:45.278+0000] {logging_mixin.py:188} INFO - [refresh] XLB: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:46.452+0000] {logging_mixin.py:188} INFO - [refresh] XLC: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:47.549+0000] {logging_mixin.py:188} INFO - [refresh] XLE: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:48.839+0000] {logging_mixin.py:188} INFO - [refresh] XLF: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:49.883+0000] {logging_mixin.py:188} INFO - [refresh] XLI: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:51.026+0000] {logging_mixin.py:188} INFO - [refresh] XLK: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:52.169+0000] {logging_mixin.py:188} INFO - [refresh] XLP: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:53.321+0000] {logging_mixin.py:188} INFO - [refresh] XLRE: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:54.474+0000] {logging_mixin.py:188} INFO - [refresh] XLU: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:55.808+0000] {logging_mixin.py:188} INFO - [refresh] XLV: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:57.090+0000] {logging_mixin.py:188} INFO - [refresh] XLY: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:58.145+0000] {logging_mixin.py:188} INFO - [refresh] XHB: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:31:59.142+0000] {logging_mixin.py:188} INFO - [refresh] GLD: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:32:00.173+0000] {logging_mixin.py:188} INFO - [refresh] SLV: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:32:01.265+0000] {logging_mixin.py:188} INFO - [refresh] UNG: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:32:02.545+0000] {logging_mixin.py:188} INFO - [refresh] DBA: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:32:03.616+0000] {logging_mixin.py:188} INFO - [refresh] DBC: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:32:05.034+0000] {logging_mixin.py:188} INFO - [refresh] USO: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:32:06.125+0000] {logging_mixin.py:188} INFO - [refresh] CPER: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:32:07.551+0000] {logging_mixin.py:188} INFO - [refresh] SGOV: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:32:08.869+0000] {logging_mixin.py:188} INFO - [refresh] SHY: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:32:10.176+0000] {logging_mixin.py:188} INFO - [refresh] IEF: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:32:11.333+0000] {logging_mixin.py:188} INFO - [refresh] TLT: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:32:12.395+0000] {logging_mixin.py:188} INFO - [refresh] ^VIX: 16 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:32:12.395+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-11-10T10:32:12.396+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-11-10T10:32:12.402+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=refresh_us_dag, task_id=refresh_us_pipeline, run_id=manual__2025-11-10T10:30:00.154079+00:00, execution_date=20251110T103000, start_date=20251110T103001, end_date=20251110T103212
+[2025-11-10T10:32:12.453+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-11-10T10:32:12.466+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-11-10T10:32:12.467+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,53 @@
+[2025-11-10T10:30:00.121+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-10T10:30:00.135+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: refresh_intl_dag.refresh_intl_pipeline manual__2025-11-10T10:29:57.268733+00:00 [queued]>
+[2025-11-10T10:30:00.138+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: refresh_intl_dag.refresh_intl_pipeline manual__2025-11-10T10:29:57.268733+00:00 [queued]>
+[2025-11-10T10:30:00.139+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-11-10T10:30:00.145+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): refresh_intl_pipeline> on 2025-11-10 10:29:57.268733+00:00
+[2025-11-10T10:30:00.148+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=73) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-11-10T10:30:00.151+0000] {standard_task_runner.py:64} INFO - Started process 75 to run task
+[2025-11-10T10:30:00.150+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'refresh_intl_dag', 'refresh_intl_pipeline', 'manual__2025-11-10T10:29:57.268733+00:00', '--job-id', '37', '--raw', '--subdir', 'DAGS_FOLDER/qi_refresh_intl.py', '--cfg-path', '/tmp/tmpifuhyr6i']
+[2025-11-10T10:30:00.151+0000] {standard_task_runner.py:91} INFO - Job 37: Subtask refresh_intl_pipeline
+[2025-11-10T10:30:00.229+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='samuel' AIRFLOW_CTX_DAG_ID='refresh_intl_dag' AIRFLOW_CTX_TASK_ID='refresh_intl_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-11-10T10:29:57.268733+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-11-10T10:29:57.268733+00:00'
+[2025-11-10T10:30:00.230+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-11-10T10:30:01.605+0000] {logging_mixin.py:188} INFO - [refresh] NOVO-B.CO: 16 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:03.000+0000] {logging_mixin.py:188} INFO - [refresh] DANSKE.CO: 16 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:04.234+0000] {logging_mixin.py:188} INFO - [refresh] CARL-B.CO: 16 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:05.467+0000] {logging_mixin.py:188} INFO - [refresh] VWS.CO: 16 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:06.790+0000] {logging_mixin.py:188} INFO - [refresh] NOKIA.HE: 16 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:07.901+0000] {logging_mixin.py:188} INFO - [refresh] KNEBV.HE: 16 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:09.356+0000] {logging_mixin.py:188} INFO - [refresh] UPM.HE: 16 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:10.668+0000] {logging_mixin.py:188} INFO - [refresh] OUT1V.HE: 16 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:12.244+0000] {logging_mixin.py:188} INFO - [refresh] FORTUM.HE: 16 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:13.454+0000] {logging_mixin.py:188} INFO - [refresh] EQNR.OL: 16 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:14.782+0000] {logging_mixin.py:188} INFO - [refresh] NHY.OL: 16 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:15.982+0000] {logging_mixin.py:188} INFO - [refresh] TEL.OL: 16 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:17.363+0000] {logging_mixin.py:188} INFO - [refresh] ORK.OL: 16 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:18.397+0000] {logging_mixin.py:188} INFO - [refresh] DNB.OL: 16 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:19.589+0000] {logging_mixin.py:188} INFO - [refresh] VOLV-B.ST: 16 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:20.692+0000] {logging_mixin.py:188} INFO - [refresh] ERIC-B.ST: 16 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:22.193+0000] {logging_mixin.py:188} INFO - [refresh] ATCO-A.ST: 16 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:23.355+0000] {logging_mixin.py:188} INFO - [refresh] SAND.ST: 16 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:24.547+0000] {logging_mixin.py:188} INFO - [refresh] SAP.DE: 16 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:25.625+0000] {logging_mixin.py:188} INFO - [refresh] SIE.DE: 16 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:26.711+0000] {logging_mixin.py:188} INFO - [refresh] VOW.DE: 16 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:27.845+0000] {logging_mixin.py:188} INFO - [refresh] ALV.DE: 16 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:29.013+0000] {logging_mixin.py:188} INFO - [refresh] DTE.DE: 16 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:30.293+0000] {logging_mixin.py:188} INFO - [refresh] MC.PA: 16 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:31.738+0000] {logging_mixin.py:188} INFO - [refresh] OR.PA: 16 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:32.835+0000] {logging_mixin.py:188} INFO - [refresh] NESN.SW: 16 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:33.993+0000] {logging_mixin.py:188} INFO - [refresh] ROG.SW: 16 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:35.214+0000] {logging_mixin.py:188} INFO - [refresh] 7203.T: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:36.310+0000] {logging_mixin.py:188} INFO - [refresh] 6758.T: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:37.463+0000] {logging_mixin.py:188} INFO - [refresh] 9432.T: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:38.749+0000] {logging_mixin.py:188} INFO - [refresh] 005930.KS: 16 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:40.079+0000] {logging_mixin.py:188} INFO - [refresh] BHP.AX: 16 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:41.279+0000] {logging_mixin.py:188} INFO - [refresh] 0700.HK: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:42.580+0000] {logging_mixin.py:188} INFO - [refresh] RELIANCE.NS: 15 rows in 2025-10-20..2025-11-11
+[2025-11-10T10:30:42.580+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-11-10T10:30:42.580+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-11-10T10:30:42.587+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=refresh_intl_dag, task_id=refresh_intl_pipeline, run_id=manual__2025-11-10T10:29:57.268733+00:00, execution_date=20251110T102957, start_date=20251110T103000, end_date=20251110T103042
+[2025-11-10T10:30:42.634+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-11-10T10:30:42.646+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-11-10T10:30:42.647+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
