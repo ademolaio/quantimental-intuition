@@ -1912,3 +1912,75 @@
 [2025-11-10T18:22:34.615+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:22:34.615+0000] {dag.py:3947} INFO - Setting next_dagrun for build_aggregates_quarterly to 2025-11-09 21:30:00+00:00, run_after=2025-11-10 21:30:00+00:00
 [2025-11-10T18:22:34.616+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:22:34.616+0000] {dag.py:3947} INFO - Setting next_dagrun for build_aggregates_weekly to 2025-11-08 06:00:00+00:00, run_after=2025-11-15 06:00:00+00:00
 [2025-11-10T18:22:34.627+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_aggregate_dbt.py took 0.072 seconds
+[2025-11-10T18:23:05.496+0000] {processor.py:161} INFO - Started process (PID=2024) to work on /opt/airflow/dags/qi_aggregate_dbt.py
+[2025-11-10T18:23:05.497+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_aggregate_dbt.py for tasks to queue
+[2025-11-10T18:23:05.498+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:23:05.497+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_aggregate_dbt.py
+[2025-11-10T18:23:05.508+0000] {processor.py:840} INFO - DAG(s) 'build_aggregates_monthly', 'build_aggregates_quarterly', 'build_aggregates_weekly' retrieved from /opt/airflow/dags/qi_aggregate_dbt.py
+[2025-11-10T18:23:05.528+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:23:05.528+0000] {dag.py:3089} INFO - Sync 3 DAGs
+[2025-11-10T18:23:05.541+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:23:05.540+0000] {dag.py:3947} INFO - Setting next_dagrun for build_aggregates_monthly to 2025-11-09 21:30:00+00:00, run_after=2025-11-10 21:30:00+00:00
+[2025-11-10T18:23:05.543+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:23:05.543+0000] {dag.py:3947} INFO - Setting next_dagrun for build_aggregates_quarterly to 2025-11-09 21:30:00+00:00, run_after=2025-11-10 21:30:00+00:00
+[2025-11-10T18:23:05.544+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:23:05.544+0000] {dag.py:3947} INFO - Setting next_dagrun for build_aggregates_weekly to 2025-11-08 06:00:00+00:00, run_after=2025-11-15 06:00:00+00:00
+[2025-11-10T18:23:05.553+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_aggregate_dbt.py took 0.063 seconds
+[2025-11-10T18:23:36.318+0000] {processor.py:161} INFO - Started process (PID=2030) to work on /opt/airflow/dags/qi_aggregate_dbt.py
+[2025-11-10T18:23:36.320+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_aggregate_dbt.py for tasks to queue
+[2025-11-10T18:23:36.320+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:23:36.320+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_aggregate_dbt.py
+[2025-11-10T18:23:36.331+0000] {processor.py:840} INFO - DAG(s) 'build_aggregates_weekly', 'build_aggregates_monthly', 'build_aggregates_quarterly' retrieved from /opt/airflow/dags/qi_aggregate_dbt.py
+[2025-11-10T18:23:36.351+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:23:36.351+0000] {dag.py:3089} INFO - Sync 3 DAGs
+[2025-11-10T18:23:36.363+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:23:36.363+0000] {dag.py:3947} INFO - Setting next_dagrun for build_aggregates_monthly to 2025-11-09 21:30:00+00:00, run_after=2025-11-10 21:30:00+00:00
+[2025-11-10T18:23:36.366+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:23:36.366+0000] {dag.py:3947} INFO - Setting next_dagrun for build_aggregates_quarterly to 2025-11-09 21:30:00+00:00, run_after=2025-11-10 21:30:00+00:00
+[2025-11-10T18:23:36.367+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:23:36.367+0000] {dag.py:3947} INFO - Setting next_dagrun for build_aggregates_weekly to 2025-11-08 06:00:00+00:00, run_after=2025-11-15 06:00:00+00:00
+[2025-11-10T18:23:36.376+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_aggregate_dbt.py took 0.066 seconds
+[2025-11-10T18:24:07.147+0000] {processor.py:161} INFO - Started process (PID=2036) to work on /opt/airflow/dags/qi_aggregate_dbt.py
+[2025-11-10T18:24:07.147+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_aggregate_dbt.py for tasks to queue
+[2025-11-10T18:24:07.148+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:24:07.148+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_aggregate_dbt.py
+[2025-11-10T18:24:07.156+0000] {processor.py:840} INFO - DAG(s) 'build_aggregates_monthly', 'build_aggregates_quarterly', 'build_aggregates_weekly' retrieved from /opt/airflow/dags/qi_aggregate_dbt.py
+[2025-11-10T18:24:07.172+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:24:07.172+0000] {dag.py:3089} INFO - Sync 3 DAGs
+[2025-11-10T18:24:07.184+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:24:07.184+0000] {dag.py:3947} INFO - Setting next_dagrun for build_aggregates_monthly to 2025-11-09 21:30:00+00:00, run_after=2025-11-10 21:30:00+00:00
+[2025-11-10T18:24:07.187+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:24:07.187+0000] {dag.py:3947} INFO - Setting next_dagrun for build_aggregates_quarterly to 2025-11-09 21:30:00+00:00, run_after=2025-11-10 21:30:00+00:00
+[2025-11-10T18:24:07.188+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:24:07.188+0000] {dag.py:3947} INFO - Setting next_dagrun for build_aggregates_weekly to 2025-11-08 06:00:00+00:00, run_after=2025-11-15 06:00:00+00:00
+[2025-11-10T18:24:07.196+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_aggregate_dbt.py took 0.055 seconds
+[2025-11-10T18:24:37.958+0000] {processor.py:161} INFO - Started process (PID=2042) to work on /opt/airflow/dags/qi_aggregate_dbt.py
+[2025-11-10T18:24:37.959+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_aggregate_dbt.py for tasks to queue
+[2025-11-10T18:24:37.959+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:24:37.959+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_aggregate_dbt.py
+[2025-11-10T18:24:37.967+0000] {processor.py:840} INFO - DAG(s) 'build_aggregates_quarterly', 'build_aggregates_weekly', 'build_aggregates_monthly' retrieved from /opt/airflow/dags/qi_aggregate_dbt.py
+[2025-11-10T18:24:37.989+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:24:37.989+0000] {dag.py:3089} INFO - Sync 3 DAGs
+[2025-11-10T18:24:38.005+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:24:38.005+0000] {dag.py:3947} INFO - Setting next_dagrun for build_aggregates_monthly to 2025-11-09 21:30:00+00:00, run_after=2025-11-10 21:30:00+00:00
+[2025-11-10T18:24:38.008+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:24:38.008+0000] {dag.py:3947} INFO - Setting next_dagrun for build_aggregates_quarterly to 2025-11-09 21:30:00+00:00, run_after=2025-11-10 21:30:00+00:00
+[2025-11-10T18:24:38.010+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:24:38.010+0000] {dag.py:3947} INFO - Setting next_dagrun for build_aggregates_weekly to 2025-11-08 06:00:00+00:00, run_after=2025-11-15 06:00:00+00:00
+[2025-11-10T18:24:38.021+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_aggregate_dbt.py took 0.068 seconds
+[2025-11-10T18:25:08.918+0000] {processor.py:161} INFO - Started process (PID=2048) to work on /opt/airflow/dags/qi_aggregate_dbt.py
+[2025-11-10T18:25:08.919+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_aggregate_dbt.py for tasks to queue
+[2025-11-10T18:25:08.920+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:25:08.919+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_aggregate_dbt.py
+[2025-11-10T18:25:08.931+0000] {processor.py:840} INFO - DAG(s) 'build_aggregates_monthly', 'build_aggregates_quarterly', 'build_aggregates_weekly' retrieved from /opt/airflow/dags/qi_aggregate_dbt.py
+[2025-11-10T18:25:08.951+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:25:08.951+0000] {dag.py:3089} INFO - Sync 3 DAGs
+[2025-11-10T18:25:08.964+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:25:08.964+0000] {dag.py:3947} INFO - Setting next_dagrun for build_aggregates_monthly to 2025-11-09 21:30:00+00:00, run_after=2025-11-10 21:30:00+00:00
+[2025-11-10T18:25:08.967+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:25:08.967+0000] {dag.py:3947} INFO - Setting next_dagrun for build_aggregates_quarterly to 2025-11-09 21:30:00+00:00, run_after=2025-11-10 21:30:00+00:00
+[2025-11-10T18:25:08.968+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:25:08.968+0000] {dag.py:3947} INFO - Setting next_dagrun for build_aggregates_weekly to 2025-11-08 06:00:00+00:00, run_after=2025-11-15 06:00:00+00:00
+[2025-11-10T18:25:08.977+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_aggregate_dbt.py took 0.065 seconds
+[2025-11-10T18:25:39.867+0000] {processor.py:161} INFO - Started process (PID=2054) to work on /opt/airflow/dags/qi_aggregate_dbt.py
+[2025-11-10T18:25:39.868+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_aggregate_dbt.py for tasks to queue
+[2025-11-10T18:25:39.869+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:25:39.869+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_aggregate_dbt.py
+[2025-11-10T18:25:39.880+0000] {processor.py:840} INFO - DAG(s) 'build_aggregates_monthly', 'build_aggregates_quarterly', 'build_aggregates_weekly' retrieved from /opt/airflow/dags/qi_aggregate_dbt.py
+[2025-11-10T18:25:39.899+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:25:39.899+0000] {dag.py:3089} INFO - Sync 3 DAGs
+[2025-11-10T18:25:39.910+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:25:39.910+0000] {dag.py:3947} INFO - Setting next_dagrun for build_aggregates_monthly to 2025-11-09 21:30:00+00:00, run_after=2025-11-10 21:30:00+00:00
+[2025-11-10T18:25:39.912+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:25:39.912+0000] {dag.py:3947} INFO - Setting next_dagrun for build_aggregates_quarterly to 2025-11-09 21:30:00+00:00, run_after=2025-11-10 21:30:00+00:00
+[2025-11-10T18:25:39.914+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:25:39.914+0000] {dag.py:3947} INFO - Setting next_dagrun for build_aggregates_weekly to 2025-11-08 06:00:00+00:00, run_after=2025-11-15 06:00:00+00:00
+[2025-11-10T18:25:39.921+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_aggregate_dbt.py took 0.062 seconds
+[2025-11-10T18:26:10.702+0000] {processor.py:161} INFO - Started process (PID=2060) to work on /opt/airflow/dags/qi_aggregate_dbt.py
+[2025-11-10T18:26:10.703+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_aggregate_dbt.py for tasks to queue
+[2025-11-10T18:26:10.704+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:26:10.704+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_aggregate_dbt.py
+[2025-11-10T18:26:10.713+0000] {processor.py:840} INFO - DAG(s) 'build_aggregates_weekly', 'build_aggregates_monthly', 'build_aggregates_quarterly' retrieved from /opt/airflow/dags/qi_aggregate_dbt.py
+[2025-11-10T18:26:10.730+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:26:10.730+0000] {dag.py:3089} INFO - Sync 3 DAGs
+[2025-11-10T18:26:10.743+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:26:10.743+0000] {dag.py:3947} INFO - Setting next_dagrun for build_aggregates_monthly to 2025-11-09 21:30:00+00:00, run_after=2025-11-10 21:30:00+00:00
+[2025-11-10T18:26:10.746+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:26:10.746+0000] {dag.py:3947} INFO - Setting next_dagrun for build_aggregates_quarterly to 2025-11-09 21:30:00+00:00, run_after=2025-11-10 21:30:00+00:00
+[2025-11-10T18:26:10.748+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:26:10.748+0000] {dag.py:3947} INFO - Setting next_dagrun for build_aggregates_weekly to 2025-11-08 06:00:00+00:00, run_after=2025-11-15 06:00:00+00:00
+[2025-11-10T18:26:10.757+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_aggregate_dbt.py took 0.060 seconds
+[2025-11-10T18:26:41.712+0000] {processor.py:161} INFO - Started process (PID=2066) to work on /opt/airflow/dags/qi_aggregate_dbt.py
+[2025-11-10T18:26:41.713+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/qi_aggregate_dbt.py for tasks to queue
+[2025-11-10T18:26:41.713+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:26:41.713+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/qi_aggregate_dbt.py
+[2025-11-10T18:26:41.722+0000] {processor.py:840} INFO - DAG(s) 'build_aggregates_monthly', 'build_aggregates_quarterly', 'build_aggregates_weekly' retrieved from /opt/airflow/dags/qi_aggregate_dbt.py
+[2025-11-10T18:26:41.755+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:26:41.755+0000] {dag.py:3089} INFO - Sync 3 DAGs
+[2025-11-10T18:26:41.768+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:26:41.768+0000] {dag.py:3947} INFO - Setting next_dagrun for build_aggregates_monthly to 2025-11-09 21:30:00+00:00, run_after=2025-11-10 21:30:00+00:00
+[2025-11-10T18:26:41.771+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:26:41.770+0000] {dag.py:3947} INFO - Setting next_dagrun for build_aggregates_quarterly to 2025-11-09 21:30:00+00:00, run_after=2025-11-10 21:30:00+00:00
+[2025-11-10T18:26:41.772+0000] {logging_mixin.py:188} INFO - [2025-11-10T18:26:41.772+0000] {dag.py:3947} INFO - Setting next_dagrun for build_aggregates_weekly to 2025-11-08 06:00:00+00:00, run_after=2025-11-15 06:00:00+00:00
+[2025-11-10T18:26:41.781+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/qi_aggregate_dbt.py took 0.074 seconds

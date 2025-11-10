@@ -29,7 +29,7 @@ endef
         env-shell dbt-provision-fundamentals refresh_fundamentals \
         backfill_fundamentals \
         container-dbt-profile container-dbt-deps container-dbt-run container-dbt-test container-dbt-build \
-        dbt-analytics dbt-analytics-in-docker
+        dbt-analytics dbt-analytics-in-docker agg.weekly agg.monthly agg.quarterly agg.all dbt.version
 
 # --- ClickHouse + Superset ----------------------------------------------------
 up:
@@ -315,3 +315,41 @@ env-shell:
 
 validate-exchanges:
 	@$(ENV_EXPORT) && $(PY) tools/validate_exchanges.py
+
+
+# ---- Config (override with: make agg.weekly WORKER=my-container) ----
+WORKER        ?= qi-airflow-worker
+DBT_DIR       ?= /opt/airflow/dags/src/qi/dbt_project
+DBT_PROFILES  ?= $(DBT_DIR)
+DBT_VERSION   ?= dbt-clickhouse==1.9.5
+
+# Internal helper: run a shell in the worker with sane env
+define EXEC_IN_WORKER
+docker exec -it $(WORKER) bash -lc 'set -euo pipefail; \
+  export PATH="$$HOME/.local/bin:$$PATH"; \
+  export DBT_PROFILES_DIR="$(DBT_PROFILES)"; \
+  cd "$(DBT_DIR)"; \
+  if ! command -v dbt >/dev/null 2>&1; then \
+    pip install --no-cache-dir $(DBT_VERSION); \
+  fi; \
+  dbt deps; \
+  $1'
+endef
+
+
+# --- Individual aggregate builds ---
+agg.weekly:
+	$(call EXEC_IN_WORKER, dbt build --select tag:agg_weekly --fail-fast)
+
+agg.monthly:
+	$(call EXEC_IN_WORKER, dbt build --select tag:agg_monthly --fail-fast)
+
+agg.quarterly:
+	$(call EXEC_IN_WORKER, dbt build --select tag:agg_quarterly --fail-fast)
+
+# --- Convenience targets ---
+agg.all:
+	$(call EXEC_IN_WORKER, dbt build --select "tag:agg_weekly tag:agg_monthly tag:agg_quarterly" --fail-fast)
+
+dbt.version:
+	$(call EXEC_IN_WORKER, dbt --version)
