@@ -1,10 +1,21 @@
 # models/aggregates/schema.yml
 version: 2
-
 models:
-  - name: weekly_sales
-    tags: [agg_weekly]
-  - name: monthly_sales
-    tags: [agg_monthly]
-  - name: quarterly_sales
-    tags: [agg_quarterly]
+  - name: weekly_prices
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: [ticker, week_ending]
+      - not_null:
+          column_name: ticker
+      - not_null:
+          column_name: week_ending
+
+  - name: monthly_prices
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: [ticker, month_ending]
+
+  - name: quarterly_prices
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: [ticker, quarter_ending]

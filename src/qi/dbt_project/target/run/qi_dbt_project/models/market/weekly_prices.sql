@@ -9,6 +9,7 @@
 
         insert into `market`.`weekly_prices__dbt_backup`
         ("ticker", "short_name", "week_ending", "open", "high", "low", "close", "adj_close", "volume", "source_max_date", "built_at")-- Real weekly aggregate: ISO week groups; week_ending is the last trading day in that week
+
 select
   ticker,
   argMax(short_name, date)        as short_name,       -- name as of last day in week

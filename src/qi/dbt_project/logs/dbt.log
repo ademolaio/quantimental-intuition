@@ -24586,3 +24586,424 @@ There are 1 unused configuration paths:
 [0m13:09:50.826916 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108fcc740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f21f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f20ce0>]}
 [0m13:09:50.827098 [debug] [MainThread]: Flushing usage events
 [0m13:09:51.345382 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:08:16.245524 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffaf7e2600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffad293830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffad368290>]}
+
+
+============================== 18:08:16.249507 | 1f772a6f-5827-4c51-92dc-e69552d84d87 ==============================
+[0m18:08:16.249507 [info ] [MainThread]: Running with dbt=1.10.13
+[0m18:08:16.249938 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'log_cache_events': 'False', 'fail_fast': 'False', 'printer_width': '80', 'log_path': '/opt/airflow/dags/src/qi/dbt_project/logs', 'indirect_selection': 'eager', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt deps', 'use_colors': 'True', 'quiet': 'False', 'cache_selected_only': 'False', 'static_parser': 'True', 'profiles_dir': '/opt/airflow/dags/src/qi/dbt_project', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'warn_error': 'None', 'partial_parse': 'True', 'target_path': 'None', 'use_experimental_parser': 'False', 'debug': 'False', 'empty': 'None', 'write_json': 'True'}
+[0m18:08:16.350071 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1f772a6f-5827-4c51-92dc-e69552d84d87', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffac387a70>]}
+[0m18:08:16.410026 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-u2bzyhjk'
+[0m18:08:16.410463 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m18:08:16.571958 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m18:08:16.572901 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m18:08:16.748077 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m18:08:16.751900 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m18:08:17.213735 [info ] [MainThread]: Installed from version 1.3.1
+[0m18:08:17.214276 [info ] [MainThread]: Updated version available: 1.3.2
+[0m18:08:17.214793 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '1f772a6f-5827-4c51-92dc-e69552d84d87', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffac825970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffac2b1130>]}
+[0m18:08:17.215152 [info ] [MainThread]: 
+[0m18:08:17.215557 [info ] [MainThread]: Updates available for packages: ['dbt-labs/dbt_utils']                 
+Update your versions in packages.yml, then run dbt deps
+[0m18:08:17.216521 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.9984153, "process_in_blocks": "10632", "process_kernel_time": 0.122078, "process_mem_max_rss": "107564", "process_out_blocks": "1164", "process_user_time": 1.255092}
+[0m18:08:17.216934 [debug] [MainThread]: Command `dbt deps` succeeded at 18:08:17.216877 after 1.00 seconds
+[0m18:08:17.217246 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffad1f9d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffac523f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffac535a30>]}
+[0m18:08:17.217565 [debug] [MainThread]: Flushing usage events
+[0m18:08:17.745335 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:08:19.120354 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb17020f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb1703410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb1772b40>]}
+
+
+============================== 18:08:19.124399 | 17a384e3-91cb-49db-b9f9-2b7e077e9a29 ==============================
+[0m18:08:19.124399 [info ] [MainThread]: Running with dbt=1.10.13
+[0m18:08:19.124946 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'log_cache_events': 'False', 'fail_fast': 'True', 'version_check': 'True', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'log_format': 'default', 'cache_selected_only': 'False', 'introspect': 'True', 'no_print': 'None', 'empty': 'False', 'use_experimental_parser': 'False', 'static_parser': 'True', 'write_json': 'True', 'target_path': 'None', 'indirect_selection': 'eager', 'use_colors': 'True', 'printer_width': '80', 'log_path': '/opt/airflow/dags/src/qi/dbt_project/logs', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/opt/airflow/dags/src/qi/dbt_project', 'invocation_command': 'dbt build --select tag:agg_weekly --fail-fast', 'partial_parse': 'True'}
+[0m18:08:19.225039 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '17a384e3-91cb-49db-b9f9-2b7e077e9a29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb0780350>]}
+[0m18:08:19.257245 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '17a384e3-91cb-49db-b9f9-2b7e077e9a29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb08cc3e0>]}
+[0m18:08:19.257981 [info ] [MainThread]: Registered adapter: clickhouse=1.9.5
+[0m18:08:19.303407 [debug] [MainThread]: checksum: 87546e06832e1286bf2d49b8b108dd3f58da97cbfca650a1f147ec4aedfbbf25, vars: {}, profile: , target: dev, version: 1.10.13
+[0m18:08:19.357857 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m18:08:19.358523 [debug] [MainThread]: previous checksum: 87546e06832e1286bf2d49b8b108dd3f58da97cbfca650a1f147ec4aedfbbf25, current checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe
+[0m18:08:19.358873 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '17a384e3-91cb-49db-b9f9-2b7e077e9a29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb173b470>]}
+[0m18:08:20.048283 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'key_ratios' in the 'models' section of file 'models/fundamentals/schema.yml'
+[0m18:08:20.094034 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'weekly_sales' in the 'models' section of file 'models/aggregates/schema.yml'
+[0m18:08:20.094927 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'monthly_sales' in the 'models' section of file 'models/aggregates/schema.yml'
+[0m18:08:20.095580 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'quarterly_sales' in the 'models' section of file 'models/aggregates/schema.yml'
+[0m18:08:20.165304 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_52w_performance' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m18:08:20.166753 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_top_1d_movers' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m18:08:20.168184 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_volume_surge' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m18:08:20.169469 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_gap_scan' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m18:08:20.170943 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_momentum_20d_60d' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m18:08:20.172592 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_distance_from_sma' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m18:08:20.173766 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_breadth_pct_above_sma' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m18:08:20.174519 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_52w_scanner' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m18:08:20.175712 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_atr14_pct' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m18:08:20.177028 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_inside_outside_day' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m18:08:20.178074 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_rv30_and_rank' in the 'models' section of file 'models/analytics/market_signals/schema.yml'
+[0m18:08:20.199339 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `accepted_values`. Arguments to generic tests
+should be nested under the `arguments` property.`
+[0m18:08:20.199929 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '17a384e3-91cb-49db-b9f9-2b7e077e9a29', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffafb9c920>]}
+[0m18:08:20.206870 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_daily_regime_120_zscore' in the 'models' section of file 'models/analytics/market_regimes/schema.yml'
+[0m18:08:20.208398 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_weekly_regime_100_zscore' in the 'models' section of file 'models/analytics/market_regimes/schema.yml'
+[0m18:08:20.209827 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_monthly_regime_60_zscore' in the 'models' section of file 'models/analytics/market_regimes/schema.yml'
+[0m18:08:20.211149 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'v_quarterly_regime_20_zscore' in the 'models' section of file 'models/analytics/market_regimes/schema.yml'
+[0m18:08:20.239991 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_key_ratios_ticker.948b0ba38a' (models/fundamentals/schema.yml) depends on a node named 'key_ratios' in package '' which was not found
+[0m18:08:20.240497 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_key_ratios_fiscal_date.cadc0e1ad5' (models/fundamentals/schema.yml) depends on a node named 'key_ratios' in package '' which was not found
+[0m18:08:20.241019 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_52w_performance_ticker.4182c3bbda' (models/analytics/market_signals/schema.yml) depends on a node named 'v_52w_performance' in package '' which was not found
+[0m18:08:20.241515 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_52w_performance_last_date.993d1f2aca' (models/analytics/market_signals/schema.yml) depends on a node named 'v_52w_performance' in package '' which was not found
+[0m18:08:20.241942 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_52w_performance_last_close.b1d99a1682' (models/analytics/market_signals/schema.yml) depends on a node named 'v_52w_performance' in package '' which was not found
+[0m18:08:20.242367 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_top_1d_movers_ticker.8dee316137' (models/analytics/market_signals/schema.yml) depends on a node named 'v_top_1d_movers' in package '' which was not found
+[0m18:08:20.242765 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_top_1d_movers_last_date.677da194ca' (models/analytics/market_signals/schema.yml) depends on a node named 'v_top_1d_movers' in package '' which was not found
+[0m18:08:20.243200 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_top_1d_movers_close_last.d6aec1e87a' (models/analytics/market_signals/schema.yml) depends on a node named 'v_top_1d_movers' in package '' which was not found
+[0m18:08:20.243684 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_volume_surge_ticker.a7aa82d74f' (models/analytics/market_signals/schema.yml) depends on a node named 'v_volume_surge' in package '' which was not found
+[0m18:08:20.244188 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_volume_surge_last_date.e3a5008de8' (models/analytics/market_signals/schema.yml) depends on a node named 'v_volume_surge' in package '' which was not found
+[0m18:08:20.244745 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_volume_surge_volume_today.a1ae37125c' (models/analytics/market_signals/schema.yml) depends on a node named 'v_volume_surge' in package '' which was not found
+[0m18:08:20.245201 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_gap_scan_ticker.f99e0d187a' (models/analytics/market_signals/schema.yml) depends on a node named 'v_gap_scan' in package '' which was not found
+[0m18:08:20.245738 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_gap_scan_date.7441b9221f' (models/analytics/market_signals/schema.yml) depends on a node named 'v_gap_scan' in package '' which was not found
+[0m18:08:20.246137 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_gap_scan_open_today.40ab0af060' (models/analytics/market_signals/schema.yml) depends on a node named 'v_gap_scan' in package '' which was not found
+[0m18:08:20.246572 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_momentum_20d_60d_ticker.b25a293306' (models/analytics/market_signals/schema.yml) depends on a node named 'v_momentum_20d_60d' in package '' which was not found
+[0m18:08:20.247023 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_momentum_20d_60d_last_close.442620cd3a' (models/analytics/market_signals/schema.yml) depends on a node named 'v_momentum_20d_60d' in package '' which was not found
+[0m18:08:20.247517 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_distance_from_sma_ticker.6662159729' (models/analytics/market_signals/schema.yml) depends on a node named 'v_distance_from_sma' in package '' which was not found
+[0m18:08:20.247975 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_distance_from_sma_last_close.7427fc7378' (models/analytics/market_signals/schema.yml) depends on a node named 'v_distance_from_sma' in package '' which was not found
+[0m18:08:20.248429 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_breadth_pct_above_sma_pct_above_50d.7777477106' (models/analytics/market_signals/schema.yml) depends on a node named 'v_breadth_pct_above_sma' in package '' which was not found
+[0m18:08:20.248859 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_breadth_pct_above_sma_pct_above_200d.b19e289a7f' (models/analytics/market_signals/schema.yml) depends on a node named 'v_breadth_pct_above_sma' in package '' which was not found
+[0m18:08:20.249254 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_52w_scanner_ticker.2371a99fbf' (models/analytics/market_signals/schema.yml) depends on a node named 'v_52w_scanner' in package '' which was not found
+[0m18:08:20.249699 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_52w_scanner_last_close.58db4816c9' (models/analytics/market_signals/schema.yml) depends on a node named 'v_52w_scanner' in package '' which was not found
+[0m18:08:20.250117 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_atr14_pct_ticker.2a6e78ae79' (models/analytics/market_signals/schema.yml) depends on a node named 'v_atr14_pct' in package '' which was not found
+[0m18:08:20.250556 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_atr14_pct_date.d681a74f63' (models/analytics/market_signals/schema.yml) depends on a node named 'v_atr14_pct' in package '' which was not found
+[0m18:08:20.251034 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_atr14_pct_last_close.548af87d66' (models/analytics/market_signals/schema.yml) depends on a node named 'v_atr14_pct' in package '' which was not found
+[0m18:08:20.251513 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_inside_outside_day_ticker.a81d212474' (models/analytics/market_signals/schema.yml) depends on a node named 'v_inside_outside_day' in package '' which was not found
+[0m18:08:20.251939 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_inside_outside_day_date.7b7d43fcbc' (models/analytics/market_signals/schema.yml) depends on a node named 'v_inside_outside_day' in package '' which was not found
+[0m18:08:20.252320 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_inside_outside_day_day_type.57a3600234' (models/analytics/market_signals/schema.yml) depends on a node named 'v_inside_outside_day' in package '' which was not found
+[0m18:08:20.252827 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_rv30_and_rank_ticker.3d79b97341' (models/analytics/market_signals/schema.yml) depends on a node named 'v_rv30_and_rank' in package '' which was not found
+[0m18:08:20.253254 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_daily_regime_120_zscore_ticker.e3a66dbf55' (models/analytics/market_regimes/schema.yml) depends on a node named 'v_daily_regime_120_zscore' in package '' which was not found
+[0m18:08:20.253663 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_daily_regime_120_zscore_trade_date.9416a6bdbe' (models/analytics/market_regimes/schema.yml) depends on a node named 'v_daily_regime_120_zscore' in package '' which was not found
+[0m18:08:20.254079 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.accepted_values_v_daily_regime_120_zscore_regime__N_A__Neutral_Typical__Bull_Volatile__Bear_Volatile__Bull_Outlier__Bear_Outlier.d9c3d2567e' (models/analytics/market_regimes/schema.yml) depends on a node named 'v_daily_regime_120_zscore' in package '' which was not found
+[0m18:08:20.254512 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_weekly_regime_100_zscore_ticker.e4fcc624b2' (models/analytics/market_regimes/schema.yml) depends on a node named 'v_weekly_regime_100_zscore' in package '' which was not found
+[0m18:08:20.254894 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_weekly_regime_100_zscore_week_ending.c8eea2df71' (models/analytics/market_regimes/schema.yml) depends on a node named 'v_weekly_regime_100_zscore' in package '' which was not found
+[0m18:08:20.255271 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.accepted_values_v_weekly_regime_100_zscore_regime__N_A__Neutral_Typical__Bull_Volatile__Bear_Volatile__Bull_Outlier__Bear_Outlier.4e88588d01' (models/analytics/market_regimes/schema.yml) depends on a node named 'v_weekly_regime_100_zscore' in package '' which was not found
+[0m18:08:20.255609 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_monthly_regime_60_zscore_ticker.8a9ef79416' (models/analytics/market_regimes/schema.yml) depends on a node named 'v_monthly_regime_60_zscore' in package '' which was not found
+[0m18:08:20.255968 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_monthly_regime_60_zscore_month_ending.638d5cefd8' (models/analytics/market_regimes/schema.yml) depends on a node named 'v_monthly_regime_60_zscore' in package '' which was not found
+[0m18:08:20.256390 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.accepted_values_v_monthly_regime_60_zscore_regime__N_A__Neutral_Typical__Bull_Volatile__Bear_Volatile__Bull_Outlier__Bear_Outlier.05e8e8e180' (models/analytics/market_regimes/schema.yml) depends on a node named 'v_monthly_regime_60_zscore' in package '' which was not found
+[0m18:08:20.256815 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_quarterly_regime_20_zscore_ticker.15ff6bbce7' (models/analytics/market_regimes/schema.yml) depends on a node named 'v_quarterly_regime_20_zscore' in package '' which was not found
+[0m18:08:20.257200 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.not_null_v_quarterly_regime_20_zscore_quarter_ending.885e7164c3' (models/analytics/market_regimes/schema.yml) depends on a node named 'v_quarterly_regime_20_zscore' in package '' which was not found
+[0m18:08:20.257756 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.qi_dbt_project.accepted_values_v_quarterly_regime_20_zscore_regime__N_A__Neutral_Typical__Bull_Volatile__Bear_Volatile__Bull_Outlier__Bear_Outlier.4d579f68cc' (models/analytics/market_regimes/schema.yml) depends on a node named 'v_quarterly_regime_20_zscore' in package '' which was not found
+[0m18:08:20.317164 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.qi_dbt_project.meta
+[0m18:08:20.323767 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '17a384e3-91cb-49db-b9f9-2b7e077e9a29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb03506e0>]}
+[0m18:08:20.426243 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dags/src/qi/dbt_project/target/manifest.json
+[0m18:08:20.427850 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dags/src/qi/dbt_project/target/semantic_manifest.json
+[0m18:08:20.450289 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '17a384e3-91cb-49db-b9f9-2b7e077e9a29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffaf3b7bf0>]}
+[0m18:08:20.450743 [info ] [MainThread]: Found 27 models, 26 data tests, 1 source, 606 macros
+[0m18:08:20.452177 [info ] [MainThread]: 
+[0m18:08:20.452556 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:08:20.452873 [info ] [MainThread]: 
+[0m18:08:20.453410 [debug] [MainThread]: Acquiring new clickhouse connection 'master'
+[0m18:08:20.454145 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list_'
+[0m18:08:20.459662 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:08:20.800925 [debug] [ThreadPool]: dbt_clickhouse adapter: On list_: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "connection_name": "list_"} */
+
+    select name from system.databases
+  ...
+[0m18:08:20.802713 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m18:08:20.817236 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_, now list__fundamentals)
+[0m18:08:20.820868 [debug] [ThreadPool]: dbt_clickhouse adapter: On list__fundamentals: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "connection_name": "list__fundamentals"} */
+select
+      t.name as name,
+      t.database as schema,
+      multiIf(
+        engine in ('MaterializedView', 'View'), 'view',
+        engine = 'Dictionary', 'dictionary',
+        'table'
+      ) as type,
+      db.engine as db_engine,0 as is_on_cluster
+          from system.tables as t join system.databases as db on t.database = db.name
+        where schema = 'fundamentals'
+      
+
+  ...
+[0m18:08:20.831902 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m18:08:20.833142 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list__fundamentals, now list__market)
+[0m18:08:20.876482 [debug] [ThreadPool]: dbt_clickhouse adapter: On list__market: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "connection_name": "list__market"} */
+select
+      t.name as name,
+      t.database as schema,
+      multiIf(
+        engine in ('MaterializedView', 'View'), 'view',
+        engine = 'Dictionary', 'dictionary',
+        'table'
+      ) as type,
+      db.engine as db_engine,0 as is_on_cluster
+          from system.tables as t join system.databases as db on t.database = db.name
+        where schema = 'market'
+      
+
+  ...
+[0m18:08:20.883039 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m18:08:20.884238 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list__market, now list__analytics)
+[0m18:08:20.885870 [debug] [ThreadPool]: dbt_clickhouse adapter: On list__analytics: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "connection_name": "list__analytics"} */
+select
+      t.name as name,
+      t.database as schema,
+      multiIf(
+        engine in ('MaterializedView', 'View'), 'view',
+        engine = 'Dictionary', 'dictionary',
+        'table'
+      ) as type,
+      db.engine as db_engine,0 as is_on_cluster
+          from system.tables as t join system.databases as db on t.database = db.name
+        where schema = 'analytics'
+      
+
+  ...
+[0m18:08:20.897350 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m18:08:20.899959 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '17a384e3-91cb-49db-b9f9-2b7e077e9a29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffaff3d910>]}
+[0m18:08:20.907182 [debug] [Thread-1 (]: Began running node model.qi_dbt_project.weekly_prices
+[0m18:08:20.907776 [info ] [Thread-1 (]: 1 of 4 START sql table model `market`.`weekly_prices` .......................... [RUN]
+[0m18:08:20.908246 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list__analytics, now model.qi_dbt_project.weekly_prices)
+[0m18:08:20.908696 [debug] [Thread-1 (]: Began compiling node model.qi_dbt_project.weekly_prices
+[0m18:08:20.913047 [debug] [Thread-1 (]: Writing injected SQL for node "model.qi_dbt_project.weekly_prices"
+[0m18:08:20.914369 [debug] [Thread-1 (]: Began executing node model.qi_dbt_project.weekly_prices
+[0m18:08:20.943763 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.qi_dbt_project.weekly_prices: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "model.qi_dbt_project.weekly_prices"} */
+
+            
+
+    
+        create table `market`.`weekly_prices__dbt_backup`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS replicated_deduplication_window='0'
+
+                    
+            empty
+          as (
+            -- Real weekly aggregate: ISO week groups; week_ending is the last trading day in that week
+
+select
+  ticker,
+  argMax(short_name, date)        as short_name,       -- name as of last day in week
+  max(date)                       as week_ending,      -- last trading day in ISO week
+  argMin(open,  date)             as open,             -- first open in week
+  max(high)                       as high,             -- highest high in week
+  min(low)                        as low,              -- lowest low in week
+  argMax(close, date)             as close,            -- last close in week
+  argMax(adj_close, date)         as adj_close,        -- last adjusted close in week
+  sum(volume)                     as volume,           -- total volume in week
+  max(date)                       as source_max_date,  -- provenance
+  now()                           as built_at
+from market.daily_prices
+group by
+  ticker,
+  toISOYear(date),
+  toISOWeek(date)
+order by ticker, week_ending
+          )
+        
+        ...
+[0m18:08:20.958836 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m18:08:20.968515 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.qi_dbt_project.weekly_prices: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "model.qi_dbt_project.weekly_prices"} */
+
+    select name, type from system.columns where table = 'weekly_prices__dbt_backup'
+    
+      
+        and database = 'market'
+      
+    
+    order by position
+  ...
+[0m18:08:20.971319 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m18:08:20.974055 [debug] [Thread-1 (]: Writing runtime sql for node "model.qi_dbt_project.weekly_prices"
+[0m18:08:20.975087 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.qi_dbt_project.weekly_prices: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "model.qi_dbt_project.weekly_prices"} */
+
+  
+    
+    
+    
+        
+         
+
+
+        insert into `market`.`weekly_prices__dbt_backup`
+        ("ticker", "short_name", "week_ending", "open", "high", "low", "close", "adj_close", "volume", "source_max_date", "built_at")-- Real weekly aggregate: ISO week groups; week_ending is the last trading day in that week
+
+select
+  ticker,
+  argMax(short_name, date)        as short_name,       -- name as of last day in week
+  max(date)                       as week_ending,      -- last trading day in ISO week
+  argMin(open,  date)             as open,             -- first open in week
+  max(high)                       as high,             -- highest high in week
+  min(low)                        as low,              -- lowest low in week
+  argMax(close, date)             as close,            -- last close in week
+  argMax(adj_close, date)         as adj_close,        -- last adjusted close in week
+  sum(volume)                     as volume,           -- total volume in week
+  max(date)                       as source_max_date,  -- provenance
+  now()                           as built_at
+from market.daily_prices
+group by
+  ticker,
+  toISOYear(date),
+  toISOWeek(date)
+order by ticker, week_ending
+  ...
+[0m18:08:21.083515 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.11 seconds
+[0m18:08:21.086526 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.qi_dbt_project.weekly_prices: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "model.qi_dbt_project.weekly_prices"} */
+EXCHANGE TABLES `market`.`weekly_prices__dbt_backup` AND `market`.`weekly_prices` 
+  
+  ...
+[0m18:08:21.088705 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m18:08:21.101957 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.qi_dbt_project.weekly_prices: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "model.qi_dbt_project.weekly_prices"} */
+drop table if exists `market`.`weekly_prices__dbt_backup` 
+  ...
+[0m18:08:21.103452 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m18:08:21.105362 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '17a384e3-91cb-49db-b9f9-2b7e077e9a29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb35b0530>]}
+[0m18:08:21.105865 [info ] [Thread-1 (]: 1 of 4 OK created sql table model `market`.`weekly_prices` ..................... [[32mOK[0m in 0.20s]
+[0m18:08:21.106349 [debug] [Thread-1 (]: Finished running node model.qi_dbt_project.weekly_prices
+[0m18:08:21.107097 [debug] [Thread-1 (]: Began running node test.qi_dbt_project.dbt_utils_unique_combination_of_columns_weekly_prices_ticker__week_ending.05b9c0ea20
+[0m18:08:21.107578 [info ] [Thread-1 (]: 2 of 4 START test dbt_utils_unique_combination_of_columns_weekly_prices_ticker__week_ending  [RUN]
+[0m18:08:21.107987 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.qi_dbt_project.weekly_prices, now test.qi_dbt_project.dbt_utils_unique_combination_of_columns_weekly_prices_ticker__week_ending.05b9c0ea20)
+[0m18:08:21.108316 [debug] [Thread-1 (]: Began compiling node test.qi_dbt_project.dbt_utils_unique_combination_of_columns_weekly_prices_ticker__week_ending.05b9c0ea20
+[0m18:08:21.110781 [debug] [Thread-1 (]: Writing injected SQL for node "test.qi_dbt_project.dbt_utils_unique_combination_of_columns_weekly_prices_ticker__week_ending.05b9c0ea20"
+[0m18:08:21.111671 [debug] [Thread-1 (]: Began executing node test.qi_dbt_project.dbt_utils_unique_combination_of_columns_weekly_prices_ticker__week_ending.05b9c0ea20
+[0m18:08:21.121453 [debug] [Thread-1 (]: Writing runtime sql for node "test.qi_dbt_project.dbt_utils_unique_combination_of_columns_weekly_prices_ticker__week_ending.05b9c0ea20"
+[0m18:08:21.122550 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.qi_dbt_project.dbt_utils_unique_combination_of_columns_weekly_prices_ticker__week_ending.05b9c0ea20: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "test.qi_dbt_project.dbt_utils_unique_combination_of_columns_weekly_prices_ticker__week_ending.05b9c0ea20"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+
+
+
+
+with validation_errors as (
+
+    select
+        ticker, week_ending
+    from `market`.`weekly_prices`
+    group by ticker, week_ending
+    having count(*) > 1
+
+)
+
+select *
+from validation_errors
+
+
+
+  
+  
+    ) dbt_internal_test...
+[0m18:08:21.159144 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.04 seconds
+[0m18:08:21.161586 [info ] [Thread-1 (]: 2 of 4 PASS dbt_utils_unique_combination_of_columns_weekly_prices_ticker__week_ending  [[32mPASS[0m in 0.05s]
+[0m18:08:21.162261 [debug] [Thread-1 (]: Finished running node test.qi_dbt_project.dbt_utils_unique_combination_of_columns_weekly_prices_ticker__week_ending.05b9c0ea20
+[0m18:08:21.162695 [debug] [Thread-1 (]: Began running node test.qi_dbt_project.not_null_weekly_prices_ticker.e525680469
+[0m18:08:21.163076 [info ] [Thread-1 (]: 3 of 4 START test not_null_weekly_prices_ticker ................................ [RUN]
+[0m18:08:21.163640 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.qi_dbt_project.dbt_utils_unique_combination_of_columns_weekly_prices_ticker__week_ending.05b9c0ea20, now test.qi_dbt_project.not_null_weekly_prices_ticker.e525680469)
+[0m18:08:21.164082 [debug] [Thread-1 (]: Began compiling node test.qi_dbt_project.not_null_weekly_prices_ticker.e525680469
+[0m18:08:21.168263 [debug] [Thread-1 (]: Writing injected SQL for node "test.qi_dbt_project.not_null_weekly_prices_ticker.e525680469"
+[0m18:08:21.169351 [debug] [Thread-1 (]: Began executing node test.qi_dbt_project.not_null_weekly_prices_ticker.e525680469
+[0m18:08:21.170873 [debug] [Thread-1 (]: Writing runtime sql for node "test.qi_dbt_project.not_null_weekly_prices_ticker.e525680469"
+[0m18:08:21.171707 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.qi_dbt_project.not_null_weekly_prices_ticker.e525680469: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "test.qi_dbt_project.not_null_weekly_prices_ticker.e525680469"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select ticker
+from `market`.`weekly_prices`
+where ticker is null
+
+
+
+  
+  
+    ) dbt_internal_test...
+[0m18:08:21.175617 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m18:08:21.176805 [info ] [Thread-1 (]: 3 of 4 PASS not_null_weekly_prices_ticker ...................................... [[32mPASS[0m in 0.01s]
+[0m18:08:21.177378 [debug] [Thread-1 (]: Finished running node test.qi_dbt_project.not_null_weekly_prices_ticker.e525680469
+[0m18:08:21.177774 [debug] [Thread-1 (]: Began running node test.qi_dbt_project.not_null_weekly_prices_week_ending.1078b135de
+[0m18:08:21.178119 [info ] [Thread-1 (]: 4 of 4 START test not_null_weekly_prices_week_ending ........................... [RUN]
+[0m18:08:21.178554 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.qi_dbt_project.not_null_weekly_prices_ticker.e525680469, now test.qi_dbt_project.not_null_weekly_prices_week_ending.1078b135de)
+[0m18:08:21.178896 [debug] [Thread-1 (]: Began compiling node test.qi_dbt_project.not_null_weekly_prices_week_ending.1078b135de
+[0m18:08:21.181712 [debug] [Thread-1 (]: Writing injected SQL for node "test.qi_dbt_project.not_null_weekly_prices_week_ending.1078b135de"
+[0m18:08:21.182751 [debug] [Thread-1 (]: Began executing node test.qi_dbt_project.not_null_weekly_prices_week_ending.1078b135de
+[0m18:08:21.184459 [debug] [Thread-1 (]: Writing runtime sql for node "test.qi_dbt_project.not_null_weekly_prices_week_ending.1078b135de"
+[0m18:08:21.185245 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.qi_dbt_project.not_null_weekly_prices_week_ending.1078b135de: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "qi_dbt_project", "target_name": "dev", "node_id": "test.qi_dbt_project.not_null_weekly_prices_week_ending.1078b135de"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select week_ending
+from `market`.`weekly_prices`
+where week_ending is null
+
+
+
+  
+  
+    ) dbt_internal_test...
+[0m18:08:21.188665 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m18:08:21.189873 [info ] [Thread-1 (]: 4 of 4 PASS not_null_weekly_prices_week_ending ................................. [[32mPASS[0m in 0.01s]
+[0m18:08:21.190417 [debug] [Thread-1 (]: Finished running node test.qi_dbt_project.not_null_weekly_prices_week_ending.1078b135de
+[0m18:08:21.191449 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:08:21.191741 [debug] [MainThread]: Connection 'test.qi_dbt_project.not_null_weekly_prices_week_ending.1078b135de' was left open.
+[0m18:08:21.192031 [debug] [MainThread]: On test.qi_dbt_project.not_null_weekly_prices_week_ending.1078b135de: Close
+[0m18:08:21.192394 [info ] [MainThread]: 
+[0m18:08:21.192761 [info ] [MainThread]: Finished running 1 table model, 3 data tests in 0 hours 0 minutes and 0.74 seconds (0.74s).
+[0m18:08:21.193635 [debug] [MainThread]: Command end result
+[0m18:08:21.233401 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dags/src/qi/dbt_project/target/manifest.json
+[0m18:08:21.235282 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dags/src/qi/dbt_project/target/semantic_manifest.json
+[0m18:08:21.238863 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/dags/src/qi/dbt_project/target/run_results.json
+[0m18:08:21.239160 [info ] [MainThread]: 
+[0m18:08:21.239575 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:08:21.239998 [info ] [MainThread]: 
+[0m18:08:21.240394 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=4
+[0m18:08:21.240878 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 5 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m18:08:21.241676 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": true, "command_wall_clock_time": 2.148741, "process_in_blocks": "46552", "process_kernel_time": 0.182363, "process_mem_max_rss": "200640", "process_out_blocks": "5730", "process_user_time": 3.540643}
+[0m18:08:21.242087 [debug] [MainThread]: Command `dbt build` succeeded at 18:08:21.242031 after 2.15 seconds
+[0m18:08:21.242417 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb1d1e600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb1d1e540>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb031bf80>]}
+[0m18:08:21.242744 [debug] [MainThread]: Flushing usage events
+[0m18:08:21.805647 [debug] [MainThread]: An error was encountered while trying to flush usage events

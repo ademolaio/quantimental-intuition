@@ -1,4 +1,5 @@
 -- Real weekly aggregate: ISO week groups; week_ending is the last trading day in that week
+
 select
   ticker,
   argMax(short_name, date)        as short_name,       -- name as of last day in week
